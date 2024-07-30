@@ -1,3 +1,5 @@
+# Update the content with new heading and subheading
+updated_home_layout_content = """
 ---
 layout: articles
 heading: 'Welcome to My Personal Website'
@@ -6,3 +8,8 @@ banner: 'default'
 ---
 
 {{ content }}
+"""
+
+# Write the updated content back to the file
+with open(home_layout_file_path, 'w', encoding='utf-8') as file:
+    file.write(updated_home_layout_content)
