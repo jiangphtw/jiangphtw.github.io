@@ -1,0 +1,49 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="28" fill="#FFFDFC"/>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="80" y="120" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="64" font-weight="800">監督式學習：先有答案，模型再學規則</text>
+  <text x="80" y="180" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="500">最關鍵的不是模型名稱，而是標籤能不能定義清楚、能不能穩定評估。</text>
+
+  <rect x="90" y="270" width="420" height="430" rx="28" fill="#FFFFFF" stroke="#B8CEF7" stroke-width="4"/>
+  <rect x="590" y="270" width="420" height="430" rx="28" fill="#FFFFFF" stroke="#FFD39F" stroke-width="4"/>
+  <rect x="1090" y="270" width="420" height="430" rx="28" fill="#FFFFFF" stroke="#9EDBC9" stroke-width="4"/>
+
+  <text x="300" y="340" text-anchor="middle" fill="#2D6BEA" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">步驟 1</text>
+  <text x="300" y="395" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="42" font-weight="800">有標籤資料</text>
+  <rect x="155" y="450" width="290" height="64" rx="18" fill="#EAF2FF"/>
+  <rect x="155" y="530" width="290" height="64" rx="18" fill="#FFF2E1"/>
+  <rect x="155" y="610" width="290" height="64" rx="18" fill="#EAF7F2"/>
+  <text x="300" y="492" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">房屋 A → 3200 萬</text>
+  <text x="300" y="572" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">房屋 B → 2780 萬</text>
+  <text x="300" y="652" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">房屋 C → 3650 萬</text>
+
+  <text x="800" y="340" text-anchor="middle" fill="#FF9A52" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">步驟 2</text>
+  <text x="800" y="395" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="42" font-weight="800">模型學規則</text>
+  <rect x="680" y="455" width="240" height="180" rx="28" fill="#F7FAFF" stroke="#B8CEF7" stroke-width="4"/>
+  <text x="800" y="530" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="32" font-weight="800">從特徵</text>
+  <text x="800" y="575" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="32" font-weight="800">推回標籤</text>
+  <text x="800" y="660" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">分類、迴歸都是這個框架</text>
+
+  <text x="1300" y="340" text-anchor="middle" fill="#27A37B" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">步驟 3</text>
+  <text x="1300" y="395" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="42" font-weight="800">對新資料預測</text>
+  <rect x="1175" y="470" width="250" height="150" rx="28" fill="#F7FAFF" stroke="#9EDBC9" stroke-width="4"/>
+  <text x="1300" y="530" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="26" font-weight="700">新房屋</text>
+  <text x="1300" y="570" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">預測價格 3410 萬</text>
+  <text x="1300" y="675" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">可以用明確指標評估表現</text>
+
+  <path d="M515 485H565" stroke="#5C7095" stroke-width="6" stroke-linecap="round"/>
+  <path d="M557 470L585 485L557 500" fill="#5C7095"/>
+  <path d="M1015 485H1065" stroke="#5C7095" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1057 470L1085 485L1057 500" fill="#5C7095"/>
+
+  <rect x="200" y="730" width="1200" height="88" rx="28" fill="#FFF6EC" stroke="#FFD39F" stroke-width="4"/>
+  <text x="800" y="783" text-anchor="middle" fill="#FF9A52" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="30" font-weight="800">標籤定義越清楚，監督式學習越容易變成真正可落地的預測問題</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4EA"/>
+      <stop offset="0.6" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEF5FF"/>
+    </linearGradient>
+  </defs>
+</svg>

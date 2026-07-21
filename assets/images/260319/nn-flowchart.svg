@@ -1,0 +1,49 @@
+<svg width="1600" height="860" viewBox="0 0 1600 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4E8"/>
+      <stop offset="1" stop-color="#EEF8FF"/>
+    </linearGradient>
+    <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12V0Z" fill="#8EA5C8"/>
+    </marker>
+    <style>
+      .title { font: 700 62px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #1A3157; }
+      .subtitle { font: 400 24px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #60769A; }
+      .label { font: 700 26px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #1A3157; }
+      .body { font: 400 22px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #60769A; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="860" rx="28" fill="url(#bg)"/>
+  <text x="86" y="106" class="title">標準 NN 的資料流</text>
+  <text x="86" y="164" class="subtitle">我會把它理解成：先把資料整理成特徵向量，再交給全連接層重新組合。</text>
+
+  <rect x="90" y="318" width="250" height="240" rx="28" fill="#FFFFFF" stroke="#B9CDF5" stroke-width="4"/>
+  <rect x="430" y="318" width="250" height="240" rx="28" fill="#FFFFFF" stroke="#B9CDF5" stroke-width="4"/>
+  <rect x="770" y="318" width="250" height="240" rx="28" fill="#FFFFFF" stroke="#B9CDF5" stroke-width="4"/>
+  <rect x="1110" y="318" width="250" height="240" rx="28" fill="#FFFFFF" stroke="#B9CDF5" stroke-width="4"/>
+
+  <text x="215" y="390" text-anchor="middle" class="label">輸入特徵</text>
+  <text x="215" y="444" text-anchor="middle" class="body">表格欄位</text>
+  <text x="215" y="488" text-anchor="middle" class="body">或攤平向量</text>
+
+  <text x="555" y="390" text-anchor="middle" class="label">全連接層 1</text>
+  <text x="555" y="444" text-anchor="middle" class="body">線性變換</text>
+  <text x="555" y="488" text-anchor="middle" class="body">加 ReLU</text>
+
+  <text x="895" y="390" text-anchor="middle" class="label">全連接層 2</text>
+  <text x="895" y="444" text-anchor="middle" class="body">再做一輪</text>
+  <text x="895" y="488" text-anchor="middle" class="body">特徵重組</text>
+
+  <text x="1235" y="390" text-anchor="middle" class="label">輸出分類</text>
+  <text x="1235" y="444" text-anchor="middle" class="body">10 類分數</text>
+  <text x="1235" y="488" text-anchor="middle" class="body">選最大者</text>
+
+  <line x1="348" y1="438" x2="420" y2="438" stroke="#8EA5C8" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="688" y1="438" x2="760" y2="438" stroke="#8EA5C8" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="1028" y1="438" x2="1100" y2="438" stroke="#8EA5C8" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <rect x="220" y="684" width="1160" height="92" rx="24" fill="#E7F7F2" stroke="#8AD4BE" stroke-width="4"/>
+  <text x="800" y="740" text-anchor="middle" class="label">這種模型最適合把輸入先整理成固定長度特徵，再交給網路自己學權重。</text>
+</svg>

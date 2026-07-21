@@ -1,0 +1,78 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4E8"/>
+      <stop offset="1" stop-color="#EEF8FF"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 62px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #1A3157; }
+      .subtitle { font: 400 24px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #60769A; }
+      .label { font: 700 28px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #1A3157; }
+      .body { font: 400 22px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #60769A; }
+      .small { font: 400 20px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #60769A; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+
+  <text x="86" y="106" class="title">經典神經網路的層結構</text>
+  <text x="86" y="164" class="subtitle">我會先用最經典的輸入層、隱藏層、輸出層，幫自己建立神經網路的骨架感。</text>
+
+  <rect x="120" y="250" width="320" height="460" rx="28" fill="#FFFFFF" stroke="#B9CDF5" stroke-width="4"/>
+  <rect x="640" y="210" width="320" height="540" rx="28" fill="#FFFFFF" stroke="#FFC56E" stroke-width="4"/>
+  <rect x="1160" y="300" width="320" height="360" rx="28" fill="#FFFFFF" stroke="#98E0CE" stroke-width="4"/>
+
+  <text x="280" y="314" text-anchor="middle" class="label">Input Layer</text>
+  <text x="280" y="350" text-anchor="middle" class="body">輸入層</text>
+
+  <text x="800" y="274" text-anchor="middle" class="label">Hidden Layer</text>
+  <text x="800" y="318" text-anchor="middle" class="body">隱藏層</text>
+
+  <text x="1320" y="364" text-anchor="middle" class="label">Output Layer</text>
+  <text x="1320" y="400" text-anchor="middle" class="body">輸出層</text>
+
+  <g stroke="#8FA4C3" stroke-width="4" opacity="0.72">
+    <line x1="322" y1="402" x2="758" y2="380"/>
+    <line x1="322" y1="402" x2="758" y2="490"/>
+    <line x1="322" y1="402" x2="758" y2="600"/>
+    <line x1="322" y1="482" x2="758" y2="380"/>
+    <line x1="322" y1="482" x2="758" y2="490"/>
+    <line x1="322" y1="482" x2="758" y2="600"/>
+    <line x1="322" y1="562" x2="758" y2="380"/>
+    <line x1="322" y1="562" x2="758" y2="490"/>
+    <line x1="322" y1="562" x2="758" y2="600"/>
+
+    <line x1="842" y1="380" x2="1278" y2="452"/>
+    <line x1="842" y1="380" x2="1278" y2="532"/>
+    <line x1="842" y1="490" x2="1278" y2="452"/>
+    <line x1="842" y1="490" x2="1278" y2="532"/>
+    <line x1="842" y1="600" x2="1278" y2="452"/>
+    <line x1="842" y1="600" x2="1278" y2="532"/>
+  </g>
+
+  <g fill="#9DB8FF" stroke="#FFFFFF" stroke-width="6">
+    <circle cx="280" cy="402" r="42"/>
+    <circle cx="280" cy="482" r="42"/>
+    <circle cx="280" cy="562" r="42"/>
+  </g>
+  <g fill="#FFBF66" stroke="#FFFFFF" stroke-width="6">
+    <circle cx="800" cy="380" r="42"/>
+    <circle cx="800" cy="490" r="42"/>
+    <circle cx="800" cy="600" r="42"/>
+  </g>
+  <g fill="#77D5BC" stroke="#FFFFFF" stroke-width="6">
+    <circle cx="1320" cy="452" r="42"/>
+    <circle cx="1320" cy="532" r="42"/>
+  </g>
+
+  <text x="280" y="634" text-anchor="middle" class="body">原始資料先進來</text>
+  <text x="280" y="668" text-anchor="middle" class="body">像像素、數值、字詞</text>
+
+  <text x="800" y="688" text-anchor="middle" class="body">中間表示在這裡被學出來</text>
+  <text x="800" y="722" text-anchor="middle" class="body">權重會決定資訊怎麼傳</text>
+
+  <text x="1320" y="594" text-anchor="middle" class="body">最後輸出分數或分類</text>
+
+  <rect x="270" y="782" width="1060" height="76" rx="24" fill="#E7F7F2" stroke="#8AD4BE" stroke-width="4"/>
+  <text x="800" y="828" text-anchor="middle" class="label" style="font-size:26px;">我會先把神經網路看成一層一層傳遞訊號的模型，再去理解損失和反向傳播。</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="72" y1="56" x2="1208" y2="664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF5ED"/>
+      <stop offset="1" stop-color="#F6FAFF"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 54px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18314F; }
+      .banner { font: 700 28px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18314F; }
+      .tag { font: 700 17px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #FFFFFF; }
+      .card-title { font: 700 22px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18314F; }
+      .card-text { font: 400 17px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #536983; }
+    </style>
+    <filter id="shadow" x="0" y="0" width="1280" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#172033" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" rx="28" fill="url(#bg)"/>
+  <text x="72" y="96" class="title">案例：電商網站的轉換率突然下降</text>
+
+  <rect x="72" y="136" width="1136" height="88" rx="26" fill="#FFF7F1" stroke="#FFB684" stroke-width="2"/>
+  <text x="640" y="190" text-anchor="middle" class="banner">資料科學的目標不是炫技，而是回答：到底掉在哪裡，團隊下一步要先修什麼？</text>
+
+  <g filter="url(#shadow)">
+    <rect x="50" y="278" width="214" height="388" rx="28" fill="#FFFFFF" stroke="#E6D9CC" stroke-width="2"/>
+    <rect x="284" y="278" width="214" height="388" rx="28" fill="#FFFFFF" stroke="#E6D9CC" stroke-width="2"/>
+    <rect x="518" y="278" width="214" height="388" rx="28" fill="#FFFFFF" stroke="#E6D9CC" stroke-width="2"/>
+    <rect x="752" y="278" width="214" height="388" rx="28" fill="#FFFFFF" stroke="#E6D9CC" stroke-width="2"/>
+    <rect x="986" y="278" width="214" height="388" rx="28" fill="#FFFFFF" stroke="#E6D9CC" stroke-width="2"/>
+  </g>
+
+  <rect x="74" y="304" width="94" height="38" rx="19" fill="#F79F63"/>
+  <rect x="308" y="304" width="94" height="38" rx="19" fill="#F79F63"/>
+  <rect x="542" y="304" width="94" height="38" rx="19" fill="#F79F63"/>
+  <rect x="776" y="304" width="94" height="38" rx="19" fill="#F79F63"/>
+  <rect x="1010" y="304" width="94" height="38" rx="19" fill="#F79F63"/>
+
+  <text x="121" y="329" text-anchor="middle" class="tag">資料蒐集</text>
+  <text x="355" y="329" text-anchor="middle" class="tag">資料清理</text>
+  <text x="589" y="329" text-anchor="middle" class="tag">資料儲存</text>
+  <text x="823" y="329" text-anchor="middle" class="tag">資料分析</text>
+  <text x="1057" y="329" text-anchor="middle" class="tag">視覺化</text>
+
+  <text x="90" y="392" class="card-title">先把影響轉換率</text>
+  <text x="90" y="424" class="card-title">的資料抓齊</text>
+  <text x="90" y="484" class="card-text">• 流量來源</text>
+  <text x="90" y="526" class="card-text">• 商品頁與加購車</text>
+  <text x="90" y="568" class="card-text">• 結帳與付款紀錄</text>
+
+  <text x="324" y="392" class="card-title">先把資料口徑</text>
+  <text x="324" y="424" class="card-title">整理一致</text>
+  <text x="324" y="484" class="card-text">• 去重與統一時間</text>
+  <text x="324" y="526" class="card-text">• 補齊漏值</text>
+  <text x="324" y="568" class="card-text">• 定義漏斗步驟</text>
+
+  <text x="558" y="392" class="card-title">把資料放進</text>
+  <text x="558" y="424" class="card-title">可重複查詢的表</text>
+  <text x="558" y="484" class="card-text">• `events` 表</text>
+  <text x="558" y="526" class="card-text">• `checkout` 表</text>
+  <text x="558" y="568" class="card-text">• `orders` 表</text>
+
+  <text x="792" y="392" class="card-title">把問題變成</text>
+  <text x="792" y="424" class="card-title">可驗證的假設</text>
+  <text x="792" y="484" class="card-text">• 哪一步掉最多？</text>
+  <text x="792" y="526" class="card-text">• 哪個來源最差？</text>
+  <text x="792" y="568" class="card-text">• 哪種付款失敗率高？</text>
+
+  <text x="1026" y="392" class="card-title">把結果變成</text>
+  <text x="1026" y="424" class="card-title">團隊看得懂的圖</text>
+  <text x="1026" y="484" class="card-text">• 漏斗圖</text>
+  <text x="1026" y="526" class="card-text">• 每日轉換率趨勢</text>
+  <text x="1026" y="568" class="card-text">• 付款失敗原因</text>
+</svg>

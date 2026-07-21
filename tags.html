@@ -1,0 +1,21 @@
+---
+layout: default
+title: 文章標籤
+description: 依標籤瀏覽技術文章。
+nav: notes
+---
+<main id="content" class="taxonomy-page content-shell">
+  <header class="taxonomy-header reveal">
+    <div><p class="page-index">NOTES / TAGS</p><h1>文章標籤</h1></div>
+    <p>依關鍵字瀏覽文章，標籤會由每篇文章的 front matter 自動整理。</p>
+  </header>
+  {% assign tags = site.tags | sort %}
+  {% for tag in tags %}
+  <section class="taxonomy-group reveal" id="{{ tag[0] | slugify }}">
+    <h2>{{ tag[0] }} <small>{{ tag[1] | size }}</small></h2>
+    <ol class="taxonomy-list">
+      {% for post in tag[1] %}<li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>{% endfor %}
+    </ol>
+  </section>
+  {% endfor %}
+</main>

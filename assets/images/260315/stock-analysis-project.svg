@@ -1,0 +1,59 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="72" y1="56" x2="1208" y2="664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF5EC"/>
+      <stop offset="1" stop-color="#F6FAFF"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 54px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18243D; }
+      .subtitle { font: 400 24px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #56647B; }
+      .tag { font: 700 18px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #FF7A59; }
+      .card-title { font: 700 28px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18243D; }
+      .card-text { font: 400 21px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #53627C; }
+      .accent-title { font: 700 28px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #0F8B6D; }
+      .accent-text { font: 500 22px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #4B607A; }
+    </style>
+    <filter id="shadow" x="0" y="0" width="1280" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#172033" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" rx="28" fill="url(#bg)"/>
+  <text x="74" y="100" class="title">股票市場資料分析：從原始資料到可比較的結果</text>
+  <text x="74" y="142" class="subtitle">這種時間序列案例很適合拿來練 Pandas、視覺化和基礎分析指標。</text>
+
+  <g filter="url(#shadow)">
+    <rect x="78" y="250" width="250" height="220" rx="28" fill="#FFFFFF" stroke="#FFD4B7" stroke-width="3"/>
+    <rect x="346" y="250" width="250" height="220" rx="28" fill="#FFFFFF" stroke="#BFD6FF" stroke-width="3"/>
+    <rect x="614" y="250" width="250" height="220" rx="28" fill="#FFFFFF" stroke="#C7E2D2" stroke-width="3"/>
+    <rect x="882" y="250" width="250" height="220" rx="28" fill="#FFFFFF" stroke="#FFE49E" stroke-width="3"/>
+    <rect x="290" y="548" width="700" height="112" rx="26" fill="#F1FFF8" stroke="#86D0B5" stroke-width="3"/>
+  </g>
+
+  <line x1="328" y1="360" x2="346" y2="360" stroke="#D7DEE9" stroke-width="6"/>
+  <line x1="596" y1="360" x2="614" y2="360" stroke="#D7DEE9" stroke-width="6"/>
+  <line x1="864" y1="360" x2="882" y2="360" stroke="#D7DEE9" stroke-width="6"/>
+
+  <text x="203" y="292" text-anchor="middle" class="tag">STEP 1</text>
+  <text x="203" y="340" text-anchor="middle" class="card-title">取得資料</text>
+  <text x="203" y="384" text-anchor="middle" class="card-text">CSV、券商 API、</text>
+  <text x="203" y="418" text-anchor="middle" class="card-text">歷史行情資料源</text>
+
+  <text x="471" y="292" text-anchor="middle" class="tag">STEP 2</text>
+  <text x="471" y="340" text-anchor="middle" class="card-title">清理資料</text>
+  <text x="471" y="384" text-anchor="middle" class="card-text">日期轉型、排序、</text>
+  <text x="471" y="418" text-anchor="middle" class="card-text">缺值與異常檢查</text>
+
+  <text x="739" y="292" text-anchor="middle" class="tag">STEP 3</text>
+  <text x="739" y="340" text-anchor="middle" class="card-title">建立指標</text>
+  <text x="739" y="384" text-anchor="middle" class="card-text">報酬率、移動平均、</text>
+  <text x="739" y="418" text-anchor="middle" class="card-text">波動度</text>
+
+  <text x="1007" y="292" text-anchor="middle" class="tag">STEP 4</text>
+  <text x="1007" y="340" text-anchor="middle" class="card-title">視覺化</text>
+  <text x="1007" y="384" text-anchor="middle" class="card-text">價格趨勢圖、</text>
+  <text x="1007" y="418" text-anchor="middle" class="card-text">分佈圖、比較圖</text>
+
+  <text x="640" y="596" text-anchor="middle" class="accent-title">最後再做跨股票比較：把不同股票標準化後放到同一張圖</text>
+  <text x="640" y="632" text-anchor="middle" class="accent-text">你會更容易看出趨勢、相對強弱與波動差異，而不是只看絕對價格。</text>
+</svg>

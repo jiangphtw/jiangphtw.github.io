@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">資料蒐集、清理、儲存在哪裡</title>
+  <desc id="desc">五個等寬流程卡片，依序說明定義問題、資料蒐集、資料清理、資料儲存、分析與視覺化。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff7ef"/>
+      <stop offset="100%" stop-color="#f4f7ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#d9dde8" flood-opacity="0.42"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M0,0 L14,7 L0,14 z" fill="#c8d6ef"/>
+    </marker>
+    <style>
+      .title { font: 700 62px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #183153; }
+      .subtitle { font: 400 26px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #5c7296; }
+      .badge { font: 700 22px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #ffffff; text-anchor: middle; }
+      .card-title { font: 700 32px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #183153; text-anchor: middle; }
+      .card-text { font: 400 22px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #5c7296; text-anchor: middle; }
+      .note { font: 700 28px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #1f5ed9; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+
+  <text x="88" y="118" class="title">資料蒐集、清理、儲存在哪裡</text>
+  <text x="88" y="170" class="subtitle">真正影響資料品質的，通常不是最後那張圖，而是前面三段有沒有做穩。</text>
+
+  <line x1="330" y1="440" x2="1268" y2="440" stroke="#dbe4f3" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="300" width="240" height="250" rx="30" fill="#ffffff" stroke="#cfd9ee" stroke-width="4"/>
+    <rect x="400" y="300" width="240" height="250" rx="30" fill="#fff7f0" stroke="#ffb786" stroke-width="4"/>
+    <rect x="680" y="300" width="240" height="250" rx="30" fill="#fff4ec" stroke="#ffa46b" stroke-width="4"/>
+    <rect x="960" y="300" width="240" height="250" rx="30" fill="#eef6ff" stroke="#8cb9ff" stroke-width="4"/>
+    <rect x="1240" y="300" width="240" height="250" rx="30" fill="#ffffff" stroke="#cfd9ee" stroke-width="4"/>
+  </g>
+
+  <rect x="180" y="262" width="120" height="52" rx="20" fill="#98a9c8"/>
+  <rect x="460" y="262" width="120" height="52" rx="20" fill="#ffb786"/>
+  <rect x="740" y="262" width="120" height="52" rx="20" fill="#ff9b66"/>
+  <rect x="1020" y="262" width="120" height="52" rx="20" fill="#7aa8ff"/>
+  <rect x="1300" y="262" width="120" height="52" rx="20" fill="#98a9c8"/>
+
+  <text x="240" y="296" class="badge">起點</text>
+  <text x="520" y="296" class="badge">第 1 段</text>
+  <text x="800" y="296" class="badge">第 2 段</text>
+  <text x="1080" y="296" class="badge">第 3 段</text>
+  <text x="1360" y="296" class="badge">輸出</text>
+
+  <text x="240" y="392" class="card-title">定義問題</text>
+  <text x="240" y="446" class="card-text">先知道要回答什麼</text>
+  <text x="240" y="482" class="card-text">才知道該收哪些資料</text>
+
+  <text x="520" y="392" class="card-title">資料蒐集</text>
+  <text x="520" y="446" class="card-text">來源、主鍵、事件時間</text>
+  <text x="520" y="482" class="card-text">都要一起留下來</text>
+
+  <text x="800" y="392" class="card-title">資料清理</text>
+  <text x="800" y="446" class="card-text">缺值、重複、格式</text>
+  <text x="800" y="482" class="card-text">與欄位定義固定下來</text>
+
+  <text x="1080" y="392" class="card-title">資料儲存</text>
+  <text x="1080" y="446" class="card-text">raw、cleaned、mart</text>
+  <text x="1080" y="482" class="card-text">分層保存與查詢</text>
+
+  <text x="1360" y="392" class="card-title">分析與視覺化</text>
+  <text x="1360" y="446" class="card-text">把結果整理成</text>
+  <text x="1360" y="482" class="card-text">可以被判讀的資訊</text>
+
+  <rect x="330" y="654" width="940" height="112" rx="30" fill="#eaf1ff" stroke="#93b0ff" stroke-width="5"/>
+  <text x="800" y="724" class="note">最常花時間、也最常決定品質的，是中間這三段</text>
+</svg>

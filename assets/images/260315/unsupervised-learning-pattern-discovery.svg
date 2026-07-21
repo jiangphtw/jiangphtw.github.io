@@ -1,0 +1,51 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="28" fill="#FFFDFC"/>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="80" y="120" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="64" font-weight="800">非監督式學習：先找結構，再談解釋</text>
+  <text x="80" y="180" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="500">當資料沒有答案欄位時，模型做的不是預測標準答案，而是先幫你看見群組與分布。</text>
+
+  <rect x="90" y="270" width="520" height="470" rx="28" fill="#FFFFFF" stroke="#B8CEF7" stroke-width="4"/>
+  <rect x="690" y="270" width="820" height="470" rx="28" fill="#FFFFFF" stroke="#FFD39F" stroke-width="4"/>
+
+  <text x="350" y="345" text-anchor="middle" fill="#2D6BEA" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">原始資料</text>
+  <text x="350" y="395" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="40" font-weight="800">沒有標籤</text>
+  <circle cx="230" cy="500" r="18" fill="#BFD4FB"/>
+  <circle cx="280" cy="560" r="18" fill="#BFD4FB"/>
+  <circle cx="330" cy="520" r="18" fill="#BFD4FB"/>
+  <circle cx="390" cy="600" r="18" fill="#FFD3AC"/>
+  <circle cx="450" cy="540" r="18" fill="#FFD3AC"/>
+  <circle cx="470" cy="470" r="18" fill="#FFD3AC"/>
+  <circle cx="270" cy="650" r="18" fill="#9EDBC9"/>
+  <circle cx="340" cy="680" r="18" fill="#9EDBC9"/>
+  <circle cx="420" cy="660" r="18" fill="#9EDBC9"/>
+  <text x="350" y="715" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">先看資料彼此是否相似</text>
+
+  <path d="M620 510H665" stroke="#5C7095" stroke-width="6" stroke-linecap="round"/>
+  <path d="M657 495L685 510L657 525" fill="#5C7095"/>
+
+  <text x="1100" y="345" text-anchor="middle" fill="#FF9A52" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">可能得到的結果</text>
+  <rect x="760" y="400" width="210" height="220" rx="28" fill="#F7FAFF" stroke="#B8CEF7" stroke-width="4"/>
+  <rect x="995" y="400" width="210" height="220" rx="28" fill="#FFF7EF" stroke="#FFD39F" stroke-width="4"/>
+  <rect x="1230" y="400" width="210" height="220" rx="28" fill="#F1FBF7" stroke="#9EDBC9" stroke-width="4"/>
+  <text x="865" y="470" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="34" font-weight="800">分群</text>
+  <text x="865" y="525" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">把相似客戶</text>
+  <text x="865" y="560" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">放到同一群</text>
+  <text x="1100" y="470" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="34" font-weight="800">降維</text>
+  <text x="1100" y="525" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">把高維資料</text>
+  <text x="1100" y="560" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">壓成可觀察空間</text>
+  <text x="1335" y="470" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="34" font-weight="800">異常點</text>
+  <text x="1335" y="525" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">找出明顯偏離</text>
+  <text x="1335" y="560" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">主體分布的資料</text>
+  <text x="1100" y="685" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">評估通常需要結合背景知識，不只是看一個分數</text>
+
+  <rect x="280" y="735" width="1040" height="88" rx="28" fill="#FFF6EC" stroke="#FFD39F" stroke-width="4"/>
+  <text x="800" y="788" text-anchor="middle" fill="#FF9A52" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="30" font-weight="800">非監督式學習很常是探索的起點，不是低階版的監督式學習</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4EA"/>
+      <stop offset="0.58" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEF7FF"/>
+    </linearGradient>
+  </defs>
+</svg>

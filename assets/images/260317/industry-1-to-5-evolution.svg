@@ -1,0 +1,57 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="28" fill="#F8FAFC"/>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="80" y="120" fill="#183153" font-size="62" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">工業 1.0 到 5.0 的演進</text>
+  <text x="80" y="175" fill="#5B7090" font-size="28" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">每一代工業革命，都在改變生產系統怎麼被組織。</text>
+
+  <path d="M140 540H1460" stroke="#CBD5E1" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1430 520L1470 540L1430 560" fill="#CBD5E1"/>
+
+  <circle cx="230" cy="540" r="28" fill="#F97316"/>
+  <circle cx="510" cy="540" r="28" fill="#FB923C"/>
+  <circle cx="790" cy="540" r="28" fill="#FBBF24"/>
+  <circle cx="1070" cy="540" r="28" fill="#38BDF8"/>
+  <circle cx="1350" cy="540" r="28" fill="#14B8A6"/>
+
+  <rect x="90" y="280" width="280" height="190" rx="26" fill="#FFF7ED" stroke="#FDBA74" stroke-width="4"/>
+  <text x="230" y="335" text-anchor="middle" fill="#F97316" font-size="26" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">工業 1.0</text>
+  <text x="230" y="392" text-anchor="middle" fill="#183153" font-size="46" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">機械化</text>
+  <text x="230" y="433" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">蒸汽動力</text>
+  <text x="230" y="466" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">取代大量人力</text>
+
+  <rect x="370" y="280" width="280" height="190" rx="26" fill="#FFF7ED" stroke="#FDBA74" stroke-width="4"/>
+  <text x="510" y="335" text-anchor="middle" fill="#F97316" font-size="26" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">工業 2.0</text>
+  <text x="510" y="392" text-anchor="middle" fill="#183153" font-size="46" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">電力化</text>
+  <text x="510" y="433" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">裝配線</text>
+  <text x="510" y="466" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">大量生產</text>
+
+  <rect x="650" y="280" width="280" height="190" rx="26" fill="#FFFBEB" stroke="#FCD34D" stroke-width="4"/>
+  <text x="790" y="335" text-anchor="middle" fill="#D97706" font-size="26" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">工業 3.0</text>
+  <text x="790" y="392" text-anchor="middle" fill="#183153" font-size="46" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">自動化</text>
+  <text x="790" y="433" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">電子控制</text>
+  <text x="790" y="466" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">資訊化</text>
+
+  <rect x="930" y="280" width="280" height="190" rx="26" fill="#F0F9FF" stroke="#7DD3FC" stroke-width="4"/>
+  <text x="1070" y="335" text-anchor="middle" fill="#0284C7" font-size="26" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">工業 4.0</text>
+  <text x="1070" y="392" text-anchor="middle" fill="#183153" font-size="46" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">智慧化</text>
+  <text x="1070" y="433" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">互聯與資料</text>
+  <text x="1070" y="466" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">系統最佳化</text>
+
+  <rect x="1210" y="280" width="280" height="190" rx="26" fill="#F0FDFA" stroke="#5EEAD4" stroke-width="4"/>
+  <text x="1350" y="335" text-anchor="middle" fill="#0F766E" font-size="26" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">工業 5.0</text>
+  <text x="1350" y="392" text-anchor="middle" fill="#183153" font-size="46" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">人本化</text>
+  <text x="1350" y="433" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">永續</text>
+  <text x="1350" y="466" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">韌性</text>
+
+  <rect x="190" y="610" width="1160" height="180" rx="30" fill="#FFFFFF" stroke="#DCE6F3" stroke-width="4"/>
+  <text x="770" y="675" text-anchor="middle" fill="#183153" font-size="34" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">我自己會把這條主線理解成：</text>
+  <text x="770" y="725" text-anchor="middle" fill="#5B7090" font-size="28" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">先解決動力與規模，再解決控制與互聯，</text>
+  <text x="770" y="765" text-anchor="middle" fill="#5B7090" font-size="28" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">最後才開始認真面對：系統是不是把人放回中心。</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7ED"/>
+      <stop offset="1" stop-color="#EFF6FF"/>
+    </linearGradient>
+  </defs>
+</svg>

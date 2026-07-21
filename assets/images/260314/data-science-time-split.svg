@@ -1,0 +1,56 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="72" y1="56" x2="1208" y2="664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF5ED"/>
+      <stop offset="1" stop-color="#F6FAFF"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 56px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18314F; }
+      .subtitle { font: 400 23px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #5B708A; }
+      .callout { font: 700 28px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #1C3C5E; }
+      .pct { font: 700 30px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18314F; }
+      .label { font: 700 21px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18314F; }
+      .note-title { font: 700 26px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18314F; }
+      .note-text { font: 500 18px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #4F6784; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="720" rx="28" fill="url(#bg)"/>
+  <text x="72" y="102" class="title">資料科學大多時間不在模型</text>
+  <text x="72" y="144" class="subtitle">下面是示意比例，不是通用統計，但很適合拿來校正初學者的期待。</text>
+  <text x="640" y="206" text-anchor="middle" class="callout">最常被低估的是中間這大段：資料整理、口徑對齊、反覆驗證</text>
+
+  <rect x="70" y="260" width="220" height="170" rx="26" fill="#FFB07B"/>
+  <rect x="290" y="260" width="390" height="170" fill="#FF9E68"/>
+  <rect x="680" y="260" width="300" height="170" fill="#FFD26E"/>
+  <rect x="980" y="260" width="160" height="170" fill="#8EB5D8"/>
+  <rect x="1140" y="260" width="70" height="170" rx="0 26 26 0" fill="#8FD0BA"/>
+
+  <text x="180" y="334" text-anchor="middle" class="pct">15%</text>
+  <text x="180" y="372" text-anchor="middle" class="label">定義問題</text>
+
+  <text x="485" y="334" text-anchor="middle" class="pct">35%</text>
+  <text x="485" y="372" text-anchor="middle" class="label">蒐集與清理</text>
+
+  <text x="830" y="334" text-anchor="middle" class="pct">25%</text>
+  <text x="830" y="372" text-anchor="middle" class="label">整理與驗證</text>
+
+  <text x="1060" y="334" text-anchor="middle" class="pct">15%</text>
+  <text x="1060" y="372" text-anchor="middle" class="label">分析與建模</text>
+
+  <text x="1175" y="330" text-anchor="middle" class="pct">10%</text>
+  <text x="1175" y="364" text-anchor="middle" class="label">視覺化</text>
+
+  <rect x="78" y="534" width="544" height="158" rx="28" fill="#FFFFFF" stroke="#E7D7C6" stroke-width="2"/>
+  <rect x="658" y="534" width="544" height="158" rx="28" fill="#FFFFFF" stroke="#E7D7C6" stroke-width="2"/>
+
+  <text x="116" y="594" class="note-title">這張圖想提醒的不是比例多精準</text>
+  <text x="116" y="630" class="note-text">而是資料科學真正花時間的地方，往往是把問題講清楚、</text>
+  <text x="116" y="658" class="note-text">把資料整理乾淨、把結果驗證到可以信任，</text>
+  <text x="116" y="686" class="note-text">而不是一開始就急著追模型。</text>
+
+  <text x="696" y="594" class="note-title">初學者最常見的落差</text>
+  <text x="696" y="630" class="note-text">以為資料科學等於 Python 加模型，結果真正卡住的通常是</text>
+  <text x="696" y="658" class="note-text">SQL、資料表、欄位定義，以及清理流程，</text>
+  <text x="696" y="686" class="note-text">而不是演算法公式本身。</text>
+</svg>

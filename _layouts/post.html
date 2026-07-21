@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<main id="content" class="post-page">
+  <header class="post-hero">
+    <div class="content-shell reveal">
+      <p class="page-index">FIELD NOTE / {{ page.categories | first | default: 'NOTE' | upcase }}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle %}<p class="post-subtitle">{{ page.subtitle }}</p>{% endif %}
+      <div class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y.%m.%d' }}</time>
+        {% if page.author %}<span>{{ page.author }}</span>{% endif %}
+        {% for category in page.categories %}<a href="{{ '/categories.html' | relative_url }}#{{ category | slugify }}">{{ category }}</a>{% endfor %}
+      </div>
+    </div>
+  </header>
+
+  <article class="post-content content-shell">
+    {{ content }}
+  </article>
+
+  {% if page.tags and page.tags != empty %}
+  <aside class="post-tags content-shell" aria-label="文章標籤">
+    <span>TAGS</span>
+    {% for tag in page.tags %}<a href="{{ '/tags.html' | relative_url }}#{{ tag | slugify }}">{{ tag }}</a>{% endfor %}
+  </aside>
+  {% endif %}
+
+  <nav class="post-navigation content-shell" aria-label="文章導覽">
+    {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><small>上一篇</small><span>{{ page.previous.title }}</span></a>{% else %}<span></span>{% endif %}
+    {% if page.next %}<a class="post-next" href="{{ page.next.url | relative_url }}"><small>下一篇</small><span>{{ page.next.title }}</span></a>{% endif %}
+  </nav>
+  <div class="post-back content-shell"><a href="{{ '/notes.html' | relative_url }}">← 返回所有文章</a></div>
+</main>

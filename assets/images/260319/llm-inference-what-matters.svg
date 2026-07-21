@@ -1,0 +1,54 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF5EA"/>
+      <stop offset="1" stop-color="#F4FBFF"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 58px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #16324F; }
+      .subtitle { font: 400 24px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #5D7391; }
+      .mid { font: 700 32px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #16324F; }
+      .head { font: 700 28px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #16324F; }
+      .body { font: 400 20px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #4C637C; }
+      .small { font: 400 18px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #5D7391; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+
+  <text x="90" y="105" class="title">大語言模型推論，不只是算力問題</text>
+  <text x="90" y="150" class="subtitle">如果我要判斷一個推論平台值不值得注意，我通常先看這四件事。</text>
+
+  <rect x="180" y="220" width="1240" height="150" rx="30" fill="#FFFFFF" stroke="#BFD5F2" stroke-width="4"/>
+  <text x="800" y="285" text-anchor="middle" class="mid">LLM 推論真正卡的地方</text>
+  <text x="800" y="328" text-anchor="middle" class="body">不是只有算得快，還要能穩定回應、搬得動資料、撐得住成本。</text>
+  <text x="800" y="355" text-anchor="middle" class="small">上下文長度、KV 快取、多機同步，都會讓答案改變。</text>
+
+  <g>
+    <rect x="170" y="445" width="540" height="170" rx="28" fill="#FFFFFF" stroke="#FFBE8E" stroke-width="4"/>
+    <text x="440" y="505" text-anchor="middle" class="head">延遲</text>
+    <text x="440" y="548" text-anchor="middle" class="body">第一個詞元多久出來</text>
+    <text x="440" y="582" text-anchor="middle" class="body">語音、代理、互動搜尋特別敏感</text>
+  </g>
+
+  <g>
+    <rect x="890" y="445" width="540" height="170" rx="28" fill="#FFFFFF" stroke="#FFD67F" stroke-width="4"/>
+    <text x="1160" y="505" text-anchor="middle" class="head">吞吐</text>
+    <text x="1160" y="548" text-anchor="middle" class="body">每秒能處理多少請求與多少詞元</text>
+    <text x="1160" y="582" text-anchor="middle" class="body">API 平台與批次業務特別在意</text>
+  </g>
+
+  <g>
+    <rect x="170" y="660" width="540" height="170" rx="28" fill="#FFFFFF" stroke="#8FD5C2" stroke-width="4"/>
+    <text x="440" y="720" text-anchor="middle" class="head">記憶體與頻寬</text>
+    <text x="440" y="763" text-anchor="middle" class="body">模型權重、KV 快取、資料搬運</text>
+    <text x="440" y="797" text-anchor="middle" class="body">很多時候真正卡的是記憶體牆</text>
+  </g>
+
+  <g>
+    <rect x="890" y="660" width="540" height="170" rx="28" fill="#FFFFFF" stroke="#A9C7FF" stroke-width="4"/>
+    <text x="1160" y="720" text-anchor="middle" class="head">功耗與軟體</text>
+    <text x="1160" y="763" text-anchor="middle" class="body">編譯器、執行環境、框架整合</text>
+    <text x="1160" y="797" text-anchor="middle" class="body">數字漂亮，不代表能大規模部署</text>
+  </g>
+</svg>

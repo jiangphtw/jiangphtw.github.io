@@ -1,0 +1,56 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="72" y1="56" x2="1208" y2="664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FAFCFF"/>
+      <stop offset="1" stop-color="#FFF4EA"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 54px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18243D; }
+      .subtitle { font: 400 24px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #57637B; }
+      .tag { font: 700 20px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #FF7A59; }
+      .card-title { font: 700 34px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18243D; }
+      .card-text { font: 400 20px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #55637B; }
+      .tip-title { font: 700 26px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #2563EB; }
+      .tip-text { font: 500 21px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #314158; }
+    </style>
+    <filter id="shadow" x="0" y="0" width="1280" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#172033" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" rx="28" fill="url(#bg)"/>
+  <text x="74" y="100" class="title">Matplotlib 與 Seaborn 的分工</text>
+  <text x="74" y="142" class="subtitle">先學會底層控制，再用高階封裝把分析圖表做得更快、更整齊。</text>
+
+  <g filter="url(#shadow)">
+    <rect x="74" y="212" width="500" height="340" rx="34" fill="#FFFFFF" stroke="#BFD5FF" stroke-width="3"/>
+    <rect x="706" y="212" width="500" height="340" rx="34" fill="#FFFFFF" stroke="#FFD4B7" stroke-width="3"/>
+    <rect x="228" y="584" width="824" height="108" rx="26" fill="#EEF4FF" stroke="#9DB7FF" stroke-width="3"/>
+  </g>
+
+  <text x="324" y="262" text-anchor="middle" class="tag">底層控制</text>
+  <text x="324" y="308" text-anchor="middle" class="card-title">Matplotlib</text>
+  <text x="324" y="348" text-anchor="middle" class="card-text">適合做細節調整</text>
+  <text x="324" y="378" text-anchor="middle" class="card-text">與自訂輸出</text>
+
+  <line x1="148" y1="484" x2="510" y2="484" stroke="#D7DFEA" stroke-width="4"/>
+  <line x1="148" y1="484" x2="148" y2="396" stroke="#D7DFEA" stroke-width="4"/>
+  <polyline points="164,468 238,430 314,448 390,392 462,356 518,306" fill="none" stroke="#2A6AF0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="324" y="528" text-anchor="middle" class="card-text">你可以精準控制線條、座標軸與輸出格式</text>
+
+  <text x="956" y="262" text-anchor="middle" class="tag">分析效率</text>
+  <text x="956" y="308" text-anchor="middle" class="card-title">Seaborn</text>
+  <text x="956" y="348" text-anchor="middle" class="card-text">更擅長快速畫出</text>
+  <text x="956" y="378" text-anchor="middle" class="card-text">分析型圖表</text>
+
+  <line x1="836" y1="484" x2="1140" y2="484" stroke="#E3E8EF" stroke-width="4"/>
+  <rect x="856" y="424" width="60" height="60" rx="18" fill="#CFE1FF"/>
+  <rect x="942" y="374" width="60" height="110" rx="18" fill="#A8C7FF"/>
+  <rect x="1028" y="318" width="60" height="166" rx="18" fill="#FFC89A"/>
+  <rect x="1114" y="262" width="60" height="222" rx="18" fill="#FFAC73"/>
+  <text x="956" y="528" text-anchor="middle" class="card-text">預設主題、色盤和 DataFrame 整合都更順手</text>
+
+  <text x="640" y="622" text-anchor="middle" class="tip-title">建議學法：先用 Matplotlib 理解圖表結構</text>
+  <text x="640" y="654" text-anchor="middle" class="tip-title">再用 Seaborn 提高作圖效率</text>
+  <text x="640" y="682" text-anchor="middle" class="tip-text">兩者通常一起用，不是二選一。</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg width="1700" height="920" viewBox="0 0 1700 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1700" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4E8"/>
+      <stop offset="1" stop-color="#EEF8FF"/>
+    </linearGradient>
+    <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12V0Z" fill="#8EA5C8"/>
+    </marker>
+    <style>
+      .title { font: 700 62px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #1A3157; }
+      .subtitle { font: 400 24px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #60769A; }
+      .label { font: 700 26px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #1A3157; }
+      .body { font: 400 22px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #60769A; }
+    </style>
+  </defs>
+
+  <rect width="1700" height="920" rx="28" fill="url(#bg)"/>
+  <text x="86" y="106" class="title">RNN 的資料流</text>
+  <text x="86" y="164" class="subtitle">我會把它理解成：資料不是一次全吃完，而是一步一步往前讀，每一步都保留一點前面的狀態。</text>
+
+  <rect x="120" y="338" width="180" height="150" rx="24" fill="#FFFFFF" stroke="#98E0CE" stroke-width="4"/>
+  <rect x="420" y="338" width="180" height="150" rx="24" fill="#FFFFFF" stroke="#98E0CE" stroke-width="4"/>
+  <rect x="720" y="338" width="180" height="150" rx="24" fill="#FFFFFF" stroke="#98E0CE" stroke-width="4"/>
+  <rect x="1020" y="338" width="180" height="150" rx="24" fill="#FFFFFF" stroke="#98E0CE" stroke-width="4"/>
+  <rect x="1320" y="338" width="220" height="150" rx="24" fill="#FFFFFF" stroke="#98E0CE" stroke-width="4"/>
+
+  <text x="210" y="400" text-anchor="middle" class="label">x₁</text>
+  <text x="210" y="448" text-anchor="middle" class="body">第一步輸入</text>
+
+  <text x="510" y="400" text-anchor="middle" class="label">x₂</text>
+  <text x="510" y="448" text-anchor="middle" class="body">第二步輸入</text>
+
+  <text x="810" y="400" text-anchor="middle" class="label">x₃</text>
+  <text x="810" y="448" text-anchor="middle" class="body">第三步輸入</text>
+
+  <text x="1110" y="400" text-anchor="middle" class="label">hidden state</text>
+  <text x="1110" y="448" text-anchor="middle" class="body">保留前文資訊</text>
+
+  <text x="1430" y="400" text-anchor="middle" class="label">下一步預測</text>
+  <text x="1430" y="448" text-anchor="middle" class="body">next character</text>
+
+  <line x1="308" y1="413" x2="410" y2="413" stroke="#8EA5C8" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="608" y1="413" x2="710" y2="413" stroke="#8EA5C8" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="908" y1="413" x2="1010" y2="413" stroke="#8EA5C8" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="1208" y1="413" x2="1310" y2="413" stroke="#8EA5C8" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <path d="M1110 338C1110 260 900 240 810 240C720 240 510 260 510 338" stroke="#8EA5C8" stroke-width="6" stroke-dasharray="14 14"/>
+  <text x="810" y="210" text-anchor="middle" class="body">前面的 hidden state 會影響後面每一步</text>
+
+  <rect x="230" y="696" width="1240" height="102" rx="24" fill="#E7F7F2" stroke="#8AD4BE" stroke-width="4"/>
+  <text x="850" y="758" text-anchor="middle" class="label">這種資料流最重要的不是空間位置，而是順序和上下文。</text>
+</svg>

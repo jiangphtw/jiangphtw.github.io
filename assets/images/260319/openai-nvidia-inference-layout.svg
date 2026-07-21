@@ -1,0 +1,57 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF5EA"/>
+      <stop offset="1" stop-color="#EEF8FF"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 56px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #16324F; }
+      .subtitle { font: 400 24px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #5D7391; }
+      .head { font: 700 30px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #16324F; }
+      .mid { font: 700 26px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #16324F; }
+      .body { font: 400 20px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #4C637C; }
+      .note { font: 700 21px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #16324F; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+
+  <text x="90" y="105" class="title">OpenAI 與 NVIDIA 都在意推論，但角色不同</text>
+  <text x="90" y="150" class="subtitle">我不會只看「誰投了哪一家」，而是看它們想把哪一層抓在手上。</text>
+
+  <g>
+    <rect x="120" y="255" width="500" height="450" rx="30" fill="#FFFFFF" stroke="#AFC7FF" stroke-width="4"/>
+    <text x="370" y="325" text-anchor="middle" class="head">OpenAI</text>
+    <text x="370" y="380" text-anchor="middle" class="body">模型公司視角</text>
+    <text x="370" y="425" text-anchor="middle" class="body">擴充推論供應組合</text>
+    <text x="370" y="460" text-anchor="middle" class="body">把不同工作負載接到不同算力來源</text>
+    <rect x="180" y="535" width="380" height="115" rx="22" fill="#F6FAFF" stroke="#D7E5FA" stroke-width="3"/>
+    <text x="370" y="585" text-anchor="middle" class="mid">代表訊號</text>
+    <text x="370" y="622" text-anchor="middle" class="body">與 Cerebras 合作超低延遲推論</text>
+  </g>
+
+  <g>
+    <rect x="980" y="255" width="500" height="450" rx="30" fill="#FFFFFF" stroke="#FFCCA5" stroke-width="4"/>
+    <text x="1230" y="325" text-anchor="middle" class="head">NVIDIA</text>
+    <text x="1230" y="380" text-anchor="middle" class="body">平台公司視角</text>
+    <text x="1230" y="425" text-anchor="middle" class="body">鞏固推論平台標準</text>
+    <text x="1230" y="460" text-anchor="middle" class="body">GPU、生態、互連與供應鏈一起守</text>
+    <rect x="1040" y="515" width="380" height="135" rx="22" fill="#FFF8F2" stroke="#FFE0C4" stroke-width="3"/>
+    <text x="1230" y="565" text-anchor="middle" class="mid">代表訊號</text>
+    <text x="1230" y="602" text-anchor="middle" class="body">2025 年底與 Groq 簽授權合作</text>
+    <text x="1230" y="636" text-anchor="middle" class="body">把推論技術納入自己的版圖</text>
+  </g>
+
+  <g>
+    <rect x="690" y="370" width="220" height="200" rx="28" fill="#FFFFFF" stroke="#C9D8EA" stroke-width="4"/>
+    <text x="800" y="438" text-anchor="middle" class="mid">推論層</text>
+    <text x="800" y="480" text-anchor="middle" class="body">速度</text>
+    <text x="800" y="514" text-anchor="middle" class="body">成本</text>
+    <text x="800" y="548" text-anchor="middle" class="body">可擴展性</text>
+  </g>
+
+  <line x1="620" y1="470" x2="690" y2="470" stroke="#AAB8CA" stroke-width="8" stroke-linecap="round"/>
+  <line x1="910" y1="470" x2="980" y2="470" stroke="#AAB8CA" stroke-width="8" stroke-linecap="round"/>
+
+  <text x="800" y="808" text-anchor="middle" class="note">所以我現在看這一層，不只看股權投資，也會把授權與技術合作一起算進布局</text>
+</svg>

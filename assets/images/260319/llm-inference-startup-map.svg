@@ -1,0 +1,60 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF5EA"/>
+      <stop offset="1" stop-color="#EEF8FF"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 58px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #16324F; }
+      .subtitle { font: 400 24px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #5D7391; }
+      .name { font: 700 28px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #16324F; }
+      .body { font: 400 20px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #4C637C; }
+      .note { font: 700 21px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #16324F; }
+      .small { font: 400 18px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #5D7391; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+
+  <text x="90" y="105" class="title">我會把推論新創放回各自押注的瓶頸上</text>
+  <text x="90" y="150" class="subtitle">這張圖不是排名，而是我用來看路線差異的地圖。</text>
+
+  <g>
+    <rect x="115" y="250" width="270" height="210" rx="28" fill="#FFFFFF" stroke="#FFB887" stroke-width="4"/>
+    <text x="250" y="315" text-anchor="middle" class="name">Groq</text>
+    <text x="250" y="360" text-anchor="middle" class="body">低延遲、可預測</text>
+    <text x="250" y="394" text-anchor="middle" class="body">押注即時推論</text>
+  </g>
+
+  <g>
+    <rect x="445" y="250" width="270" height="210" rx="28" fill="#FFFFFF" stroke="#FFD37C" stroke-width="4"/>
+    <text x="580" y="315" text-anchor="middle" class="name">Cerebras</text>
+    <text x="580" y="360" text-anchor="middle" class="body">超大單晶片整合</text>
+    <text x="580" y="394" text-anchor="middle" class="body">減少資料搬運</text>
+  </g>
+
+  <g>
+    <rect x="775" y="250" width="270" height="210" rx="28" fill="#FFFFFF" stroke="#9ED8C8" stroke-width="4"/>
+    <text x="910" y="315" text-anchor="middle" class="name">SambaNova</text>
+    <text x="910" y="360" text-anchor="middle" class="body">資料流架構</text>
+    <text x="910" y="394" text-anchor="middle" class="body">晶片與系統一起做</text>
+  </g>
+
+  <g>
+    <rect x="1105" y="250" width="270" height="210" rx="28" fill="#FFFFFF" stroke="#AFC7FF" stroke-width="4"/>
+    <text x="1240" y="315" text-anchor="middle" class="name">d-Matrix</text>
+    <text x="1240" y="360" text-anchor="middle" class="body">記憶體內運算</text>
+    <text x="1240" y="394" text-anchor="middle" class="body">瞄準生成式推論</text>
+  </g>
+
+  <g>
+    <rect x="665" y="540" width="380" height="220" rx="28" fill="#FFFFFF" stroke="#FFB4A7" stroke-width="4"/>
+    <text x="855" y="610" text-anchor="middle" class="name">Etched</text>
+    <text x="855" y="658" text-anchor="middle" class="body">Transformer 特化 ASIC</text>
+    <text x="855" y="692" text-anchor="middle" class="body">如果主流架構不變</text>
+    <text x="855" y="726" text-anchor="middle" class="body">特化就可能非常划算</text>
+  </g>
+
+  <text x="800" y="820" text-anchor="middle" class="note">我最在意的不是它們誰比較紅，而是它們到底各自想解哪一種瓶頸</text>
+  <text x="800" y="855" text-anchor="middle" class="small">這也是我為什麼不想把這一段寫成單純的獨角獸名單。</text>
+</svg>

@@ -1,0 +1,80 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="72" y1="56" x2="1208" y2="664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4EC"/>
+      <stop offset="1" stop-color="#F6FAFF"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 54px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18314F; }
+      .subtitle { font: 400 23px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #5B708A; }
+      .panel-title { font: 700 30px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18314F; }
+      .panel-text { font: 500 18px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #566C86; }
+      .box-title { font: 700 24px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18314F; }
+      .pill { font: 700 18px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #FFFFFF; }
+    </style>
+    <filter id="shadow" x="0" y="0" width="1280" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#172033" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" rx="28" fill="url(#bg)"/>
+  <text x="72" y="96" class="title">很多人以為資料科學 = 建模</text>
+  <text x="72" y="138" class="subtitle">但真正的工作，是把一個模糊問題一步步轉成可以採取行動的答案。</text>
+
+  <rect x="52" y="196" width="340" height="450" rx="28" fill="#FFF1E8" stroke="#FFB98D" stroke-width="2"/>
+  <rect x="436" y="196" width="780" height="450" rx="28" fill="#F5FFFC" stroke="#B7E5D7" stroke-width="2"/>
+
+  <text x="92" y="254" class="panel-title">常見誤解</text>
+  <text x="92" y="294" class="panel-text">一想到資料科學，就直接跳到模型。</text>
+  <text x="92" y="330" class="panel-text">有資料就上模型？</text>
+
+  <path d="M222 346L222 390" stroke="#FFD0B6" stroke-width="10" stroke-linecap="round"/>
+  <path d="M198 380L222 418L246 380" fill="#FFD0B6"/>
+
+  <rect x="114" y="424" width="216" height="144" rx="24" fill="#FFFFFF" stroke="#FFCAA7" stroke-width="2"/>
+  <text x="222" y="488" text-anchor="middle" class="panel-title">建模</text>
+  <text x="222" y="532" text-anchor="middle" class="panel-text">Machine Learning</text>
+  <text x="92" y="610" class="panel-text">少了問題定義、資料整理，</text>
+  <text x="92" y="640" class="panel-text">以及結果解讀與決策這一段。</text>
+
+  <text x="476" y="254" class="panel-title">比較接近真實專案的流程</text>
+  <text x="476" y="294" class="panel-text">先定義問題，再把資料整理成能支持判斷的資訊。</text>
+
+  <g filter="url(#shadow)">
+    <rect x="478" y="380" width="102" height="138" rx="22" fill="#FFFFFF" stroke="#D4DEE8" stroke-width="2"/>
+    <rect x="594" y="380" width="102" height="138" rx="22" fill="#FFFFFF" stroke="#D4DEE8" stroke-width="2"/>
+    <rect x="710" y="380" width="102" height="138" rx="22" fill="#FFFFFF" stroke="#D4DEE8" stroke-width="2"/>
+    <rect x="826" y="380" width="112" height="138" rx="22" fill="#FFF7F1" stroke="#FFBB8B" stroke-width="2"/>
+    <rect x="952" y="380" width="112" height="138" rx="22" fill="#FFFFFF" stroke="#D4DEE8" stroke-width="2"/>
+    <rect x="1078" y="380" width="112" height="138" rx="22" fill="#F1FFF9" stroke="#AADBCB" stroke-width="2"/>
+  </g>
+
+  <line x1="580" y1="448" x2="594" y2="448" stroke="#FFD3BE" stroke-width="6"/>
+  <line x1="696" y1="448" x2="710" y2="448" stroke="#FFD3BE" stroke-width="6"/>
+  <line x1="812" y1="448" x2="826" y2="448" stroke="#FFD3BE" stroke-width="6"/>
+  <line x1="938" y1="448" x2="952" y2="448" stroke="#FFD3BE" stroke-width="6"/>
+  <line x1="1064" y1="448" x2="1078" y2="448" stroke="#FFD3BE" stroke-width="6"/>
+
+  <text x="529" y="430" text-anchor="middle" class="box-title">定義</text>
+  <text x="529" y="464" text-anchor="middle" class="box-title">問題</text>
+
+  <text x="645" y="430" text-anchor="middle" class="box-title">資料</text>
+  <text x="645" y="464" text-anchor="middle" class="box-title">蒐集</text>
+
+  <text x="761" y="430" text-anchor="middle" class="box-title">資料</text>
+  <text x="761" y="464" text-anchor="middle" class="box-title">清理</text>
+
+  <text x="882" y="426" text-anchor="middle" class="box-title">分析</text>
+  <text x="882" y="460" text-anchor="middle" class="box-title">與建模</text>
+
+  <text x="1008" y="426" text-anchor="middle" class="box-title">視覺化</text>
+  <text x="1008" y="460" text-anchor="middle" class="box-title">與解讀</text>
+
+  <text x="1134" y="426" text-anchor="middle" class="box-title">採取</text>
+  <text x="1134" y="460" text-anchor="middle" class="box-title">決策</text>
+
+  <rect x="836" y="548" width="146" height="42" rx="21" fill="#F79F63"/>
+  <text x="909" y="576" text-anchor="middle" class="pill">建模只是其中一段</text>
+
+  <text x="742" y="622" text-anchor="middle" class="panel-text">做完決策後，通常還會回頭檢查問題定義與資料狀態。</text>
+</svg>

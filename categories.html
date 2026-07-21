@@ -1,0 +1,21 @@
+---
+layout: default
+title: 文章分類
+description: 依主題分類瀏覽技術文章。
+nav: notes
+---
+<main id="content" class="taxonomy-page content-shell">
+  <header class="taxonomy-header reveal">
+    <div><p class="page-index">NOTES / CATEGORIES</p><h1>文章分類</h1></div>
+    <p>依主題瀏覽文章，分類會由每篇文章的 front matter 自動產生。</p>
+  </header>
+  {% assign categories = site.categories | sort %}
+  {% for category in categories %}
+  <section class="taxonomy-group reveal" id="{{ category[0] | slugify }}">
+    <h2>{{ category[0] }} <small>{{ category[1] | size }}</small></h2>
+    <ol class="taxonomy-list">
+      {% for post in category[1] %}<li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>{% endfor %}
+    </ol>
+  </section>
+  {% endfor %}
+</main>

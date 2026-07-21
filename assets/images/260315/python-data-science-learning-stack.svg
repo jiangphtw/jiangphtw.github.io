@@ -1,0 +1,44 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="72" y1="56" x2="1208" y2="664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#FFF6EE"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 54px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18243D; }
+      .subtitle { font: 400 24px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #58657B; }
+      .layer-title { font: 700 28px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18243D; }
+      .layer-text { font: 400 20px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #53627C; }
+    </style>
+    <filter id="shadow" x="0" y="0" width="1280" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#172033" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" rx="28" fill="url(#bg)"/>
+  <text x="74" y="100" class="title">學習堆疊：資料科學不是從模型開始</text>
+  <text x="74" y="142" class="subtitle">越靠近底層的能力越常用，也越直接影響你後面做分析與建模的品質。</text>
+
+  <g filter="url(#shadow)">
+    <rect x="150" y="560" width="980" height="84" rx="28" fill="#DCE7FF" stroke="#AFC8FF" stroke-width="3"/>
+    <rect x="230" y="468" width="820" height="84" rx="28" fill="#EAF2FF" stroke="#BFD5FF" stroke-width="3"/>
+    <rect x="310" y="376" width="660" height="84" rx="28" fill="#FFF0E1" stroke="#FFD1AC" stroke-width="3"/>
+    <rect x="390" y="284" width="500" height="84" rx="28" fill="#FFE6CC" stroke="#FFBF8A" stroke-width="3"/>
+    <rect x="470" y="192" width="340" height="84" rx="28" fill="#FFD8B9" stroke="#FF9E68" stroke-width="3"/>
+  </g>
+
+  <text x="640" y="608" text-anchor="middle" class="layer-title">環境與工具</text>
+  <text x="640" y="636" text-anchor="middle" class="layer-text">Anaconda、Jupyter、套件安裝與執行流程</text>
+
+  <text x="640" y="516" text-anchor="middle" class="layer-title">資料結構與處理</text>
+  <text x="640" y="544" text-anchor="middle" class="layer-text">NumPy 陣列、Pandas DataFrame、清理與轉換</text>
+
+  <text x="640" y="424" text-anchor="middle" class="layer-title">視覺化與解讀</text>
+  <text x="640" y="452" text-anchor="middle" class="layer-text">Matplotlib、Seaborn、趨勢、分佈、比較</text>
+
+  <text x="640" y="332" text-anchor="middle" class="layer-title">建模入門</text>
+  <text x="640" y="360" text-anchor="middle" class="layer-text">Scikit-learn、資料切分、評估方法</text>
+
+  <text x="640" y="240" text-anchor="middle" class="layer-title">往上延伸</text>
+  <text x="640" y="268" text-anchor="middle" class="layer-text">文字探勘、深度學習、專題實戰</text>
+</svg>

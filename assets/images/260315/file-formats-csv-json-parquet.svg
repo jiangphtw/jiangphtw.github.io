@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">CSV、JSON、Parquet 比較</title>
+  <desc id="desc">三張卡片比較 CSV、JSON、Parquet 三種資料檔案格式的適用場景。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8f1"/>
+      <stop offset="100%" stop-color="#f3f8ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#d9dde8" flood-opacity="0.42"/>
+    </filter>
+    <style>
+      .title { font: 700 60px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #183153; }
+      .subtitle { font: 400 26px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #5c7296; }
+      .badge { font: 700 24px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #ffffff; text-anchor: middle; }
+      .card-title { font: 700 34px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #183153; text-anchor: middle; }
+      .line { font: 400 23px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #5c7296; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="88" y="118" class="title">常見資料檔案格式各自適合什麼</text>
+  <text x="88" y="170" class="subtitle">CSV 最直觀，JSON 最彈性，Parquet 最適合分析型大資料集。</text>
+
+  <g filter="url(#shadow)">
+    <rect x="100" y="280" width="430" height="350" rx="34" fill="#ffffff" stroke="#ffb17a" stroke-width="4"/>
+    <rect x="585" y="280" width="430" height="350" rx="34" fill="#ffffff" stroke="#8cb9ff" stroke-width="4"/>
+    <rect x="1070" y="280" width="430" height="350" rx="34" fill="#ffffff" stroke="#77cdb5" stroke-width="4"/>
+  </g>
+
+  <rect x="235" y="242" width="160" height="52" rx="20" fill="#ff9b66"/>
+  <rect x="720" y="242" width="160" height="52" rx="20" fill="#6ea5ff"/>
+  <rect x="1205" y="242" width="160" height="52" rx="20" fill="#36b58f"/>
+
+  <text x="315" y="276" class="badge">CSV</text>
+  <text x="800" y="276" class="badge">JSON</text>
+  <text x="1285" y="276" class="badge">Parquet</text>
+
+  <text x="315" y="376" class="card-title">簡單、好交換</text>
+  <text x="315" y="436" class="line">適合匯出報表</text>
+  <text x="315" y="472" class="line">小型分析與人工檢查</text>
+  <text x="315" y="508" class="line">但沒有型別、索引與 transaction</text>
+
+  <text x="800" y="376" class="card-title">彈性高、可巢狀</text>
+  <text x="800" y="436" class="line">適合 API payload</text>
+  <text x="800" y="472" class="line">設定檔與事件資料</text>
+  <text x="800" y="508" class="line">但後續分析前常要先展開</text>
+
+  <text x="1285" y="376" class="card-title">分析效率優先</text>
+  <text x="1285" y="436" class="line">欄位式儲存、壓縮佳</text>
+  <text x="1285" y="472" class="line">適合 data lake 與批次分析</text>
+  <text x="1285" y="508" class="line">但不適合直接做交易系統</text>
+</svg>

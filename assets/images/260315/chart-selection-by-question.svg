@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">視覺化選圖方式</title>
+  <desc id="desc">依問題類型說明趨勢、比較、分布、關聯、組成各自常見圖表。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8f1"/>
+      <stop offset="100%" stop-color="#f3f8ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#d9dde8" flood-opacity="0.42"/>
+    </filter>
+    <style>
+      .title { font: 700 60px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #183153; }
+      .subtitle { font: 400 26px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #5c7296; }
+      .head { font: 700 30px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #183153; text-anchor: middle; }
+      .line { font: 400 22px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #5c7296; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+
+  <text x="88" y="118" class="title">視覺化先選問題，再選圖</text>
+  <text x="88" y="170" class="subtitle">很多圖都能畫，但不是每張圖都能清楚回答同一種問題。</text>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="270" width="260" height="250" rx="30" fill="#ffffff" stroke="#8cb9ff" stroke-width="4"/>
+    <rect x="390" y="270" width="260" height="250" rx="30" fill="#ffffff" stroke="#ffb17a" stroke-width="4"/>
+    <rect x="690" y="270" width="260" height="250" rx="30" fill="#ffffff" stroke="#77cdb5" stroke-width="4"/>
+    <rect x="990" y="270" width="260" height="250" rx="30" fill="#ffffff" stroke="#f1b85e" stroke-width="4"/>
+    <rect x="1290" y="270" width="220" height="250" rx="30" fill="#ffffff" stroke="#c39cff" stroke-width="4"/>
+  </g>
+
+  <text x="220" y="360" class="head">趨勢</text>
+  <text x="220" y="418" class="line">折線圖</text>
+  <text x="220" y="454" class="line">面積圖</text>
+  <text x="220" y="490" class="line">回答變化何時開始</text>
+
+  <text x="520" y="360" class="head">比較</text>
+  <text x="520" y="418" class="line">長條圖</text>
+  <text x="520" y="454" class="line">分組長條圖</text>
+  <text x="520" y="490" class="line">回答誰高誰低</text>
+
+  <text x="820" y="360" class="head">分布</text>
+  <text x="820" y="418" class="line">直方圖</text>
+  <text x="820" y="454" class="line">盒鬚圖</text>
+  <text x="820" y="490" class="line">回答集中在哪裡</text>
+
+  <text x="1120" y="360" class="head">關聯</text>
+  <text x="1120" y="418" class="line">散點圖</text>
+  <text x="1120" y="454" class="line">氣泡圖</text>
+  <text x="1120" y="490" class="line">回答是否一起變動</text>
+
+  <text x="1400" y="360" class="head">組成</text>
+  <text x="1400" y="418" class="line">堆疊長條圖</text>
+  <text x="1400" y="454" class="line">堆疊面積圖</text>
+  <text x="1400" y="490" class="line">回答比例結構</text>
+
+  <rect x="330" y="640" width="940" height="104" rx="28" fill="#eaf1ff" stroke="#93b0ff" stroke-width="4"/>
+  <text x="800" y="703" class="head">先問你要回答哪種問題，再決定用什麼圖，通常就不會選錯。</text>
+</svg>

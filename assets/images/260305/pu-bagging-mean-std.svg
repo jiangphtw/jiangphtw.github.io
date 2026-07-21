@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="450" viewBox="0 0 960 450" role="img" aria-label="PU Bagging：多次抽樣訓練，取平均分數並用標準差表示不確定性">
+  <title>PU Bagging：平均分數與不確定性</title>
+  <defs>
+    <style>
+      .title {
+        font: 700 24px "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+        fill: #0f172a;
+      }
+      .label {
+        font: 600 15px "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+        fill: #111827;
+      }
+      .body {
+        font: 600 13px "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+        fill: #1f2937;
+      }
+      .small {
+        font: 12px "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+        fill: #374151;
+      }
+      .muted { fill: #6b7280; }
+      .center { text-anchor: middle; dominant-baseline: middle; }
+      .panel { fill: #f8fafc; stroke: #d1d5db; stroke-width: 2; }
+      .pos { fill: #dbeafe; stroke: #2563eb; stroke-width: 2.5; }
+      .unknown { fill: #fef3c7; stroke: #d97706; stroke-width: 2.5; }
+      .pseudo { fill: #dcfce7; stroke: #16a34a; stroke-width: 2.5; }
+      .ghost { fill: #f8fafc; stroke: #d1d5db; stroke-width: 2; }
+      .arrow { stroke: #6b7280; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="450" fill="#ffffff"/>
+  <text x="480" y="50" class="title center">PU Bagging：多次抽樣，算平均分數與不確定性</text>
+
+  <rect x="44" y="90" width="242" height="300" rx="18" class="panel"/>
+  <text x="165" y="126" class="label center">資料</text>
+  <rect x="74" y="164" width="182" height="46" rx="14" class="pos"/>
+  <text x="165" y="187" class="body center">P：確定正例</text>
+  <rect x="74" y="228" width="182" height="46" rx="14" class="unknown"/>
+  <text x="165" y="251" class="body center">U：未標註（未知）</text>
+  <text x="165" y="304" class="small muted center">U 不是負例</text>
+
+  <path d="M286 188 L336 188" class="arrow"/>
+  <path d="M286 238 L336 238" class="arrow"/>
+  <path d="M286 288 L336 288" class="arrow"/>
+
+  <rect x="336" y="108" width="328" height="260" rx="18" class="panel"/>
+  <text x="500" y="144" class="label center">多次抽樣訓練（Bags）</text>
+
+  <rect x="368" y="170" width="82" height="28" rx="9" class="pseudo"/>
+  <text x="409" y="184" class="body center">偽負例</text>
+  <rect x="460" y="170" width="82" height="28" rx="9" class="pos"/>
+  <text x="501" y="184" class="body center">正例</text>
+  <rect x="554" y="170" width="76" height="28" rx="9" class="ghost"/>
+  <text x="592" y="184" class="body center">模型 1</text>
+
+  <rect x="368" y="214" width="82" height="28" rx="9" class="pseudo" opacity="0.88"/>
+  <text x="409" y="228" class="body center">偽負例</text>
+  <rect x="460" y="214" width="82" height="28" rx="9" class="pos" opacity="0.95"/>
+  <text x="501" y="228" class="body center">正例</text>
+  <rect x="554" y="214" width="76" height="28" rx="9" class="ghost"/>
+  <text x="592" y="228" class="body center">模型 2</text>
+
+  <text x="409" y="274" class="small muted center">…</text>
+  <rect x="554" y="260" width="76" height="28" rx="9" class="ghost" opacity="0.95"/>
+  <text x="592" y="274" class="body center">模型 n</text>
+
+  <text x="500" y="322" class="small muted center">
+    <tspan x="500" dy="0">每次都從 U 抽一部分</tspan>
+    <tspan x="500" dy="18">暫時當偽負例</tspan>
+  </text>
+
+  <path d="M664 238 L706 238" class="arrow"/>
+
+  <rect x="706" y="114" width="210" height="248" rx="18" class="panel"/>
+  <text x="811" y="150" class="label center">輸出</text>
+
+  <rect x="742" y="172" width="138" height="44" rx="14" class="pos" opacity="0.85"/>
+  <text x="811" y="194" class="body center">p_mean</text>
+  <text x="811" y="228" class="small muted center">平均分數</text>
+
+  <rect x="742" y="246" width="138" height="44" rx="14" class="unknown" opacity="0.9"/>
+  <text x="811" y="268" class="body center">p_std</text>
+  <text x="811" y="302" class="small muted center">不確定性</text>
+
+  <text x="811" y="336" class="small muted center">std 越大，代表結果越不穩</text>
+</svg>

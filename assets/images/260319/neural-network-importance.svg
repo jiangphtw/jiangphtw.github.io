@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">神經網路在 AI 地圖中的角色</title>
+  <desc id="desc">說明神經網路如何連接影像、語音、文字與生成式模型等 AI 任務。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#eefbf9"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 64px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #142b52; }
+      .subtitle { font: 400 24px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #5f7396; }
+      .card-title { font: 700 28px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #17305a; }
+      .card-body { font: 400 20px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #5a6f93; }
+      .label { font: 700 22px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #1f4fd6; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" rx="32" fill="url(#bg)"/>
+
+  <text x="80" y="110" class="title">神經網路為什麼重要</text>
+  <text x="80" y="160" class="subtitle">我會把它看成現代 AI 的共同底座之一，而不是一個孤立的小章節。</text>
+
+  <rect x="565" y="230" width="470" height="180" rx="28" fill="#2f6fec"/>
+  <text x="800" y="305" text-anchor="middle" class="title" style="font-size:52px; fill:#ffffff;">神經網路</text>
+  <text x="800" y="352" text-anchor="middle" class="card-body" style="font-size:24px; fill:#eaf1ff;">從資料裡學表示</text>
+
+  <line x1="800" y1="410" x2="800" y2="495" stroke="#8aa8e6" stroke-width="8" stroke-linecap="round"/>
+  <line x1="300" y1="495" x2="1300" y2="495" stroke="#d6e1f7" stroke-width="6" stroke-linecap="round"/>
+
+  <line x1="300" y1="495" x2="300" y2="520" stroke="#d6e1f7" stroke-width="6" stroke-linecap="round"/>
+  <line x1="633" y1="495" x2="633" y2="520" stroke="#d6e1f7" stroke-width="6" stroke-linecap="round"/>
+  <line x1="967" y1="495" x2="967" y2="520" stroke="#d6e1f7" stroke-width="6" stroke-linecap="round"/>
+  <line x1="1300" y1="495" x2="1300" y2="520" stroke="#d6e1f7" stroke-width="6" stroke-linecap="round"/>
+
+  <g transform="translate(140 520)">
+    <rect width="320" height="210" rx="24" fill="#ffffff" stroke="#bfd2fb" stroke-width="4"/>
+    <text x="160" y="58" text-anchor="middle" class="card-title">影像理解</text>
+    <text x="160" y="105" text-anchor="middle" class="card-body">辨識、分類、檢測</text>
+    <text x="160" y="145" text-anchor="middle" class="card-body">通常會看到 CNN</text>
+    <text x="160" y="182" text-anchor="middle" class="label">Computer Vision</text>
+  </g>
+
+  <g transform="translate(473 520)">
+    <rect width="320" height="210" rx="24" fill="#ffffff" stroke="#bfd2fb" stroke-width="4"/>
+    <text x="160" y="58" text-anchor="middle" class="card-title">語音與聲音</text>
+    <text x="160" y="105" text-anchor="middle" class="card-body">辨識、轉錄、生成</text>
+    <text x="160" y="145" text-anchor="middle" class="card-body">把訊號變成可學特徵</text>
+    <text x="160" y="182" text-anchor="middle" class="label">Speech</text>
+  </g>
+
+  <g transform="translate(807 520)">
+    <rect width="320" height="210" rx="24" fill="#ffffff" stroke="#bfd2fb" stroke-width="4"/>
+    <text x="160" y="58" text-anchor="middle" class="card-title">文字與語言</text>
+    <text x="160" y="105" text-anchor="middle" class="card-body">翻譯、摘要、聊天</text>
+    <text x="160" y="145" text-anchor="middle" class="card-body">大型語言模型的核心</text>
+    <text x="160" y="182" text-anchor="middle" class="label">NLP / LLM</text>
+  </g>
+
+  <g transform="translate(1140 520)">
+    <rect width="320" height="210" rx="24" fill="#ffffff" stroke="#bfd2fb" stroke-width="4"/>
+    <text x="160" y="58" text-anchor="middle" class="card-title">生成與推薦</text>
+    <text x="160" y="105" text-anchor="middle" class="card-body">內容生成、排序、召回</text>
+    <text x="160" y="145" text-anchor="middle" class="card-body">從互動資料學模式</text>
+    <text x="160" y="182" text-anchor="middle" class="label">Generative AI</text>
+  </g>
+</svg>

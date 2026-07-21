@@ -1,0 +1,61 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="28" fill="#FFFDFC"/>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="80" y="120" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="64" font-weight="800">三種常見機器學習方法</text>
+  <text x="80" y="180" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="500">先分清楚資料有沒有標籤，模型是在預測答案，還是在找資料結構。</text>
+
+  <rect x="70" y="250" width="450" height="460" rx="28" fill="#FFFFFF" stroke="#B8CEF7" stroke-width="4"/>
+  <rect x="575" y="250" width="450" height="460" rx="28" fill="#FFFFFF" stroke="#FFD39F" stroke-width="4"/>
+  <rect x="1080" y="250" width="450" height="460" rx="28" fill="#FFFFFF" stroke="#9EDBC9" stroke-width="4"/>
+
+  <text x="295" y="320" text-anchor="middle" fill="#2D6BEA" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="22" font-weight="700">有標籤</text>
+  <text x="295" y="380" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="48" font-weight="800">監督式學習</text>
+  <text x="295" y="445" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="26" font-weight="500">學輸入到答案的對應</text>
+  <rect x="150" y="500" width="125" height="72" rx="20" fill="#EAF2FF" stroke="#2D6BEA" stroke-width="3"/>
+  <rect x="315" y="500" width="125" height="72" rx="20" fill="#FFF2E1" stroke="#FF9A52" stroke-width="3"/>
+  <text x="212" y="545" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="700">X</text>
+  <text x="377" y="545" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="700">Y</text>
+  <path d="M285 536H305" stroke="#5C7095" stroke-width="5" stroke-linecap="round"/>
+  <path d="M301 526L321 536L301 546" fill="#5C7095"/>
+  <text x="295" y="625" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="26" font-weight="700">常見任務</text>
+  <text x="295" y="670" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">分類、迴歸、風險預測</text>
+
+  <text x="800" y="320" text-anchor="middle" fill="#FF9A52" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="22" font-weight="700">無標籤</text>
+  <text x="800" y="380" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="48" font-weight="800">非監督式學習</text>
+  <text x="800" y="445" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="26" font-weight="500">先找出資料裡的群組與模式</text>
+  <circle cx="730" cy="520" r="26" fill="#BFD4FB"/>
+  <circle cx="780" cy="560" r="26" fill="#BFD4FB"/>
+  <circle cx="835" cy="525" r="26" fill="#BFD4FB"/>
+  <circle cx="875" cy="560" r="26" fill="#BFD4FB"/>
+  <circle cx="715" cy="610" r="26" fill="#FFD3AC"/>
+  <circle cx="770" cy="640" r="26" fill="#FFD3AC"/>
+  <circle cx="835" cy="620" r="26" fill="#FFD3AC"/>
+  <circle cx="900" cy="640" r="26" fill="#FFD3AC"/>
+  <text x="800" y="650" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="26" font-weight="700">常見任務</text>
+  <text x="800" y="690" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">分群、降維、探索式分析</text>
+
+  <text x="1305" y="320" text-anchor="middle" fill="#27A37B" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="22" font-weight="700">少量標籤加大量未標註</text>
+  <text x="1305" y="380" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="44" font-weight="800">半監督式學習</text>
+  <text x="1305" y="445" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="26" font-weight="500">讓少量答案帶動大量資料</text>
+  <rect x="1145" y="500" width="160" height="88" rx="24" fill="#EAF2FF" stroke="#2D6BEA" stroke-width="3"/>
+  <rect x="1320" y="500" width="160" height="88" rx="24" fill="#F3F5F9" stroke="#BFC8D8" stroke-width="3"/>
+  <text x="1225" y="537" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">少量標註</text>
+  <text x="1400" y="537" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">大量未標註</text>
+  <text x="1225" y="570" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="20" font-weight="500">有方向</text>
+  <text x="1400" y="570" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="20" font-weight="500">有分布</text>
+  <path d="M1305 544H1315" stroke="#5C7095" stroke-width="5" stroke-linecap="round"/>
+  <path d="M1312 534L1330 544L1312 554" fill="#5C7095"/>
+  <text x="1305" y="645" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="26" font-weight="700">常見情境</text>
+  <text x="1305" y="690" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">標註昂貴、資料量很大</text>
+
+  <rect x="240" y="735" width="1120" height="88" rx="28" fill="#F1F6FF" stroke="#B8CEF7" stroke-width="4"/>
+  <text x="800" y="788" text-anchor="middle" fill="#2D6BEA" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="30" font-weight="800">真正的選法：先看標籤成本，再看你要做預測還是探索</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF3E8"/>
+      <stop offset="0.55" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEF5FF"/>
+    </linearGradient>
+  </defs>
+</svg>

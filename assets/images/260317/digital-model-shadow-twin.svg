@@ -1,0 +1,52 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="28" fill="#F8FAFC"/>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="80" y="120" fill="#183153" font-size="58" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">Digital Model、Shadow、Twin 的差異</text>
+  <text x="80" y="175" fill="#5B7090" font-size="28" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">最關鍵的差別，不是名字，而是資料流是不是自動、是不是雙向。</text>
+
+  <rect x="80" y="250" width="440" height="500" rx="30" fill="#FFF7ED" stroke="#FDBA74" stroke-width="4"/>
+  <rect x="580" y="250" width="440" height="500" rx="30" fill="#F0F9FF" stroke="#93C5FD" stroke-width="4"/>
+  <rect x="1080" y="250" width="440" height="500" rx="30" fill="#F0FDFA" stroke="#99F6E4" stroke-width="4"/>
+
+  <text x="300" y="318" text-anchor="middle" fill="#F97316" font-size="30" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">Digital Model</text>
+  <text x="800" y="318" text-anchor="middle" fill="#2563EB" font-size="30" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">Digital Shadow</text>
+  <text x="1300" y="318" text-anchor="middle" fill="#0F766E" font-size="30" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">Digital Twin</text>
+
+  <rect x="140" y="405" width="140" height="110" rx="22" fill="#FFFFFF"/>
+  <rect x="320" y="405" width="140" height="110" rx="22" fill="#FFFFFF"/>
+  <text x="210" y="470" text-anchor="middle" fill="#183153" font-size="34" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">實體</text>
+  <text x="390" y="470" text-anchor="middle" fill="#183153" font-size="34" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">模型</text>
+  <path d="M280 460H320" stroke="#FB923C" stroke-width="8" stroke-dasharray="12 12" stroke-linecap="round"/>
+  <text x="300" y="385" text-anchor="middle" fill="#5B7090" font-size="22" font-weight="600" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">手動更新</text>
+  <text x="300" y="610" text-anchor="middle" fill="#183153" font-size="28" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">沒有自動資料交換</text>
+  <text x="300" y="648" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">多半靠人工輸入</text>
+
+  <rect x="640" y="405" width="140" height="110" rx="22" fill="#FFFFFF"/>
+  <rect x="820" y="405" width="140" height="110" rx="22" fill="#FFFFFF"/>
+  <text x="710" y="470" text-anchor="middle" fill="#183153" font-size="34" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">實體</text>
+  <text x="890" y="470" text-anchor="middle" fill="#183153" font-size="34" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">影子</text>
+  <path d="M780 460H820" stroke="#3B82F6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M802 438L840 460L802 482" fill="#3B82F6"/>
+  <text x="800" y="385" text-anchor="middle" fill="#5B7090" font-size="22" font-weight="600" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">自動同步</text>
+  <text x="800" y="610" text-anchor="middle" fill="#183153" font-size="28" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">只有實體到數位</text>
+  <text x="800" y="648" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">更新是單向的</text>
+
+  <rect x="1140" y="405" width="140" height="110" rx="22" fill="#FFFFFF"/>
+  <rect x="1320" y="405" width="140" height="110" rx="22" fill="#FFFFFF"/>
+  <text x="1210" y="470" text-anchor="middle" fill="#183153" font-size="34" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">實體</text>
+  <text x="1390" y="470" text-anchor="middle" fill="#183153" font-size="34" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">分身</text>
+  <path d="M1280 440H1320" stroke="#14B8A6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1302 418L1340 440L1302 462" fill="#14B8A6"/>
+  <path d="M1320 480H1280" stroke="#14B8A6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1298 458L1260 480L1298 502" fill="#14B8A6"/>
+  <text x="1300" y="385" text-anchor="middle" fill="#5B7090" font-size="22" font-weight="600" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">雙向自動同步</text>
+  <text x="1300" y="610" text-anchor="middle" fill="#183153" font-size="28" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">實體與數位互相影響</text>
+  <text x="1300" y="648" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">這才是完整 Twin</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7ED"/>
+      <stop offset="1" stop-color="#EFF6FF"/>
+    </linearGradient>
+  </defs>
+</svg>

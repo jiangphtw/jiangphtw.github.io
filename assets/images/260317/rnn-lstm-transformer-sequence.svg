@@ -1,0 +1,46 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="28" fill="#F8FAFC"/>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="80" y="120" fill="#183153" font-size="58" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">RNN、LSTM 與 Transformer 的演進</text>
+  <text x="80" y="175" fill="#5B7090" font-size="28" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">我會把這條線理解成：先能處理序列，再想辦法記更久，最後直接重寫資訊互相看到彼此的方式。</text>
+
+  <rect x="90" y="270" width="420" height="470" rx="30" fill="#FFF7ED" stroke="#FDBA74" stroke-width="4"/>
+  <rect x="590" y="270" width="420" height="470" rx="30" fill="#F0F9FF" stroke="#93C5FD" stroke-width="4"/>
+  <rect x="1090" y="270" width="420" height="470" rx="30" fill="#F0FDFA" stroke="#99F6E4" stroke-width="4"/>
+
+  <text x="300" y="335" text-anchor="middle" fill="#F97316" font-size="34" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">RNN</text>
+  <text x="300" y="390" text-anchor="middle" fill="#183153" font-size="44" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">先讓序列</text>
+  <text x="300" y="438" text-anchor="middle" fill="#183153" font-size="44" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">能被建模</text>
+  <text x="300" y="520" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">前面資訊往後傳</text>
+  <text x="300" y="556" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">但長距離依賴不穩</text>
+
+  <text x="800" y="335" text-anchor="middle" fill="#2563EB" font-size="34" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">LSTM</text>
+  <text x="800" y="390" text-anchor="middle" fill="#183153" font-size="44" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">讓模型更會記</text>
+  <text x="800" y="520" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">用門控決定保留與遺忘</text>
+  <text x="800" y="556" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">比 RNN 更能保留上下文</text>
+
+  <text x="1300" y="335" text-anchor="middle" fill="#0F766E" font-size="34" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">Transformer</text>
+  <text x="1300" y="390" text-anchor="middle" fill="#183153" font-size="44" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">直接看整段</text>
+  <text x="1300" y="438" text-anchor="middle" fill="#183153" font-size="44" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">關係</text>
+  <text x="1300" y="520" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">用自注意力看不同位置彼此關係</text>
+  <text x="1300" y="556" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">訓練更容易平行化</text>
+
+  <path d="M510 505H580" stroke="#94A3B8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M560 480L605 505L560 530" fill="#94A3B8"/>
+  <path d="M1010 505H1080" stroke="#94A3B8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1060 480L1105 505L1060 530" fill="#94A3B8"/>
+
+  <rect x="190" y="610" width="220" height="70" rx="18" fill="#FFFFFF"/>
+  <rect x="690" y="610" width="220" height="70" rx="18" fill="#FFFFFF"/>
+  <rect x="1190" y="610" width="220" height="70" rx="18" fill="#FFFFFF"/>
+  <text x="300" y="654" text-anchor="middle" fill="#183153" font-size="24" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">逐步傳遞資訊</text>
+  <text x="800" y="654" text-anchor="middle" fill="#183153" font-size="24" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">記憶更穩定</text>
+  <text x="1300" y="654" text-anchor="middle" fill="#183153" font-size="24" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">整體關係建模</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7ED"/>
+      <stop offset="1" stop-color="#EFF6FF"/>
+    </linearGradient>
+  </defs>
+</svg>

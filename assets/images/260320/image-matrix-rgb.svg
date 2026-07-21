@@ -1,0 +1,55 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="520" rx="28" fill="#F7F9FC"/>
+  <rect x="40" y="40" width="1120" height="440" rx="24" fill="white" stroke="#D9E2F0"/>
+
+  <text x="84" y="104" fill="#243042" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">圖片先被表示成矩陣，再拆成通道</text>
+  <text x="84" y="140" fill="#526071" font-family="Segoe UI, Arial, sans-serif" font-size="18">左邊是視覺世界，中間是像素格子，右邊是電腦真正操作的 RGB 數值。</text>
+
+  <rect x="84" y="176" width="260" height="220" rx="22" fill="#0D1B2A"/>
+  <rect x="110" y="202" width="208" height="168" rx="18" fill="url(#scene)"/>
+  <circle cx="196" cy="252" r="28" fill="#F6BD60" opacity="0.95"/>
+  <rect x="146" y="286" width="118" height="46" rx="14" fill="#EE6C4D" opacity="0.9"/>
+  <rect x="136" y="336" width="140" height="20" rx="10" fill="#4FB0C6" opacity="0.95"/>
+  <text x="84" y="430" fill="#243042" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">視覺上的圖片</text>
+  <text x="84" y="458" fill="#5B6778" font-family="Segoe UI, Arial, sans-serif" font-size="18">肉眼看到的是顏色、形狀與紋理。</text>
+
+  <path d="M384 286H504" stroke="#7B8BA1" stroke-width="8" stroke-linecap="round"/>
+  <path d="M488 272L516 286L488 300" stroke="#7B8BA1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="536" y="176" width="248" height="220" rx="22" fill="#F6FAFF" stroke="#C8D6E8"/>
+  <text x="564" y="214" fill="#243042" font-family="Consolas, 'Courier New', monospace" font-size="22" font-weight="700">像素矩陣</text>
+  <g stroke="#AFC0D6" stroke-width="2">
+    <line x1="592" y1="244" x2="592" y2="364"/>
+    <line x1="640" y1="244" x2="640" y2="364"/>
+    <line x1="688" y1="244" x2="688" y2="364"/>
+    <line x1="736" y1="244" x2="736" y2="364"/>
+    <line x1="544" y1="244" x2="784" y2="244"/>
+    <line x1="544" y1="284" x2="784" y2="284"/>
+    <line x1="544" y1="324" x2="784" y2="324"/>
+    <line x1="544" y1="364" x2="784" y2="364"/>
+  </g>
+  <rect x="640" y="284" width="48" height="40" fill="#FFD166" opacity="0.9"/>
+  <text x="557" y="418" fill="#243042" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">放大後變成格子</text>
+  <text x="557" y="446" fill="#5B6778" font-family="Segoe UI, Arial, sans-serif" font-size="18">每一格就是一個 pixel（像素）。</text>
+
+  <path d="M824 286H944" stroke="#7B8BA1" stroke-width="8" stroke-linecap="round"/>
+  <path d="M928 272L956 286L928 300" stroke="#7B8BA1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="976" y="176" width="140" height="220" rx="22" fill="#F9FBFD" stroke="#D5DEE9"/>
+  <rect x="1004" y="220" width="84" height="36" rx="12" fill="#FF6B6B"/>
+  <rect x="1004" y="270" width="84" height="36" rx="12" fill="#51CF66"/>
+  <rect x="1004" y="320" width="84" height="36" rx="12" fill="#4D96FF"/>
+  <text x="1030" y="244" fill="white" font-family="Consolas, 'Courier New', monospace" font-size="18" font-weight="700">R 255</text>
+  <text x="1030" y="294" fill="white" font-family="Consolas, 'Courier New', monospace" font-size="18" font-weight="700">G 168</text>
+  <text x="1030" y="344" fill="white" font-family="Consolas, 'Courier New', monospace" font-size="18" font-weight="700">B  70</text>
+  <text x="976" y="418" fill="#243042" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">RGB 數值</text>
+  <text x="976" y="446" fill="#5B6778" font-family="Segoe UI, Arial, sans-serif" font-size="18">彩圖通常就是三個通道。</text>
+
+  <defs>
+    <linearGradient id="scene" x1="110" y1="202" x2="318" y2="370" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6C63FF"/>
+      <stop offset="0.45" stop-color="#FF8A5B"/>
+      <stop offset="1" stop-color="#4FB0C6"/>
+    </linearGradient>
+  </defs>
+</svg>

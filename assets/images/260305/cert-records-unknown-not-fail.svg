@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="450" viewBox="0 0 960 450" role="img" aria-label="只有通過紀錄的認證資料：空白通常代表未知，不等於不通過">
+  <title>只有通過紀錄：空白是未知，不是不通過</title>
+  <defs>
+    <style>
+      .title {
+        font: 700 24px "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+        fill: #0f172a;
+      }
+      .label {
+        font: 600 15px "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+        fill: #111827;
+      }
+      .body {
+        font: 600 13px "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+        fill: #1f2937;
+      }
+      .small {
+        font: 12px "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+        fill: #374151;
+      }
+      .muted { fill: #6b7280; }
+      .center { text-anchor: middle; dominant-baseline: middle; }
+      .panel { fill: #f8fafc; stroke: #d1d5db; stroke-width: 2; }
+      .grid { stroke: #d1d5db; stroke-width: 1.5; }
+      .pass { fill: #dbeafe; stroke: #2563eb; stroke-width: 2.5; }
+      .unknown { fill: #fef3c7; stroke: #d97706; stroke-width: 2.5; }
+      .fail { fill: #dcfce7; stroke: #16a34a; stroke-width: 2.5; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="450" fill="#ffffff"/>
+  <text x="480" y="50" class="title center">只有通過紀錄的認證資料：空白多半是「未知」</text>
+
+  <rect x="48" y="90" width="596" height="300" rx="18" class="panel"/>
+  <text x="346" y="128" class="label center">你手上看到的通常像這樣：只標「通過」</text>
+  <text x="346" y="154" class="small muted center">（沒有出現，不代表不通過）</text>
+
+  <text x="150" y="188" class="label center">產品</text>
+  <text x="265" y="188" class="label center">項目 A</text>
+  <text x="375" y="188" class="label center">項目 B</text>
+  <text x="485" y="188" class="label center">項目 C</text>
+  <text x="585" y="188" class="label center">項目 D</text>
+
+  <line x1="90" y1="204" x2="630" y2="204" class="grid"/>
+  <line x1="90" y1="244" x2="630" y2="244" class="grid"/>
+  <line x1="90" y1="284" x2="630" y2="284" class="grid"/>
+  <line x1="90" y1="324" x2="630" y2="324" class="grid"/>
+  <line x1="90" y1="364" x2="630" y2="364" class="grid"/>
+
+  <line x1="90" y1="204" x2="90" y2="364" class="grid"/>
+  <line x1="210" y1="204" x2="210" y2="364" class="grid"/>
+  <line x1="320" y1="204" x2="320" y2="364" class="grid"/>
+  <line x1="430" y1="204" x2="430" y2="364" class="grid"/>
+  <line x1="540" y1="204" x2="540" y2="364" class="grid"/>
+  <line x1="630" y1="204" x2="630" y2="364" class="grid"/>
+
+  <text x="150" y="224" class="small center">產品 1</text>
+  <text x="150" y="264" class="small center">產品 2</text>
+  <text x="150" y="304" class="small center">產品 3</text>
+  <text x="150" y="344" class="small center">產品 4</text>
+
+  <rect x="221" y="209" width="88" height="30" rx="10" class="pass"/>
+  <text x="265" y="224" class="body center">通過</text>
+
+  <rect x="331" y="249" width="88" height="30" rx="10" class="pass"/>
+  <text x="375" y="264" class="body center">通過</text>
+
+  <rect x="551" y="329" width="66" height="30" rx="10" class="pass"/>
+  <text x="584" y="344" class="body center">通過</text>
+
+  <rect x="441" y="209" width="88" height="30" rx="10" class="unknown" opacity="0.95"/>
+  <text x="485" y="224" class="body center">空白</text>
+
+  <rect x="221" y="329" width="88" height="30" rx="10" class="unknown" opacity="0.95"/>
+  <text x="265" y="344" class="body center">空白</text>
+
+  <rect x="668" y="108" width="252" height="272" rx="18" class="panel"/>
+  <text x="794" y="146" class="label center">解讀方式</text>
+
+  <rect x="700" y="176" width="56" height="28" rx="9" class="pass"/>
+  <text x="776" y="192" class="body">通過紀錄（正例 P）</text>
+
+  <rect x="700" y="232" width="56" height="28" rx="9" class="unknown"/>
+  <text x="776" y="248" class="body">沒紀錄（未知 U）</text>
+  <text x="776" y="269" class="small muted">
+    <tspan x="776" dy="0">可能沒申請、漏收</tspan>
+    <tspan x="776" dy="18">或未通過</tspan>
+  </text>
+
+  <rect x="700" y="312" width="56" height="28" rx="9" class="fail" opacity="0.5"/>
+  <text x="776" y="328" class="body">不通過（負例 N）</text>
+  <text x="776" y="349" class="small muted">
+    <tspan x="776" dy="0">若沒有這欄資料</tspan>
+    <tspan x="776" dy="18">就不要硬當 0</tspan>
+  </text>
+</svg>

@@ -1,0 +1,65 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="72" y1="56" x2="1208" y2="664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4EA"/>
+      <stop offset="1" stop-color="#F6FAFF"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 56px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18243D; }
+      .subtitle { font: 400 24px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #55637B; }
+      .tag { font: 700 18px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #FF7A59; }
+      .card-title { font: 700 28px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #18243D; }
+      .card-text { font: 400 19px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #526078; }
+      .foot-title { font: 700 28px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #2563EB; }
+      .foot-text { font: 500 21px 'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif; fill: #4C5F7B; }
+    </style>
+    <filter id="shadow" x="0" y="0" width="1280" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#172033" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" rx="28" fill="url(#bg)"/>
+  <text x="74" y="100" class="title">Python Data Science 入門路線圖</text>
+  <text x="74" y="142" class="subtitle">先把環境與資料處理打穩，再往視覺化、建模延伸。</text>
+  <text x="74" y="176" class="subtitle">文字探勘與深度學習，通常都會站在這條路線的後面。</text>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="246" width="252" height="228" rx="28" fill="#FFFFFF" stroke="#FFD0AA" stroke-width="3"/>
+    <rect x="340" y="246" width="252" height="228" rx="28" fill="#FFFFFF" stroke="#FFBF8E" stroke-width="3"/>
+    <rect x="608" y="246" width="252" height="228" rx="28" fill="#FFFFFF" stroke="#FFAE73" stroke-width="3"/>
+    <rect x="876" y="246" width="252" height="228" rx="28" fill="#FFFFFF" stroke="#FF9A5B" stroke-width="3"/>
+  </g>
+
+  <line x1="324" y1="360" x2="340" y2="360" stroke="#D7DEE9" stroke-width="6"/>
+  <line x1="592" y1="360" x2="608" y2="360" stroke="#D7DEE9" stroke-width="6"/>
+  <line x1="860" y1="360" x2="876" y2="360" stroke="#D7DEE9" stroke-width="6"/>
+
+  <text x="198" y="288" text-anchor="middle" class="tag">STEP 1</text>
+  <text x="198" y="334" text-anchor="middle" class="card-title">環境安裝</text>
+  <text x="198" y="376" text-anchor="middle" class="card-text">Anaconda</text>
+  <text x="198" y="410" text-anchor="middle" class="card-text">Jupyter Notebook</text>
+  <text x="198" y="440" text-anchor="middle" class="card-text">與 Lab</text>
+
+  <text x="466" y="288" text-anchor="middle" class="tag">STEP 2</text>
+  <text x="466" y="334" text-anchor="middle" class="card-title">資料處理核心</text>
+  <text x="466" y="376" text-anchor="middle" class="card-text">NumPy 做數值計算</text>
+  <text x="466" y="410" text-anchor="middle" class="card-text">Pandas 處理表格</text>
+  <text x="466" y="440" text-anchor="middle" class="card-text">與時間序列</text>
+
+  <text x="734" y="288" text-anchor="middle" class="tag">STEP 3</text>
+  <text x="734" y="334" text-anchor="middle" class="card-title">資料視覺化</text>
+  <text x="734" y="376" text-anchor="middle" class="card-text">Matplotlib 打底</text>
+  <text x="734" y="410" text-anchor="middle" class="card-text">Seaborn 做分析型</text>
+  <text x="734" y="440" text-anchor="middle" class="card-text">圖表</text>
+
+  <text x="1002" y="288" text-anchor="middle" class="tag">STEP 4</text>
+  <text x="1002" y="334" text-anchor="middle" class="card-title">建模入門</text>
+  <text x="1002" y="376" text-anchor="middle" class="card-text">Scikit-learn</text>
+  <text x="1002" y="410" text-anchor="middle" class="card-text">回歸、分類、分群</text>
+  <text x="1002" y="440" text-anchor="middle" class="card-text">與評估</text>
+
+  <rect x="252" y="540" width="776" height="116" rx="26" fill="#EEF4FF" stroke="#9BB6FF" stroke-width="3"/>
+  <text x="640" y="588" text-anchor="middle" class="foot-title">再往下延伸：文字探勘、機器學習、深度學習</text>
+  <text x="640" y="624" text-anchor="middle" class="foot-text">前面的資料整理與視覺化能力，</text>
+  <text x="640" y="652" text-anchor="middle" class="foot-text">會直接變成後續建模與實戰的地基。</text>
+</svg>

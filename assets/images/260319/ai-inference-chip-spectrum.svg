@@ -1,0 +1,73 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF5EA"/>
+      <stop offset="1" stop-color="#EEF8FF"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 58px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #16324F; }
+      .subtitle { font: 400 24px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #5D7391; }
+      .axis { font: 700 24px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #16324F; }
+      .name { font: 700 28px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #16324F; }
+      .body { font: 400 19px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #4C637C; }
+      .note { font: 700 22px "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #16324F; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+
+  <text x="100" y="108" class="title">AI 推論晶片不是同一種答案</text>
+  <text x="100" y="152" class="subtitle">我會先看它在系統裡負責什麼工作，再看它到底在解哪一種瓶頸。</text>
+
+  <line x1="180" y1="285" x2="1360" y2="285" stroke="#B3BECF" stroke-width="14" stroke-linecap="round"/>
+  <polygon points="1410,285 1360,255 1360,315" fill="#FF8A3D"/>
+  <text x="180" y="240" class="axis">通用</text>
+  <text x="1290" y="240" class="axis">高度特化</text>
+
+  <g>
+    <rect x="85" y="390" width="245" height="255" rx="28" fill="#FFFFFF" stroke="#C8D4E6" stroke-width="4"/>
+    <text x="207.5" y="452" text-anchor="middle" class="name">CPU</text>
+    <text x="207.5" y="498" text-anchor="middle" class="body">控制、排程、前後處理</text>
+    <text x="207.5" y="532" text-anchor="middle" class="body">靈活，但不是矩陣主算</text>
+    <text x="207.5" y="586" text-anchor="middle" class="body">在整體服務系統裡</text>
+    <text x="207.5" y="620" text-anchor="middle" class="body">仍然是指揮官</text>
+  </g>
+
+  <g>
+    <rect x="370" y="390" width="245" height="255" rx="28" fill="#FFFFFF" stroke="#A9C7FF" stroke-width="4"/>
+    <text x="492.5" y="452" text-anchor="middle" class="name">GPU</text>
+    <text x="492.5" y="498" text-anchor="middle" class="body">大規模平行矩陣運算</text>
+    <text x="492.5" y="532" text-anchor="middle" class="body">訓練與通用推論主力</text>
+    <text x="492.5" y="586" text-anchor="middle" class="body">硬體之外，還有完整</text>
+    <text x="492.5" y="620" text-anchor="middle" class="body">軟體與資料中心生態</text>
+  </g>
+
+  <g>
+    <rect x="655" y="390" width="245" height="255" rx="28" fill="#FFFFFF" stroke="#9ADCC4" stroke-width="4"/>
+    <text x="777.5" y="452" text-anchor="middle" class="name">NPU</text>
+    <text x="777.5" y="498" text-anchor="middle" class="body">低功耗本地 AI 加速</text>
+    <text x="777.5" y="532" text-anchor="middle" class="body">AI PC、手機、邊緣裝置</text>
+    <text x="777.5" y="586" text-anchor="middle" class="body">重點是每瓦效能</text>
+  </g>
+
+  <g>
+    <rect x="940" y="390" width="245" height="255" rx="28" fill="#FFFFFF" stroke="#FFD071" stroke-width="4"/>
+    <text x="1062.5" y="452" text-anchor="middle" class="name">TPU</text>
+    <text x="1062.5" y="498" text-anchor="middle" class="body">Google 自研 AI ASIC</text>
+    <text x="1062.5" y="532" text-anchor="middle" class="body">對應超大規模雲端</text>
+    <text x="1062.5" y="586" text-anchor="middle" class="body">如果流量夠大、負載穩</text>
+    <text x="1062.5" y="620" text-anchor="middle" class="body">自研就會有整合優勢</text>
+  </g>
+
+  <g>
+    <rect x="1225" y="390" width="245" height="255" rx="28" fill="#FFFFFF" stroke="#FFB48A" stroke-width="4"/>
+    <text x="1347.5" y="452" text-anchor="middle" class="name">LPU</text>
+    <text x="1347.5" y="498" text-anchor="middle" class="body">Groq 的架構命名</text>
+    <text x="1347.5" y="532" text-anchor="middle" class="body">主打低延遲、可預測</text>
+    <text x="1347.5" y="586" text-anchor="middle" class="body">我不會把它當作</text>
+    <text x="1347.5" y="620" text-anchor="middle" class="body">通用產業分類</text>
+  </g>
+
+  <text x="800" y="765" text-anchor="middle" class="note">同樣叫 AI 晶片，面對的部署場景其實完全不同</text>
+  <text x="800" y="808" text-anchor="middle" class="body">資料中心 `LLM` 推論大多還是看 GPU / TPU / 專用 ASIC；NPU 更像裝置端路線。</text>
+</svg>

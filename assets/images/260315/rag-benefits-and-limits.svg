@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">RAG 的優點與限制</title>
+  <desc id="desc">左側說明 RAG 帶來的好處，右側說明 RAG 沒有自動解決的問題。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8f1"/>
+      <stop offset="100%" stop-color="#f3f8ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#d9dde8" flood-opacity="0.42"/>
+    </filter>
+    <style>
+      .title { font: 700 60px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #183153; }
+      .subtitle { font: 400 26px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #5c7296; }
+      .head { font: 700 34px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #183153; text-anchor: middle; }
+      .line { font: 400 24px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #5c7296; text-anchor: middle; }
+      .badge { font: 700 22px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #ffffff; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="88" y="118" class="title">RAG 改善了什麼，又沒有改善什麼</text>
+  <text x="88" y="170" class="subtitle">RAG 能補外部知識與來源追溯，但不會自動保證回答一定正確。</text>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="280" width="560" height="380" rx="36" fill="#eefaf7" stroke="#77cdb5" stroke-width="4"/>
+    <rect x="920" y="280" width="560" height="380" rx="36" fill="#fff6ef" stroke="#ffb17a" stroke-width="4"/>
+  </g>
+
+  <rect x="300" y="242" width="200" height="52" rx="20" fill="#36b58f"/>
+  <rect x="1100" y="242" width="200" height="52" rx="20" fill="#ff9b66"/>
+  <text x="400" y="276" class="badge">改善的部分</text>
+  <text x="1200" y="276" class="badge">仍然存在的問題</text>
+
+  <text x="400" y="376" class="head">RAG 的好處</text>
+  <text x="400" y="438" class="line">可根據最新文件回答</text>
+  <text x="400" y="476" class="line">可用私有知識庫</text>
+  <text x="400" y="514" class="line">比較容易附來源與驗證</text>
+  <text x="400" y="552" class="line">不用重訓模型就能更新知識</text>
+
+  <text x="1200" y="376" class="head">RAG 的限制</text>
+  <text x="1200" y="438" class="line">檢索錯了，答案還是會錯</text>
+  <text x="1200" y="476" class="line">文件品質差也會一起被找回來</text>
+  <text x="1200" y="514" class="line">找太多內容會增加噪音</text>
+  <text x="1200" y="552" class="line">模型仍可能摘要錯誤或過度延伸</text>
+</svg>

@@ -1,0 +1,45 @@
+---
+layout: default
+title: 技術文章
+description: 江柏賢的 AI、資料科學、開發與生活技術筆記。
+theme_color: '#dfff42'
+nav: notes
+---
+<main id="content">
+  <header class="page-masthead masthead-acid">
+    <div class="reveal"><p class="page-index">03 / FIELD NOTES</p><h1>Notes on<br /><em>what I learn.</em></h1></div>
+    <p class="masthead-intro reveal">把 AI、資料科學與工程新知，整理成自己真正理解的樣子。也記錄一些實驗室之外的生活。</p>
+    <div class="notes-stamp" aria-hidden="true">READ<br />THINK<br />WRITE</div>
+  </header>
+
+  <section class="notes-page content-shell">
+    <div class="notes-toolbar reveal">
+      <p class="section-label">BROWSE NOTES</p>
+      <nav aria-label="文章索引"><a href="{{ '/categories.html' | relative_url }}">分類 Categories</a><a href="{{ '/tags.html' | relative_url }}">標籤 Tags</a><a href="{{ '/archives.html' | relative_url }}">封存 Archives</a></nav>
+    </div>
+
+    {% assign featured = site.posts | first %}
+    {% if featured %}
+    <article class="lead-note reveal">
+      <div class="lead-note-art" aria-hidden="true"><span>KV</span><i></i><i></i></div>
+      <div>
+        <p class="section-label">FEATURED · {{ featured.categories | first | default: 'NOTE' | upcase }} · {{ featured.date | date: '%Y.%m.%d' }}</p>
+        <h2>{{ featured.title }}</h2>
+        <p>{{ featured.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
+        <a href="{{ featured.url | relative_url }}">閱讀全文 ↗</a>
+      </div>
+    </article>
+    {% endif %}
+
+    <div class="notes-heading reveal"><p class="section-label">ALL ARTICLES</p><span>{{ site.posts | size }} NOTES · NEWEST FIRST</span></div>
+    <div class="article-grid">
+      {% for post in site.posts offset: 1 %}
+      <a class="article-card reveal" href="{{ post.url | relative_url }}">
+        <div><span>{{ post.categories | first | default: 'NOTE' }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time></div>
+        <h2>{{ post.title }}</h2><b>↗</b>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  <nav class="page-next content-shell" aria-label="下一頁"><span>NEXT / 04</span><a href="{{ '/about.html' | relative_url }}">關於江柏賢 <b>→</b></a></nav>
+</main>

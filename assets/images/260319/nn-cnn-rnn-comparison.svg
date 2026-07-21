@@ -1,0 +1,71 @@
+<svg width="1800" height="1260" viewBox="0 0 1800 1260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1800" y2="1260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4E8"/>
+      <stop offset="1" stop-color="#EEF8FF"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 68px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #1A3157; }
+      .subtitle { font: 400 24px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #60769A; }
+      .cardtitle { font: 700 38px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #1A3157; }
+      .body { font: 400 22px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #60769A; }
+      .label-blue { font: 700 24px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #2F6DF6; }
+      .label-orange { font: 700 24px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #F28B00; }
+      .label-green { font: 700 24px 'Noto Sans TC','Microsoft JhengHei',sans-serif; fill: #20A873; }
+    </style>
+  </defs>
+
+  <rect width="1800" height="1260" rx="28" fill="url(#bg)"/>
+
+  <text x="60" y="112" class="title">NN、CNN、RNN 怎麼分工</text>
+  <text x="60" y="170" class="subtitle">我不會把它們看成平行名詞表，而是先看資料結構，再看哪種架構比較自然。</text>
+
+  <rect x="60" y="282" width="500" height="890" rx="28" fill="#FFFFFF" stroke="#B9CDF5" stroke-width="4"/>
+  <rect x="650" y="282" width="500" height="890" rx="28" fill="#FFFFFF" stroke="#FFC56E" stroke-width="4"/>
+  <rect x="1240" y="282" width="500" height="890" rx="28" fill="#FFFFFF" stroke="#98E0CE" stroke-width="4"/>
+
+  <text x="310" y="364" text-anchor="middle" class="cardtitle">標準 NN</text>
+  <text x="310" y="414" text-anchor="middle" class="body">我這裡用 MLP 當代表</text>
+
+  <text x="900" y="364" text-anchor="middle" class="cardtitle">CNN</text>
+  <text x="900" y="414" text-anchor="middle" class="body">卷積神經網路</text>
+
+  <text x="1490" y="364" text-anchor="middle" class="cardtitle">RNN</text>
+  <text x="1490" y="414" text-anchor="middle" class="body">循環神經網路</text>
+
+  <text x="130" y="520" class="label-blue">適合資料</text>
+  <text x="130" y="586" class="body">固定長度特徵向量</text>
+
+  <text x="130" y="698" class="label-blue">核心直覺</text>
+  <text x="130" y="764" class="body">把所有特徵重新加權組合</text>
+
+  <text x="130" y="876" class="label-blue">典型任務</text>
+  <text x="130" y="942" class="body">分類、迴歸、表格基線</text>
+
+  <text x="130" y="1030" class="label-blue">我會怎麼用</text>
+  <text x="130" y="1096" class="body">先學訓練流程最清楚</text>
+
+  <text x="720" y="520" class="label-orange">適合資料</text>
+  <text x="720" y="586" class="body">影像、局部空間結構</text>
+
+  <text x="720" y="698" class="label-orange">核心直覺</text>
+  <text x="720" y="764" class="body">先抓小區域，再組成整體</text>
+
+  <text x="720" y="876" class="label-orange">典型任務</text>
+  <text x="720" y="942" class="body">影像分類、檢測、分割</text>
+
+  <text x="720" y="1030" class="label-orange">我會怎麼用</text>
+  <text x="720" y="1096" class="body">理解影像特徵最直覺</text>
+
+  <text x="1310" y="520" class="label-green">適合資料</text>
+  <text x="1310" y="586" class="body">文字、語音、時間序列</text>
+
+  <text x="1310" y="698" class="label-green">核心直覺</text>
+  <text x="1310" y="764" class="body">一步一步保留前後依賴</text>
+
+  <text x="1310" y="876" class="label-green">典型任務</text>
+  <text x="1310" y="942" class="body">序列預測、教學型範例</text>
+
+  <text x="1310" y="1030" class="label-green">我會怎麼用</text>
+  <text x="1310" y="1096" class="body">理解序列模型的起點</text>
+</svg>

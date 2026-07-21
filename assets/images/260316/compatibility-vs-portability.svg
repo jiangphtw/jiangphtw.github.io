@@ -1,0 +1,30 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="28" fill="#FFFDFC"/>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="80" y="110" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="64" font-weight="800">兼容不是同一件事</text>
+  <text x="80" y="165" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="500">講 CUDA、Metal、ROCm 的「兼容」時，至少要先分成三層來看。</text>
+
+  <rect x="150" y="250" width="1300" height="150" rx="28" fill="#FFFFFF" stroke="#B8CEF7" stroke-width="4"/>
+  <rect x="150" y="445" width="1300" height="150" rx="28" fill="#FFFFFF" stroke="#FFD39F" stroke-width="4"/>
+  <rect x="150" y="640" width="1300" height="150" rx="28" fill="#FFFFFF" stroke="#9EDBC9" stroke-width="4"/>
+
+  <text x="275" y="315" fill="#2D6BEA" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="800">1. 框架 API 抽象</text>
+  <text x="275" y="355" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">例如 PyTorch 在 ROCm 上重用很多 `torch.cuda` 介面</text>
+  <text x="275" y="388" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">使用者感受到的是「很多 code 看起來很像」</text>
+
+  <text x="275" y="510" fill="#FF9A52" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="800">2. 原始碼可移植</text>
+  <text x="275" y="550" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">例如 HIP / hipify 幫助把部分 CUDA 程式移到 AMD 路徑</text>
+  <text x="275" y="583" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">這是在講 source portability，不是 runtime 完全互通</text>
+
+  <text x="275" y="705" fill="#27A37B" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="800">3. runtime / binary 互通</text>
+  <text x="275" y="745" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">這一層不能講得太樂觀：CUDA、Metal、ROCm 不是直接互換執行</text>
+  <text x="275" y="778" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">Metal 也更像平台自己的加速路徑，而不是 CUDA 的 drop-in 替代物</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4EA"/>
+      <stop offset="0.58" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEF8FF"/>
+    </linearGradient>
+  </defs>
+</svg>

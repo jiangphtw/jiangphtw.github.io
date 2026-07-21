@@ -1,0 +1,35 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="28" fill="#FFFDFC"/>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="80" y="110" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="64" font-weight="800">PyTorch 與 TensorFlow / Keras 的工作方式</text>
+  <text x="80" y="165" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="500">兩者都能做深度學習，但帶給初學者的使用感與抽象層不同。</text>
+
+  <rect x="120" y="240" width="590" height="520" rx="32" fill="#FFFFFF" stroke="#B8CEF7" stroke-width="4"/>
+  <rect x="890" y="240" width="590" height="520" rx="32" fill="#FFFFFF" stroke="#FFD39F" stroke-width="4"/>
+
+  <text x="415" y="320" text-anchor="middle" fill="#2D6BEA" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">PyTorch</text>
+  <text x="415" y="380" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="52" font-weight="800">訓練流程比較可見</text>
+  <rect x="200" y="445" width="430" height="72" rx="22" fill="#EAF2FF"/>
+  <rect x="200" y="540" width="430" height="72" rx="22" fill="#EAF2FF"/>
+  <rect x="200" y="635" width="430" height="72" rx="22" fill="#EAF2FF"/>
+  <text x="415" y="490" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="700">比較貼近 Python 程式思維</text>
+  <text x="415" y="585" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="700">debug 與教學時通常更直覺</text>
+  <text x="415" y="680" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="700">適合先理解模型怎麼學</text>
+
+  <text x="1185" y="320" text-anchor="middle" fill="#FF9A52" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">TensorFlow / Keras</text>
+  <text x="1185" y="380" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="50" font-weight="800">高階 API 比較完整</text>
+  <rect x="970" y="445" width="430" height="72" rx="22" fill="#FFF4E8"/>
+  <rect x="970" y="540" width="430" height="72" rx="22" fill="#FFF4E8"/>
+  <rect x="970" y="635" width="430" height="72" rx="22" fill="#FFF4E8"/>
+  <text x="1185" y="490" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="700">標準工作流比較容易搭起來</text>
+  <text x="1185" y="585" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="700">常和完整平台生態一起理解</text>
+  <text x="1185" y="680" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="700">適合快速建立標準模型流程</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4EA"/>
+      <stop offset="0.58" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEF6FF"/>
+    </linearGradient>
+  </defs>
+</svg>

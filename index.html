@@ -1,0 +1,46 @@
+---
+layout: default
+title: Researcher & Engineer
+description: 江柏賢 Po-Hsien Jiang 的個人網站：生物力學、人體動作量測、最佳化分析與 AI。
+nav: home
+---
+<main id="content" class="home-main">
+  <section class="home-hero">
+    <div class="home-intro reveal">
+      <p class="eyebrow"><span></span> MECHANICAL ENGINEERING · BIOMECHANICS · AI</p>
+      <h1><span>讓資料理解</span><em>人的動作。</em></h1>
+      <p class="lead">我是江柏賢，機械工程博士與研究者。從人體動作量測、肌肉骨骼模型到嵌入式系統，把複雜的行為訊號轉化為可以理解與實作的工程方法。</p>
+      <div class="hero-actions">
+        <a class="button dark-button" href="{{ '/research.html' | relative_url }}">查看研究 <span>↗</span></a>
+        <a class="under-link" href="{{ '/about.html' | relative_url }}">認識我</a>
+      </div>
+    </div>
+    <div class="home-photo reveal reveal-delay">
+      <div class="photo-wrap"><img src="{{ '/assets/profile.jpg' | relative_url }}" alt="江柏賢的個人照片" width="597" height="848" fetchpriority="high" /></div>
+      <div class="current-card"><i></i><span><small>CURRENTLY</small><strong>National Taipei University of Education</strong><b>Assistant Professor · Principal Investigator</b></span></div>
+    </div>
+    <p class="vertical-note" aria-hidden="true">TAIPEI · TAIWAN · UTC+8</p>
+  </section>
+
+  <section class="home-directory" aria-labelledby="directory-title">
+    <div class="directory-heading reveal">
+      <p class="section-label">EXPLORE / 01—04</p>
+      <h2 id="directory-title">從這裡開始</h2>
+      <p>這個網站分成四個獨立空間，每一頁只處理一個主題。</p>
+    </div>
+    <div class="directory-grid">
+      <a class="directory-card card-blue reveal" href="{{ '/research.html' | relative_url }}"><span>01</span><div><small>RESEARCH</small><h3>研究與專案</h3><p>人體動作、肌肉模型與系統整合</p></div><b>↗</b></a>
+      <a class="directory-card card-ink reveal" href="{{ '/publications.html' | relative_url }}"><span>02</span><div><small>PUBLICATIONS</small><h3>論文發表</h3><p>期刊論文與研討會成果</p></div><b>↗</b></a>
+      <a class="directory-card card-acid reveal" href="{{ '/notes.html' | relative_url }}"><span>03</span><div><small>FIELD NOTES</small><h3>技術文章</h3><p>AI、資料科學與工程筆記</p></div><b>↗</b></a>
+      <a class="directory-card card-paper reveal" href="{{ '/about.html' | relative_url }}"><span>04</span><div><small>ABOUT</small><h3>關於江柏賢</h3><p>學歷、專長與實驗室之外</p></div><b>↗</b></a>
+    </div>
+  </section>
+
+  {% assign latest_post = site.posts | first %}
+  {% if latest_post %}
+  <section class="home-feature reveal">
+    <div><p class="section-label">LATEST NOTE · {{ latest_post.date | date: '%Y.%m.%d' }}</p><h2>{{ latest_post.title }}</h2></div>
+    <a href="{{ latest_post.url | relative_url }}">閱讀文章 <span>↗</span></a>
+  </section>
+  {% endif %}
+</main>

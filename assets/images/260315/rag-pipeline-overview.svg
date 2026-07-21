@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">RAG 基本流程</title>
+  <desc id="desc">從文件準備、切 chunk、embedding、索引，到使用者提問、檢索與生成答案的基本流程。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8f1"/>
+      <stop offset="100%" stop-color="#f3f8ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#d9dde8" flood-opacity="0.42"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M0,0 L14,7 L0,14 z" fill="#c8d6ef"/>
+    </marker>
+    <style>
+      .title { font: 700 60px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #183153; }
+      .subtitle { font: 400 26px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #5c7296; }
+      .badge { font: 700 22px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #ffffff; text-anchor: middle; }
+      .card-title { font: 700 28px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #183153; text-anchor: middle; }
+      .line { font: 400 22px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #5c7296; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="88" y="118" class="title">RAG 的基本流程</text>
+  <text x="88" y="170" class="subtitle">RAG 不是只靠最後一個 prompt，而是前面整條文件整理與檢索流程一起決定品質。</text>
+
+  <line x1="200" y1="430" x2="1400" y2="430" stroke="#dbe4f3" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="80" y="300" width="200" height="220" rx="28" fill="#ffffff" stroke="#ffb17a" stroke-width="4"/>
+    <rect x="320" y="300" width="200" height="220" rx="28" fill="#ffffff" stroke="#ffb17a" stroke-width="4"/>
+    <rect x="560" y="300" width="200" height="220" rx="28" fill="#ffffff" stroke="#ffb17a" stroke-width="4"/>
+    <rect x="800" y="300" width="200" height="220" rx="28" fill="#ffffff" stroke="#8cb9ff" stroke-width="4"/>
+    <rect x="1040" y="300" width="200" height="220" rx="28" fill="#ffffff" stroke="#8cb9ff" stroke-width="4"/>
+    <rect x="1280" y="300" width="200" height="220" rx="28" fill="#ffffff" stroke="#77cdb5" stroke-width="4"/>
+  </g>
+
+  <rect x="120" y="262" width="120" height="48" rx="18" fill="#ff9b66"/>
+  <rect x="360" y="262" width="120" height="48" rx="18" fill="#ff9b66"/>
+  <rect x="600" y="262" width="120" height="48" rx="18" fill="#ff9b66"/>
+  <rect x="840" y="262" width="120" height="48" rx="18" fill="#6ea5ff"/>
+  <rect x="1080" y="262" width="120" height="48" rx="18" fill="#6ea5ff"/>
+  <rect x="1320" y="262" width="120" height="48" rx="18" fill="#36b58f"/>
+
+  <text x="180" y="294" class="badge">文件</text>
+  <text x="420" y="294" class="badge">切分</text>
+  <text x="660" y="294" class="badge">索引</text>
+  <text x="900" y="294" class="badge">提問</text>
+  <text x="1140" y="294" class="badge">檢索</text>
+  <text x="1380" y="294" class="badge">生成</text>
+
+  <text x="180" y="390" class="card-title">文件準備</text>
+  <text x="180" y="444" class="line">PDF、FAQ、Wiki</text>
+  <text x="180" y="478" class="line">規格與知識庫</text>
+
+  <text x="420" y="390" class="card-title">Chunking</text>
+  <text x="420" y="444" class="line">把文件切成</text>
+  <text x="420" y="478" class="line">可檢索片段</text>
+
+  <text x="660" y="384" class="card-title">Embedding</text>
+  <text x="660" y="422" class="card-title">與索引</text>
+  <text x="660" y="468" class="line">轉向量</text>
+  <text x="660" y="502" class="line">存進索引或資料庫</text>
+
+  <text x="900" y="390" class="card-title">使用者提問</text>
+  <text x="900" y="444" class="line">理解問題</text>
+  <text x="900" y="478" class="line">準備檢索查詢</text>
+
+  <text x="1140" y="390" class="card-title">Retrieval</text>
+  <text x="1140" y="444" class="line">找回最相關 chunk</text>
+  <text x="1140" y="478" class="line">可搭配 filter / rerank</text>
+
+  <text x="1380" y="390" class="card-title">Generation</text>
+  <text x="1380" y="444" class="line">連同來源一起</text>
+  <text x="1380" y="478" class="line">生成答案</text>
+</svg>

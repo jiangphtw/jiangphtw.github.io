@@ -1,0 +1,32 @@
+title: 江柏賢 Po-Hsien Jiang
+description: 生物力學、人體動作量測、最佳化分析、資料科學與 AI。
+url: https://jiangphtw.github.io
+baseurl: ""
+lang: zh-Hant
+timezone: Asia/Taipei
+
+author:
+  name: Po-Hsien Jiang
+  email: jiangph@mail.ntue.edu.tw
+
+permalink: /:categories/:year/:month/:day/:title.html
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      nav: notes
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

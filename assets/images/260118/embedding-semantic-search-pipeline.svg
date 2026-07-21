@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-label="語義搜尋與向量檢索流程示意圖">
+  <title>語義搜尋（Embedding 檢索）流程</title>
+  <defs>
+    <style>
+      .title { font: 600 24px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Arial, sans-serif; fill: #111827; }
+      .label { font: 600 14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Arial, sans-serif; fill: #111827; }
+      .small { font: 12px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Arial, sans-serif; fill: #374151; }
+      .muted { fill: #6B7280; }
+      .box { fill: #F9FAFB; stroke: #E5E7EB; stroke-width: 2; rx: 14; }
+      .lane { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 2; rx: 18; }
+      .arrow { stroke: #6B7280; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+      .arrowSmall { stroke: #6B7280; stroke-width: 3; fill: none; marker-end: url(#arrowhead-small); }
+      .accent { fill: #2563EB; }
+      .accent2 { fill: #10B981; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6B7280"/>
+    </marker>
+    <marker id="arrowhead-small" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6B7280"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="520" fill="#ffffff"/>
+  <text x="480" y="48" text-anchor="middle" class="title">語義搜尋（Semantic Search）/ RAG 檢索流程（示意）</text>
+
+  <!-- Lanes -->
+  <rect x="60" y="80" width="840" height="190" class="lane"/>
+  <text x="90" y="112" class="label">離線：建索引（Indexing）</text>
+
+  <rect x="60" y="290" width="840" height="190" class="lane"/>
+  <text x="90" y="322" class="label">線上：查詢（Querying）</text>
+
+  <!-- Indexing flow -->
+  <rect x="90" y="140" width="170" height="80" class="box"/>
+  <text x="175" y="174" text-anchor="middle" class="label">文件</text>
+  <text x="175" y="196" text-anchor="middle" class="small muted">posts / docs</text>
+
+  <path d="M260 180 L320 180" class="arrow"/>
+  <rect x="320" y="140" width="170" height="80" class="box"/>
+  <text x="405" y="174" text-anchor="middle" class="label">切段</text>
+  <text x="405" y="196" text-anchor="middle" class="small muted">chunking</text>
+
+  <path d="M490 180 L550 180" class="arrow"/>
+  <rect x="550" y="140" width="180" height="80" class="box"/>
+  <text x="640" y="174" text-anchor="middle" class="label">Embedding 模型</text>
+  <text x="640" y="196" text-anchor="middle" class="small muted">text → vector</text>
+
+  <path d="M730 180 L790 180" class="arrow"/>
+  <rect x="790" y="140" width="90" height="80" class="box"/>
+  <text x="835" y="172" text-anchor="middle" class="label">向量</text>
+  <text x="835" y="194" text-anchor="middle" class="small muted">索引</text>
+
+  <!-- Querying flow -->
+  <rect x="90" y="350" width="170" height="80" class="box"/>
+  <text x="175" y="384" text-anchor="middle" class="label">Query</text>
+  <text x="175" y="406" text-anchor="middle" class="small muted">使用者問題</text>
+
+  <path d="M260 390 L320 390" class="arrow"/>
+  <rect x="320" y="350" width="180" height="80" class="box"/>
+  <text x="410" y="384" text-anchor="middle" class="label">Query Embedding</text>
+  <text x="410" y="406" text-anchor="middle" class="small muted">query → vector</text>
+
+  <path d="M500 390 L560 390" class="arrow"/>
+  <rect x="560" y="350" width="160" height="80" class="box"/>
+  <text x="640" y="384" text-anchor="middle" class="label">向量檢索</text>
+  <text x="640" y="406" text-anchor="middle" class="small muted">Top-K 近鄰</text>
+
+  <path d="M720 390 L780 390" class="arrow"/>
+  <rect x="780" y="350" width="120" height="80" class="box"/>
+  <text x="840" y="374" text-anchor="middle" class="label">結果片段</text>
+  <text x="840" y="396" text-anchor="middle" class="small muted">chunks</text>
+  <text x="840" y="418" text-anchor="middle" class="small muted">(context)</text>
+
+  <!-- Optional RAG -->
+  <path d="M840 430 L840 444" class="arrowSmall"/>
+  <rect x="730" y="444" width="170" height="34" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="2" rx="12"/>
+  <text x="815" y="466" text-anchor="middle" class="label" style="font-size:13px" fill="#065F46">（可選）LLM 生成回答</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="28" fill="#F8FAFC"/>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="80" y="120" fill="#183153" font-size="58" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">工業 5.0 的應用與挑戰</text>
+  <text x="80" y="175" fill="#5B7090" font-size="28" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">越想把人放回系統中心，就越會碰到資料、建模、治理與倫理問題。</text>
+
+  <rect x="90" y="250" width="650" height="560" rx="30" fill="#F0FDFA" stroke="#99F6E4" stroke-width="4"/>
+  <rect x="860" y="250" width="650" height="560" rx="30" fill="#FFF7ED" stroke="#FDBA74" stroke-width="4"/>
+
+  <text x="415" y="325" text-anchor="middle" fill="#0F766E" font-size="34" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">目前可能的應用</text>
+  <text x="1185" y="325" text-anchor="middle" fill="#F97316" font-size="34" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">落地時的困難</text>
+
+  <rect x="135" y="380" width="560" height="82" rx="18" fill="#FFFFFF"/>
+  <rect x="135" y="485" width="560" height="82" rx="18" fill="#FFFFFF"/>
+  <rect x="135" y="590" width="560" height="82" rx="18" fill="#FFFFFF"/>
+  <rect x="135" y="695" width="560" height="82" rx="18" fill="#FFFFFF"/>
+  <text x="170" y="432" fill="#183153" font-size="28" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">人機協作產線與工作站調整</text>
+  <text x="170" y="537" fill="#183153" font-size="28" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">疲勞、安全與人體工學監測</text>
+  <text x="170" y="642" fill="#183153" font-size="28" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">訓練、模擬與現場輔助決策</text>
+  <text x="170" y="747" fill="#183153" font-size="28" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">排程與維護開始同時看機器和人</text>
+
+  <rect x="905" y="380" width="560" height="82" rx="18" fill="#FFFFFF"/>
+  <rect x="905" y="485" width="560" height="82" rx="18" fill="#FFFFFF"/>
+  <rect x="905" y="590" width="560" height="82" rx="18" fill="#FFFFFF"/>
+  <rect x="905" y="695" width="560" height="82" rx="18" fill="#FFFFFF"/>
+  <text x="940" y="432" fill="#183153" font-size="28" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">即時同步、延遲與邊緣運算</text>
+  <text x="940" y="537" fill="#183153" font-size="28" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">人的資料難量測、缺漏也多</text>
+  <text x="940" y="642" fill="#183153" font-size="28" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">多模態建模難、泛化不穩定</text>
+  <text x="940" y="747" fill="#183153" font-size="28" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">隱私、同意、監控感與責任問題</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7ED"/>
+      <stop offset="1" stop-color="#EFF6FF"/>
+    </linearGradient>
+  </defs>
+</svg>

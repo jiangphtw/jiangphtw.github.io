@@ -1,0 +1,36 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="28" fill="#F8FAFC"/>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="80" y="120" fill="#183153" font-size="58" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">模型架構的整體地圖</text>
+  <text x="80" y="175" fill="#5B7090" font-size="28" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">我會把這篇拆成兩條線：空間結構看 CNN，序列建模看 RNN、LSTM 與 Transformer。</text>
+
+  <rect x="110" y="280" width="1380" height="190" rx="32" fill="#F0F9FF" stroke="#93C5FD" stroke-width="4"/>
+  <text x="800" y="345" text-anchor="middle" fill="#2563EB" font-size="34" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">空間結構這條線</text>
+  <rect x="560" y="380" width="480" height="70" rx="18" fill="#FFFFFF"/>
+  <text x="800" y="425" text-anchor="middle" fill="#183153" font-size="34" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">CNN：很會抓局部空間模式</text>
+
+  <rect x="110" y="520" width="1380" height="250" rx="32" fill="#FFF7ED" stroke="#FDBA74" stroke-width="4"/>
+  <text x="800" y="585" text-anchor="middle" fill="#F97316" font-size="34" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">序列建模這條線</text>
+
+  <rect x="180" y="635" width="270" height="90" rx="20" fill="#FFFFFF"/>
+  <rect x="660" y="635" width="270" height="90" rx="20" fill="#FFFFFF"/>
+  <rect x="1140" y="635" width="270" height="90" rx="20" fill="#FFFFFF"/>
+  <text x="315" y="675" text-anchor="middle" fill="#183153" font-size="30" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">RNN</text>
+  <text x="315" y="711" text-anchor="middle" fill="#5B7090" font-size="22" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">先讓序列能被建模</text>
+  <text x="795" y="675" text-anchor="middle" fill="#183153" font-size="30" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">LSTM</text>
+  <text x="795" y="711" text-anchor="middle" fill="#5B7090" font-size="22" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">讓模型更會記</text>
+  <text x="1275" y="675" text-anchor="middle" fill="#183153" font-size="30" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">Transformer</text>
+  <text x="1275" y="711" text-anchor="middle" fill="#5B7090" font-size="22" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">直接看整段關係</text>
+
+  <path d="M450 680H620" stroke="#FB923C" stroke-width="8" stroke-linecap="round"/>
+  <path d="M600 655L640 680L600 705" fill="#FB923C"/>
+  <path d="M930 680H1100" stroke="#FB923C" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1080 655L1120 680L1080 705" fill="#FB923C"/>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7ED"/>
+      <stop offset="1" stop-color="#EFF6FF"/>
+    </linearGradient>
+  </defs>
+</svg>

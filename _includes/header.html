@@ -1,0 +1,18 @@
+<a class="skip-link" href="#content">跳到主要內容</a>
+<header class="site-header" data-header>
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="江柏賢首頁">
+    <span class="brand-mark">JP</span>
+    <span><strong>PO-HSIEN JIANG</strong><small>RESEARCHER × ENGINEER</small></span>
+  </a>
+  <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+    <i></i><i></i><span class="sr-only">開啟選單</span>
+  </button>
+  <nav class="site-nav" id="site-nav" aria-label="主要導覽">
+    <a{% if page.nav == 'research' %} class="active"{% endif %} href="{{ '/research.html' | relative_url }}">研究</a>
+    <a{% if page.nav == 'publications' %} class="active"{% endif %} href="{{ '/publications.html' | relative_url }}">論文</a>
+    <a{% if page.nav == 'notes' %} class="active"{% endif %} href="{{ '/notes.html' | relative_url }}">文章</a>
+    <a{% if page.nav == 'about' %} class="active"{% endif %} href="{{ '/about.html' | relative_url }}">關於</a>
+    <button class="theme-toggle" type="button" aria-label="切換深色模式">◐</button>
+  </nav>
+</header>
+

@@ -1,0 +1,42 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="28" fill="#F8FAFC"/>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="80" y="120" fill="#183153" font-size="60" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">工業 4.0 到 5.0 的關鍵轉向</text>
+  <text x="80" y="175" fill="#5B7090" font-size="28" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">不是只有更自動化，而是系統的中心從設備與效率，移向人、永續與韌性。</text>
+
+  <rect x="100" y="260" width="600" height="500" rx="32" fill="#F0F9FF" stroke="#93C5FD" stroke-width="4"/>
+  <rect x="900" y="260" width="600" height="500" rx="32" fill="#F0FDFA" stroke="#99F6E4" stroke-width="4"/>
+
+  <text x="400" y="330" text-anchor="middle" fill="#2563EB" font-size="30" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">Industry 4.0</text>
+  <text x="400" y="388" text-anchor="middle" fill="#183153" font-size="52" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">system-centric</text>
+  <text x="400" y="435" text-anchor="middle" fill="#5B7090" font-size="26" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">先把設備、資料、控制串起來</text>
+
+  <rect x="155" y="490" width="490" height="76" rx="18" fill="#FFFFFF"/>
+  <rect x="155" y="585" width="490" height="76" rx="18" fill="#FFFFFF"/>
+  <rect x="155" y="680" width="490" height="76" rx="18" fill="#FFFFFF"/>
+  <text x="190" y="538" fill="#183153" font-size="30" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">互聯化：設備彼此可通訊</text>
+  <text x="190" y="633" fill="#183153" font-size="30" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">資料化：即時感測與追蹤</text>
+  <text x="190" y="728" fill="#183153" font-size="30" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">最佳化：追求效率與產出</text>
+
+  <text x="1200" y="330" text-anchor="middle" fill="#0F766E" font-size="30" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">Industry 5.0</text>
+  <text x="1200" y="388" text-anchor="middle" fill="#183153" font-size="52" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">human-centric</text>
+  <text x="1200" y="435" text-anchor="middle" fill="#5B7090" font-size="26" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">在 4.0 技術底座上，重新定義系統目的</text>
+
+  <rect x="955" y="490" width="490" height="76" rx="18" fill="#FFFFFF"/>
+  <rect x="955" y="585" width="490" height="76" rx="18" fill="#FFFFFF"/>
+  <rect x="955" y="680" width="490" height="76" rx="18" fill="#FFFFFF"/>
+  <text x="990" y="538" fill="#183153" font-size="30" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">人本：把人放回設計中心</text>
+  <text x="990" y="633" fill="#183153" font-size="30" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">永續：把資源與環境放進目標</text>
+  <text x="990" y="728" fill="#183153" font-size="30" font-weight="700" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">韌性：面對波動也能維持運作</text>
+
+  <path d="M740 520H860" stroke="#94A3B8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M840 495L885 520L840 545" fill="#94A3B8"/>
+  <text x="800" y="485" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="600" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">轉向</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7ED"/>
+      <stop offset="1" stop-color="#ECFEFF"/>
+    </linearGradient>
+  </defs>
+</svg>

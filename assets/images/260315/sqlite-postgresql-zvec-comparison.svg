@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">SQLite、PostgreSQL、zvec 比較</title>
+  <desc id="desc">三張卡片比較 SQLite、PostgreSQL 與 zvec 的定位、優勢與適用場景。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8f1"/>
+      <stop offset="100%" stop-color="#f3f8ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#d9dde8" flood-opacity="0.42"/>
+    </filter>
+    <style>
+      .title { font: 700 60px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #183153; }
+      .subtitle { font: 400 26px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #5c7296; }
+      .badge { font: 700 24px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #ffffff; text-anchor: middle; }
+      .card-title { font: 700 34px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #183153; text-anchor: middle; }
+      .line { font: 400 22px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #5c7296; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="88" y="118" class="title">SQLite、PostgreSQL、zvec 的定位比較</text>
+  <text x="88" y="170" class="subtitle">前兩者是關聯式資料庫，zvec 更偏向 embedding 與 similarity search 的工作負載。</text>
+
+  <g filter="url(#shadow)">
+    <rect x="100" y="280" width="430" height="360" rx="34" fill="#ffffff" stroke="#ffb17a" stroke-width="4"/>
+    <rect x="585" y="280" width="430" height="360" rx="34" fill="#ffffff" stroke="#8cb9ff" stroke-width="4"/>
+    <rect x="1070" y="280" width="430" height="360" rx="34" fill="#ffffff" stroke="#77cdb5" stroke-width="4"/>
+  </g>
+
+  <rect x="215" y="242" width="200" height="52" rx="20" fill="#ff9b66"/>
+  <rect x="700" y="242" width="200" height="52" rx="20" fill="#6ea5ff"/>
+  <rect x="1185" y="242" width="200" height="52" rx="20" fill="#36b58f"/>
+
+  <text x="315" y="276" class="badge">SQLite</text>
+  <text x="800" y="276" class="badge">PostgreSQL</text>
+  <text x="1285" y="276" class="badge">zvec</text>
+
+  <text x="315" y="374" class="card-title">輕量、單機、零設定</text>
+  <text x="315" y="434" class="line">適合本機工具與 side project</text>
+  <text x="315" y="470" class="line">資料通常就是單一檔案</text>
+  <text x="315" y="506" class="line">不適合高並發多人寫入</text>
+
+  <text x="800" y="374" class="card-title">正式產品的穩定主庫</text>
+  <text x="800" y="434" class="line">適合多人系統與 transaction</text>
+  <text x="800" y="470" class="line">權限、索引、extension 成熟</text>
+  <text x="800" y="506" class="line">但要安裝與維運服務</text>
+
+  <text x="1285" y="374" class="card-title">向量搜尋與語意檢索</text>
+  <text x="1285" y="434" class="line">適合 embedding、RAG、similarity search</text>
+  <text x="1285" y="470" class="line">可搭配 metadata filter</text>
+  <text x="1285" y="506" class="line">不是一般交易主資料庫</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="28" fill="#FFFDFC"/>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+
+  <text x="80" y="120" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="64" font-weight="800">半監督式學習：同一批資料，只有一小部分有標註</text>
+  <text x="80" y="180" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="500">重點不是混合不同資料型態，而是同一個任務下，同時利用少量有答案資料與大量沒有答案資料。</text>
+
+  <rect x="80" y="250" width="420" height="520" rx="28" fill="#FFFFFF" stroke="#B8CEF7" stroke-width="4"/>
+  <text x="290" y="325" text-anchor="middle" fill="#2D6BEA" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">原始資料池</text>
+  <text x="290" y="375" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="42" font-weight="800">同一批影像資料</text>
+
+  <rect x="135" y="440" width="90" height="70" rx="18" fill="#EAF2FF" stroke="#2D6BEA" stroke-width="2"/>
+  <rect x="245" y="440" width="90" height="70" rx="18" fill="#F3F5F9" stroke="#C9D2E0" stroke-width="2"/>
+  <rect x="355" y="440" width="90" height="70" rx="18" fill="#F3F5F9" stroke="#C9D2E0" stroke-width="2"/>
+  <rect x="135" y="530" width="90" height="70" rx="18" fill="#F3F5F9" stroke="#C9D2E0" stroke-width="2"/>
+  <rect x="245" y="530" width="90" height="70" rx="18" fill="#FFF2E1" stroke="#FFB56D" stroke-width="2"/>
+  <rect x="355" y="530" width="90" height="70" rx="18" fill="#F3F5F9" stroke="#C9D2E0" stroke-width="2"/>
+  <rect x="135" y="620" width="90" height="70" rx="18" fill="#F3F5F9" stroke="#C9D2E0" stroke-width="2"/>
+  <rect x="245" y="620" width="90" height="70" rx="18" fill="#F3F5F9" stroke="#C9D2E0" stroke-width="2"/>
+  <rect x="355" y="620" width="90" height="70" rx="18" fill="#EAF7F2" stroke="#9EDBC9" stroke-width="2"/>
+
+  <text x="290" y="730" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">資料型態一致，差別只在有沒有標註</text>
+
+  <rect x="610" y="280" width="360" height="210" rx="28" fill="#FFFFFF" stroke="#B8CEF7" stroke-width="4"/>
+  <text x="790" y="340" text-anchor="middle" fill="#2D6BEA" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">切出少量標註資料</text>
+  <text x="790" y="390" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="38" font-weight="800">有答案</text>
+  <text x="790" y="445" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">影像 A → 腫瘤</text>
+  <text x="790" y="478" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">影像 B → 正常</text>
+
+  <rect x="610" y="540" width="360" height="210" rx="28" fill="#FFFFFF" stroke="#D2D9E6" stroke-width="4"/>
+  <text x="790" y="600" text-anchor="middle" fill="#8793A8" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">保留大量未標註資料</text>
+  <text x="790" y="650" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="38" font-weight="800">沒答案</text>
+  <text x="790" y="705" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">影像 C、D、E、F、G ...</text>
+  <text x="790" y="738" text-anchor="middle" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="500">沒有標籤，但仍反映資料分布</text>
+
+  <path d="M500 510C545 510 555 385 590 385" stroke="#5C7095" stroke-width="6" stroke-linecap="round"/>
+  <path d="M582 370L605 385L582 400" fill="#5C7095"/>
+  <path d="M500 510C545 510 555 645 590 645" stroke="#5C7095" stroke-width="6" stroke-linecap="round"/>
+  <path d="M582 630L605 645L582 660" fill="#5C7095"/>
+
+  <rect x="1100" y="330" width="410" height="360" rx="28" fill="#FFFFFF" stroke="#9EDBC9" stroke-width="4"/>
+  <text x="1305" y="395" text-anchor="middle" fill="#27A37B" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">一起進半監督模型</text>
+  <text x="1305" y="445" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="42" font-weight="800">同時利用兩種訊息</text>
+
+  <rect x="1170" y="500" width="270" height="68" rx="20" fill="#EAF2FF" stroke="#2D6BEA" stroke-width="3"/>
+  <rect x="1170" y="590" width="270" height="68" rx="20" fill="#F3F5F9" stroke="#C9D2E0" stroke-width="3"/>
+  <text x="1305" y="542" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">少量標籤提供方向</text>
+  <text x="1305" y="632" text-anchor="middle" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="24" font-weight="700">未標註資料提供分布</text>
+
+  <path d="M970 385H1080" stroke="#5C7095" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1072 370L1095 385L1072 400" fill="#5C7095"/>
+  <path d="M970 645H1080" stroke="#5C7095" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1072 630L1095 645L1072 660" fill="#5C7095"/>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4EA"/>
+      <stop offset="0.58" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEF8FF"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">資料儲存分層</title>
+  <desc id="desc">以原始層、清理層、分析層三層說明資料儲存的設計，並比較 RDBMS 與 NoSQL 的適用場景。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8f1" />
+      <stop offset="100%" stop-color="#f1f8ff" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#d9dde8" flood-opacity="0.45" />
+    </filter>
+    <style>
+      .title { font: 700 60px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #183153; }
+      .subtitle { font: 400 26px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #5c7296; }
+      .layer-title { font: 700 34px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #183153; }
+      .layer-text { font: 400 24px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #5c7296; }
+      .side-title { font: 700 30px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #183153; text-anchor: middle; }
+      .side-text { font: 400 23px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #5c7296; text-anchor: middle; }
+      .footer { font: 700 28px "Noto Sans TC","Microsoft JhengHei",sans-serif; fill: #1f5ed9; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)" />
+
+  <text x="88" y="116" class="title">資料儲存要解決的是一致、追溯與重用</text>
+  <text x="88" y="168" class="subtitle">不要只想「放哪裡」，而要先想 raw、cleaned、mart 三層各自負責什麼。</text>
+
+  <g filter="url(#shadow)">
+    <rect x="110" y="252" width="930" height="500" rx="36" fill="#ffffff" stroke="#d4dff3" stroke-width="5" />
+    <rect x="1120" y="252" width="370" height="500" rx="36" fill="#ffffff" stroke="#d4dff3" stroke-width="5" />
+  </g>
+
+  <rect x="170" y="312" width="810" height="108" rx="28" fill="#fff0e5" stroke="#ffb17a" stroke-width="4" />
+  <rect x="170" y="452" width="810" height="108" rx="28" fill="#eef6ff" stroke="#96b8ff" stroke-width="4" />
+  <rect x="170" y="592" width="810" height="108" rx="28" fill="#ebfff8" stroke="#79ccb6" stroke-width="4" />
+
+  <text x="218" y="358" class="layer-title">原始層 Raw</text>
+  <text x="218" y="394" class="layer-text">保留原始輸入、來源與版本，方便回頭重跑</text>
+
+  <text x="218" y="498" class="layer-title">清理層 Cleaned</text>
+  <text x="218" y="534" class="layer-text">欄位、型別、主鍵與時間格式固定下來</text>
+
+  <text x="218" y="638" class="layer-title">分析層 Mart</text>
+  <text x="218" y="674" class="layer-text">依主題整理成可直接查詢的報表資料表</text>
+
+  <text x="1305" y="320" class="side-title">常見儲存選擇</text>
+
+  <rect x="1164" y="344" width="282" height="172" rx="28" fill="#fff6ef" stroke="#ffb17a" stroke-width="4" />
+  <rect x="1174" y="540" width="262" height="132" rx="28" fill="#eef7ff" stroke="#96b8ff" stroke-width="4" />
+
+  <text x="1305" y="404" class="side-title">RDBMS</text>
+  <text x="1305" y="442" class="side-text">固定 schema</text>
+  <text x="1305" y="474" class="side-text">join、transaction</text>
+  <text x="1305" y="502" class="side-text">權限管理</text>
+
+  <text x="1305" y="592" class="side-title">NoSQL / 文件儲存</text>
+  <text x="1305" y="630" class="side-text">JSON、log、大量文件</text>
+  <text x="1305" y="664" class="side-text">欄位變動快或結構巢狀</text>
+
+  <rect x="390" y="792" width="820" height="88" rx="28" fill="#eaf1ff" stroke="#93b0ff" stroke-width="4" />
+  <text x="800" y="846" class="footer">NoSQL 不是取代 SQL，而是補不同資料型態與場景</text>
+</svg>

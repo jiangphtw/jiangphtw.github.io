@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="460" viewBox="0 0 960 460" role="img" aria-label="向量空間中相似概念靠近與類比關係示意圖">
+  <title>向量空間與類比關係示意</title>
+  <defs>
+    <style>
+      .title { font: 600 24px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Arial, sans-serif; fill: #111827; }
+      .label { font: 600 14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Arial, sans-serif; fill: #111827; }
+      .small { font: 12px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Arial, sans-serif; fill: #374151; }
+      .muted { fill: #6B7280; }
+      .axis { stroke: #D1D5DB; stroke-width: 2; }
+      .grid { stroke: #F3F4F6; stroke-width: 1; }
+      .pt { fill: #111827; }
+      .pt2 { fill: #2563EB; }
+      .pt3 { fill: #10B981; }
+      .arrow { stroke: #6B7280; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+      .arrow2 { stroke: #2563EB; stroke-width: 3; fill: none; marker-end: url(#arrowhead2); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6B7280"/>
+    </marker>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563EB"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="460" fill="#ffffff"/>
+  <text x="480" y="48" text-anchor="middle" class="title">向量空間：相似概念靠近、類比關係常呈現平行方向（示意）</text>
+
+  <!-- Plot area -->
+  <rect x="80" y="80" width="720" height="320" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2" rx="14"/>
+
+  <!-- Grid -->
+  <g>
+    <line x1="140" y1="100" x2="140" y2="380" class="grid"/>
+    <line x1="220" y1="100" x2="220" y2="380" class="grid"/>
+    <line x1="300" y1="100" x2="300" y2="380" class="grid"/>
+    <line x1="380" y1="100" x2="380" y2="380" class="grid"/>
+    <line x1="460" y1="100" x2="460" y2="380" class="grid"/>
+    <line x1="540" y1="100" x2="540" y2="380" class="grid"/>
+    <line x1="620" y1="100" x2="620" y2="380" class="grid"/>
+    <line x1="700" y1="100" x2="700" y2="380" class="grid"/>
+
+    <line x1="100" y1="140" x2="780" y2="140" class="grid"/>
+    <line x1="100" y1="200" x2="780" y2="200" class="grid"/>
+    <line x1="100" y1="260" x2="780" y2="260" class="grid"/>
+    <line x1="100" y1="320" x2="780" y2="320" class="grid"/>
+  </g>
+
+  <!-- Axes (just as reference) -->
+  <line x1="120" y1="360" x2="760" y2="360" class="axis"/>
+  <line x1="120" y1="360" x2="120" y2="120" class="axis"/>
+  <text x="760" y="382" text-anchor="end" class="small muted">語義維度 1（示意）</text>
+  <text x="95" y="125" text-anchor="start" class="small muted">語義維度 2（示意）</text>
+
+  <!-- Points -->
+  <!-- Man / Woman -->
+  <circle cx="240" cy="300" r="8" class="pt"/>
+  <text x="255" y="305" class="label">Man</text>
+
+  <circle cx="240" cy="180" r="8" class="pt"/>
+  <text x="255" y="185" class="label">Woman</text>
+
+  <!-- King / Queen -->
+  <circle cx="520" cy="300" r="8" class="pt2"/>
+  <text x="535" y="305" class="label">King</text>
+
+  <circle cx="520" cy="180" r="8" class="pt2"/>
+  <text x="535" y="185" class="label">Queen</text>
+
+  <!-- Apple far away -->
+  <circle cx="700" cy="240" r="8" class="pt3"/>
+  <text x="715" y="245" class="label">Apple</text>
+
+  <!-- Arrows: Man->King and Woman->Queen (parallel-ish) -->
+  <path d="M248 300 L512 300" class="arrow2"/>
+  <text x="380" y="290" text-anchor="middle" class="small">+「royalty」方向（示意）</text>
+
+  <path d="M248 180 L512 180" class="arrow2"/>
+
+  <!-- Arrow: Man->Woman (gender axis) -->
+  <path d="M240 292 L240 188" class="arrow"/>
+  <text x="210" y="245" text-anchor="end" class="small">「gender」方向（示意）</text>
+
+  <!-- Formula -->
+  <rect x="810" y="120" width="130" height="280" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="2" rx="14"/>
+  <text x="875" y="160" text-anchor="middle" class="label">向量類比</text>
+  <text x="875" y="195" text-anchor="middle" class="small">King - Man</text>
+  <text x="875" y="218" text-anchor="middle" class="small">+ Woman</text>
+  <text x="875" y="241" text-anchor="middle" class="small muted">≈</text>
+  <text x="875" y="266" text-anchor="middle" class="small">Queen</text>
+  <text x="875" y="315" text-anchor="middle" class="small muted">（不是定律）</text>
+  <text x="875" y="338" text-anchor="middle" class="small muted">（是常見現象）</text>
+</svg>
+

@@ -1,0 +1,21 @@
+---
+layout: default
+title: 文章封存
+description: 依年份瀏覽所有技術文章。
+nav: notes
+---
+<main id="content" class="taxonomy-page content-shell">
+  <header class="taxonomy-header reveal">
+    <div><p class="page-index">NOTES / ARCHIVES</p><h1>文章封存</h1></div>
+    <p>依發表年份瀏覽所有文章，共 {{ site.posts | size }} 篇。</p>
+  </header>
+  {% assign posts_by_year = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+  {% for year in posts_by_year %}
+  <section class="taxonomy-group reveal" id="year-{{ year.name }}">
+    <h2>{{ year.name }}</h2>
+    <ol class="taxonomy-list">
+      {% for post in year.items %}<li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%m.%d' }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>{% endfor %}
+    </ol>
+  </section>
+  {% endfor %}
+</main>

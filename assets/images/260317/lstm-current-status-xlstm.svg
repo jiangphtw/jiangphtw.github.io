@@ -1,0 +1,41 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="28" fill="#F8FAFC"/>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="80" y="120" fill="#183153" font-size="58" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">LSTM 的現況與 xLSTM</text>
+  <text x="80" y="175" fill="#5B7090" font-size="28" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">我不會把它理解成「LSTM 回來了」，而是理解成 recurrent 這條線還在被重新設計。</text>
+
+  <rect x="90" y="270" width="420" height="500" rx="30" fill="#FFF7ED" stroke="#FDBA74" stroke-width="4"/>
+  <rect x="590" y="270" width="420" height="500" rx="30" fill="#F0F9FF" stroke="#93C5FD" stroke-width="4"/>
+  <rect x="1090" y="270" width="420" height="500" rx="30" fill="#F0FDFA" stroke="#99F6E4" stroke-width="4"/>
+
+  <text x="300" y="335" text-anchor="middle" fill="#F97316" font-size="32" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">傳統 LSTM</text>
+  <text x="300" y="410" text-anchor="middle" fill="#183153" font-size="42" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">很重要</text>
+  <text x="300" y="456" text-anchor="middle" fill="#183153" font-size="42" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">但不是現在主流底座</text>
+  <text x="300" y="560" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">序列建模經典入口</text>
+  <text x="300" y="596" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">但長序列與平行化有限</text>
+
+  <text x="800" y="335" text-anchor="middle" fill="#2563EB" font-size="32" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">Transformer 主流化</text>
+  <text x="800" y="410" text-anchor="middle" fill="#183153" font-size="42" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">長距離依賴</text>
+  <text x="800" y="456" text-anchor="middle" fill="#183153" font-size="42" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">與大規模訓練更強</text>
+  <text x="800" y="560" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">大型語言模型多走這條線</text>
+  <text x="800" y="596" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">但不是唯一可探索方向</text>
+
+  <text x="1300" y="335" text-anchor="middle" fill="#0F766E" font-size="32" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">xLSTM</text>
+  <text x="1300" y="410" text-anchor="middle" fill="#183153" font-size="42" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">不是回到舊版</text>
+  <text x="1300" y="456" text-anchor="middle" fill="#183153" font-size="42" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">而是現代化重做</text>
+  <text x="1300" y="540" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">改 gating、改 memory</text>
+  <text x="1300" y="576" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">重新測試 recurrent 架構潛力</text>
+  <text x="1300" y="612" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">這是 2024 論文的主張</text>
+
+  <path d="M510 500H580" stroke="#94A3B8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M560 475L605 500L560 525" fill="#94A3B8"/>
+  <path d="M1010 500H1080" stroke="#94A3B8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1060 475L1105 500L1060 525" fill="#94A3B8"/>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7ED"/>
+      <stop offset="1" stop-color="#ECFEFF"/>
+    </linearGradient>
+  </defs>
+</svg>
