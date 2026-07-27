@@ -33,4 +33,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - dist
+  - dist-stale
   - vendor
