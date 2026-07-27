@@ -8,13 +8,13 @@ nav: home
 <main id="content" class="home-main">
   <header class="home-hero" id="top" data-home-section="01">
     <div class="hero-portrait" aria-hidden="true">
-      <img src="{{ '/assets/profile.jpg' | relative_url }}" alt="" width="597" height="848" fetchpriority="high" />
+      <img data-parallax="0.085" data-parallax-limit="72" src="{{ '/assets/profile.jpg' | relative_url }}" alt="" width="597" height="848" fetchpriority="high" />
     </div>
     <div class="hero-shade" aria-hidden="true"></div>
 
     <p class="hero-discipline">MECHANICAL ENGINEERING / BIOMECHANICS / AI</p>
 
-    <div class="signal-mark" aria-hidden="true">
+    <div class="signal-mark" data-parallax="-0.055" data-parallax-limit="46" aria-hidden="true">
       <span class="signal-letter signal-letter-left">P</span>
       <span class="signal-letter signal-letter-right">H</span>
       <i></i><i></i><i></i><i></i><i></i>
@@ -49,7 +49,7 @@ nav: home
 
   <section class="home-about" id="about" data-home-section="02">
     <div class="section-counter" aria-hidden="true">00002</div>
-    <div class="about-orbit" aria-hidden="true">
+    <div class="about-orbit" data-parallax="0.045" data-parallax-limit="42" aria-hidden="true">
       <span></span><span></span><span></span>
       <i></i><i></i><i></i><i></i>
     </div>
@@ -62,7 +62,7 @@ nav: home
   </section>
 
   <section class="home-research" id="research" data-home-section="03">
-    <div class="research-backdrop" aria-hidden="true">
+    <div class="research-backdrop" data-parallax="0.035" data-parallax-limit="36" aria-hidden="true">
       <div class="data-grid"></div>
       <div class="data-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
     </div>
@@ -124,7 +124,7 @@ nav: home
   {% endif %}
 
   <section class="home-contact" id="contact" data-home-section="06">
-    <div class="contact-signal" aria-hidden="true">
+    <div class="contact-signal" data-parallax="0.06" data-parallax-limit="48" aria-hidden="true">
       <span>P</span><i></i><i></i><i></i><i></i><b>H</b>
     </div>
     <div class="contact-heading reveal">

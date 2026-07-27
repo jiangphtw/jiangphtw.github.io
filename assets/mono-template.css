@@ -213,7 +213,8 @@ body::before {
   object-fit: cover;
   object-position: 52% 28%;
   filter: grayscale(1) contrast(1.12) brightness(.6);
-  transform: scale(1.02);
+  transform: translate3d(0, var(--parallax-y, 0), 0) scale(1.06);
+  will-change: transform;
   animation: hero-in 1.7s var(--mono-ease) both;
 }
 
@@ -243,7 +244,8 @@ body::before {
   width: 118px;
   height: 292px;
   border: 5px solid rgba(255, 255, 255, .62);
-  transform: translateX(-50%);
+  transform: translate3d(-50%, var(--parallax-y, 0), 0);
+  will-change: transform;
 }
 
 .signal-letter {
@@ -466,6 +468,8 @@ body::before {
   justify-self: center;
   border: 1px solid rgba(255, 255, 255, .28);
   border-radius: 50%;
+  transform: translate3d(0, var(--parallax-y, 0), 0);
+  will-change: transform;
 }
 
 .about-orbit::before,
@@ -541,8 +545,10 @@ body::before {
 
 .research-backdrop {
   position: absolute;
-  inset: 0;
+  inset: -4%;
   opacity: .58;
+  transform: translate3d(0, var(--parallax-y, 0), 0) scale(1.04);
+  will-change: transform;
 }
 
 .data-grid {
@@ -822,6 +828,8 @@ body::before {
   height: 330px;
   border: 1px solid rgba(255, 255, 255, .26);
   border-radius: 50%;
+  transform: translate3d(0, var(--parallax-y, 0), 0);
+  will-change: transform;
 }
 
 .contact-signal::before,
@@ -1027,8 +1035,8 @@ body::before {
 }
 
 @keyframes hero-in {
-  from { opacity: 0; transform: scale(1.08); }
-  to { opacity: 1; transform: scale(1.02); }
+  from { opacity: 0; filter: grayscale(1) contrast(1.12) brightness(.35); }
+  to { opacity: 1; filter: grayscale(1) contrast(1.12) brightness(.6); }
 }
 
 @keyframes scroll-pulse {
@@ -1135,6 +1143,7 @@ body::before {
 
   .hero-portrait img {
     object-position: 54% 30%;
+    transform: scale(1.04);
   }
 
   .signal-mark {
@@ -1178,6 +1187,7 @@ body::before {
 
   .hero-portrait img {
     object-position: 50% 30%;
+    transform: scale(1.04);
   }
 
   .hero-shade {
@@ -1317,5 +1327,13 @@ body::before {
   .hero-portrait img,
   .hero-scroll i {
     animation: none;
+  }
+
+  [data-parallax] {
+    transform: none;
+  }
+
+  .signal-mark {
+    transform: translateX(-50%);
   }
 }

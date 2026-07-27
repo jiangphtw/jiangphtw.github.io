@@ -101,3 +101,39 @@ if (homeSections.length && "IntersectionObserver" in window) {
 
   homeSections.forEach((section) => sectionObserver.observe(section));
 }
+
+const parallaxItems = document.querySelectorAll("[data-parallax]");
+const compactViewport = window.matchMedia("(max-width: 820px)");
+let parallaxFrame = 0;
+
+function updateParallax() {
+  parallaxFrame = 0;
+
+  parallaxItems.forEach((item) => {
+    if (reducedMotion.matches || compactViewport.matches) {
+      item.style.removeProperty("--parallax-y");
+      return;
+    }
+
+    const rect = item.getBoundingClientRect();
+    const speed = Number(item.dataset.parallax || 0);
+    const limit = Number(item.dataset.parallaxLimit || 60);
+    const distance = window.innerHeight / 2 - (rect.top + rect.height / 2);
+    const offset = Math.max(-limit, Math.min(limit, distance * speed));
+
+    item.style.setProperty("--parallax-y", `${offset.toFixed(2)}px`);
+  });
+}
+
+function requestParallaxUpdate() {
+  if (parallaxFrame) return;
+  parallaxFrame = window.requestAnimationFrame(updateParallax);
+}
+
+if (parallaxItems.length) {
+  window.addEventListener("scroll", requestParallaxUpdate, { passive: true });
+  window.addEventListener("resize", requestParallaxUpdate);
+  reducedMotion.addEventListener?.("change", requestParallaxUpdate);
+  compactViewport.addEventListener?.("change", requestParallaxUpdate);
+  requestParallaxUpdate();
+}
