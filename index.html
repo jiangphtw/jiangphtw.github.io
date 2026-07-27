@@ -2,45 +2,140 @@
 layout: default
 title: Researcher & Engineer
 description: 江柏賢 Po-Hsien Jiang 的個人網站：生物力學、人體動作量測、最佳化分析與 AI。
+body_class: home-template
 nav: home
 ---
 <main id="content" class="home-main">
-  <section class="home-hero">
-    <div class="home-intro reveal">
-      <p class="eyebrow"><span></span> MECHANICAL ENGINEERING · BIOMECHANICS · AI</p>
-      <h1><span>讓資料理解</span><em>人的動作。</em></h1>
-      <p class="lead">我是江柏賢，機械工程博士與研究者。從人體動作量測、肌肉骨骼模型到嵌入式系統，把複雜的行為訊號轉化為可以理解與實作的工程方法。</p>
-      <div class="hero-actions">
-        <a class="button dark-button" href="{{ '/research.html' | relative_url }}">查看研究 <span>↗</span></a>
-        <a class="under-link" href="{{ '/about.html' | relative_url }}">認識我</a>
-      </div>
+  <header class="home-hero" id="top" data-home-section="01">
+    <div class="hero-portrait" aria-hidden="true">
+      <img src="{{ '/assets/profile.jpg' | relative_url }}" alt="" width="597" height="848" fetchpriority="high" />
     </div>
-    <div class="home-photo reveal reveal-delay">
-      <div class="photo-wrap"><img src="{{ '/assets/profile.jpg' | relative_url }}" alt="江柏賢的個人照片" width="597" height="848" fetchpriority="high" /></div>
-      <div class="current-card"><i></i><span><small>CURRENTLY</small><strong>National Taipei University of Education</strong><b>Assistant Professor · Principal Investigator</b></span></div>
+    <div class="hero-shade" aria-hidden="true"></div>
+
+    <p class="hero-discipline">MECHANICAL ENGINEERING / BIOMECHANICS / AI</p>
+
+    <div class="signal-mark" aria-hidden="true">
+      <span class="signal-letter signal-letter-left">P</span>
+      <span class="signal-letter signal-letter-right">H</span>
+      <i></i><i></i><i></i><i></i><i></i>
     </div>
-    <p class="vertical-note" aria-hidden="true">TAIPEI · TAIWAN · UTC+8</p>
+
+    <div class="hero-copy">
+      <p class="hero-status"><span></span> TAIPEI · TAIWAN · UTC+8</p>
+      <h1>
+        <span>PO-HSIEN</span>
+        <span>JIANG</span>
+      </h1>
+      <p class="hero-role">RESEARCHER <b>×</b> ENGINEER</p>
+    </div>
+
+    <a class="hero-scroll" href="#about">
+      <span>SCROLL TO EXPLORE</span>
+      <i aria-hidden="true"></i>
+    </a>
+  </header>
+
+  <aside class="home-rail" aria-label="首頁段落導覽">
+    <span class="rail-number" data-rail-number>00001</span>
+    <nav>
+      <a class="is-active" href="#top" aria-label="首頁"></a>
+      <a href="#about" aria-label="簡介"></a>
+      <a href="#research" aria-label="研究"></a>
+      <a href="#explore" aria-label="瀏覽網站"></a>
+      <a href="#latest" aria-label="最新文章"></a>
+      <a href="#contact" aria-label="聯絡"></a>
+    </nav>
+  </aside>
+
+  <section class="home-about" id="about" data-home-section="02">
+    <div class="section-counter" aria-hidden="true">00002</div>
+    <div class="about-orbit" aria-hidden="true">
+      <span></span><span></span><span></span>
+      <i></i><i></i><i></i><i></i>
+    </div>
+    <div class="home-about-copy reveal">
+      <p class="mono-label">ALWAYS ON / PO-HSIEN JIANG</p>
+      <h2>把人的動作，<br />轉成可理解的資料。</h2>
+      <p>我是江柏賢，機械工程博士、研究者與教育者。我的工作橫跨人體動作量測、肌肉骨骼模型、最佳化分析與嵌入式系統，關心的是如何讓複雜的行為訊號成為可驗證、可重現、也真正能被使用的工程方法。</p>
+      <a class="text-arrow" href="{{ '/about.html' | relative_url }}">READ MY STORY <span>↗</span></a>
+    </div>
   </section>
 
-  <section class="home-directory" aria-labelledby="directory-title">
-    <div class="directory-heading reveal">
-      <p class="section-label">EXPLORE / 01—04</p>
-      <h2 id="directory-title">從這裡開始</h2>
-      <p>這個網站分成四個獨立空間，每一頁只處理一個主題。</p>
+  <section class="home-research" id="research" data-home-section="03">
+    <div class="research-backdrop" aria-hidden="true">
+      <div class="data-grid"></div>
+      <div class="data-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
     </div>
-    <div class="directory-grid">
-      <a class="directory-card card-blue reveal" href="{{ '/research.html' | relative_url }}"><span>01</span><div><small>RESEARCH</small><h3>研究與專案</h3><p>人體動作、肌肉模型與系統整合</p></div><b>↗</b></a>
-      <a class="directory-card card-ink reveal" href="{{ '/publications.html' | relative_url }}"><span>02</span><div><small>PUBLICATIONS</small><h3>論文發表</h3><p>期刊論文與研討會成果</p></div><b>↗</b></a>
-      <a class="directory-card card-acid reveal" href="{{ '/notes.html' | relative_url }}"><span>03</span><div><small>FIELD NOTES</small><h3>技術文章</h3><p>AI、資料科學與工程筆記</p></div><b>↗</b></a>
-      <a class="directory-card card-paper reveal" href="{{ '/about.html' | relative_url }}"><span>04</span><div><small>ABOUT</small><h3>關於江柏賢</h3><p>學歷、專長與實驗室之外</p></div><b>↗</b></a>
+    <div class="section-counter" aria-hidden="true">00003</div>
+    <div class="research-heading reveal">
+      <p class="mono-label">MEASURE / MODEL / PREDICT</p>
+      <h2>Research<br />Systems</h2>
     </div>
+    <div class="research-copy reveal">
+      <p>以時間序列、穿戴式感測與個人化模型，研究動作如何發生；再把研究原型一路推進到可即時回饋的系統。</p>
+      <ul>
+        <li><span>01</span> DYNAMIC ACTION RECOGNITION</li>
+        <li><span>02</span> MUSCULOSKELETAL MODELING</li>
+        <li><span>03</span> REAL-TIME SYSTEM INTEGRATION</li>
+      </ul>
+      <a class="outline-button" href="{{ '/research.html' | relative_url }}">EXPLORE RESEARCH <span>↗</span></a>
+    </div>
+  </section>
+
+  <section class="home-directory" id="explore" data-home-section="04">
+    <div class="directory-intro reveal">
+      <div class="section-counter">00004</div>
+      <p class="mono-label">INDEX / EXPLORE THE SITE</p>
+      <h2>Selected<br />Directions</h2>
+      <p>四個入口，分別整理正在進行的研究、正式發表、技術筆記與個人經歷。</p>
+    </div>
+    <nav class="directory-list" aria-label="網站主要內容">
+      <a class="directory-row reveal" href="{{ '/research.html' | relative_url }}">
+        <span>01</span><small>RESEARCH</small><strong>研究與專案</strong><b>↗</b>
+      </a>
+      <a class="directory-row reveal" href="{{ '/publications.html' | relative_url }}">
+        <span>02</span><small>PUBLICATIONS</small><strong>論文發表</strong><b>↗</b>
+      </a>
+      <a class="directory-row reveal" href="{{ '/notes.html' | relative_url }}">
+        <span>03</span><small>FIELD NOTES</small><strong>技術文章</strong><b>↗</b>
+      </a>
+      <a class="directory-row reveal" href="{{ '/about.html' | relative_url }}">
+        <span>04</span><small>ABOUT</small><strong>關於江柏賢</strong><b>↗</b>
+      </a>
+    </nav>
   </section>
 
   {% assign latest_post = site.posts | first %}
   {% if latest_post %}
-  <section class="home-feature reveal">
-    <div><p class="section-label">LATEST NOTE · {{ latest_post.date | date: '%Y.%m.%d' }}</p><h2>{{ latest_post.title }}</h2></div>
-    <a href="{{ latest_post.url | relative_url }}">閱讀文章 <span>↗</span></a>
+  <section class="home-latest" id="latest" data-home-section="05">
+    <div class="latest-meta reveal">
+      <div class="section-counter">00005</div>
+      <p class="mono-label">LATEST FIELD NOTE</p>
+      <span>{{ latest_post.date | date: '%Y.%m.%d' }}</span>
+      <span>{{ latest_post.categories | first | default: 'NOTE' | upcase }}</span>
+    </div>
+    <a class="latest-story reveal" href="{{ latest_post.url | relative_url }}">
+      <small>NEW / {{ latest_post.date | date: '%Y' }}</small>
+      <h2>{{ latest_post.title }}</h2>
+      <p>{{ latest_post.excerpt | strip_html | strip_newlines | truncate: 145 }}</p>
+      <span class="text-arrow">READ NOTE <b>↗</b></span>
+    </a>
   </section>
   {% endif %}
+
+  <section class="home-contact" id="contact" data-home-section="06">
+    <div class="contact-signal" aria-hidden="true">
+      <span>P</span><i></i><i></i><i></i><i></i><b>H</b>
+    </div>
+    <div class="contact-heading reveal">
+      <div class="section-counter">00006</div>
+      <p class="mono-label">OPEN TO RESEARCH & COLLABORATION</p>
+      <h2>Let’s make<br />ideas move.</h2>
+    </div>
+    <div class="contact-links reveal">
+      <a href="mailto:jiangph@mail.ntue.edu.tw"><small>EMAIL</small><span>jiangph@mail.ntue.edu.tw</span><b>↗</b></a>
+      <a href="https://github.com/jiangphtw" target="_blank" rel="noreferrer"><small>GITHUB</small><span>@jiangphtw</span><b>↗</b></a>
+      <a href="{{ '/about.html' | relative_url }}"><small>PROFILE</small><span>About Po-Hsien</span><b>↗</b></a>
+    </div>
+  </section>
 </main>

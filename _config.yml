@@ -20,6 +20,10 @@ plugins:
 defaults:
   - scope:
       path: ""
+    values:
+      image: /assets/og-card.png
+  - scope:
+      path: ""
       type: posts
     values:
       layout: post

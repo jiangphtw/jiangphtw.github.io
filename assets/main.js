@@ -34,6 +34,10 @@ function applyTheme(useDark) {
   document.body.classList.toggle("dark", useDark);
   metaTheme?.setAttribute("content", useDark ? "#151713" : "#f1efe8");
   themeButton?.setAttribute("aria-pressed", String(useDark));
+  themeButton?.setAttribute(
+    "aria-label",
+    useDark ? "切換淺色模式" : "切換深色模式",
+  );
 }
 
 applyTheme(storedTheme ? storedTheme === "dark" : prefersDark);
@@ -65,4 +69,35 @@ if (reducedMotion.matches || !("IntersectionObserver" in window)) {
   );
 
   revealItems.forEach((item) => observer.observe(item));
+}
+
+const homeSections = document.querySelectorAll("[data-home-section]");
+const railLinks = document.querySelectorAll(".home-rail a");
+const railNumber = document.querySelector("[data-rail-number]");
+
+function activateHomeSection(section) {
+  const sectionNumber = section?.dataset.homeSection;
+
+  if (!sectionNumber) return;
+
+  railNumber && (railNumber.textContent = `0000${sectionNumber}`);
+  railLinks.forEach((link) => {
+    const target = link.getAttribute("href")?.slice(1);
+    link.classList.toggle("is-active", target === section.id);
+  });
+}
+
+if (homeSections.length && "IntersectionObserver" in window) {
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+      if (visible[0]) activateHomeSection(visible[0].target);
+    },
+    { threshold: [0.25, 0.5, 0.75], rootMargin: "-18% 0px -42%" },
+  );
+
+  homeSections.forEach((section) => sectionObserver.observe(section));
 }
