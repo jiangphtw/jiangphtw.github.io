@@ -36,6 +36,29 @@ nav: home
     </div>
   </section>
 
+  <section class="home-courses" aria-labelledby="home-courses-title">
+    <div class="home-courses-heading reveal">
+      <div>
+        <p class="section-label">ONLINE COURSES / 02</p>
+        <h2 id="home-courses-title">線上課程</h2>
+        <p>把學習拆成可以持續前進的單元，從資料科學到投資研究，直接選一門開始。</p>
+      </div>
+      <a class="under-link" href="{{ '/courses.html' | relative_url }}">查看課程總覽 ↗</a>
+    </div>
+    <div class="home-course-links">
+      <a class="home-course-link reveal" href="{{ '/course/data-science/' | relative_url }}">
+        <span>01</span>
+        <div><small>24 WEEKS · DATA SCIENCE</small><h3>AI 資料科學家・完整學習地圖</h3></div>
+        <b>↗</b>
+      </a>
+      <a class="home-course-link reveal reveal-delay" href="{{ '/course/stock-decision/' | relative_url }}">
+        <span>02</span>
+        <div><small>9 UNITS · STOCK RESEARCH</small><h3>股海判讀學</h3></div>
+        <b>↗</b>
+      </a>
+    </div>
+  </section>
+
   {% assign latest_post = site.posts | first %}
   {% if latest_post %}
   <section class="home-feature reveal">

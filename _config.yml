@@ -29,4 +29,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - course/資料科學
+  - course/股票新聞選股
+  - .github
   - vendor
