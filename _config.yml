@@ -20,10 +20,6 @@ plugins:
 defaults:
   - scope:
       path: ""
-    values:
-      image: /assets/og-card.png
-  - scope:
-      path: ""
       type: posts
     values:
       layout: post
@@ -33,6 +29,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - dist
-  - dist-stale
+  - course/資料科學
+  - course/股票新聞選股
+  - .github
   - vendor

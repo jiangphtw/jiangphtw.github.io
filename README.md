@@ -53,9 +53,15 @@ tags: [LLM, Inference]
 - `_posts/`：文章 Markdown
 - `assets/images/`：文章圖片
 - `_config.yml`：網站與網址設定
-- `index.html`、`research.html`、`publications.html`、`notes.html`、`about.html`：主要頁面
+- `index.html`、`research.html`、`publications.html`、`courses.html`、`notes.html`、`about.html`：主要頁面
+- `course/`：兩門互動式線上課程的原始碼
 
 ## GitHub Pages
 
-推送到 `jiangphtw.github.io` repository 的預設分支後，可由 GitHub Pages 直接執行 Jekyll 建置。`.nojekyll` 已移除，請勿再加回。
+GitHub Pages 的發布來源設為 **GitHub Actions**。推送到 `main` 後，工作流程會：
+
+1. 檢查並靜態建置兩門線上課程。
+2. 建置 Jekyll 主站。
+3. 將課程加入 `/course/data-science/` 與 `/course/stock-decision/`。
+4. 發布組合後的 GitHub Pages 網站。
 

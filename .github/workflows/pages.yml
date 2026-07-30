@@ -1,0 +1,93 @@
+name: Deploy Jekyll site and courses to Pages
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: |
+            course/資料科學/package-lock.json
+            course/股票新聞選股/package-lock.json
+
+      - name: Install and test data science course
+        working-directory: course/資料科學
+        run: |
+          npm ci
+          npm run lint
+          npm test
+
+      - name: Install and test stock decision course
+        working-directory: course/股票新聞選股
+        run: |
+          npm ci
+          npm run lint
+          npm test
+
+      - name: Build Jekyll site
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Make Jekyll output writable
+        run: sudo chown -R "$(id -u):$(id -g)" "_site"
+
+      - name: Add static courses to the site
+        run: |
+          mkdir -p "_site/course/data-science" "_site/course/stock-decision"
+          cp -a "course/資料科學/out/." "_site/course/data-science/"
+          cp -a "course/股票新聞選股/out/." "_site/course/stock-decision/"
+
+      - name: Verify assembled Pages artifact
+        run: |
+          test -f "_site/courses.html"
+          test -f "_site/course/data-science/index.html"
+          test -f "_site/course/stock-decision/index.html"
+          test -d "_site/course/data-science/_next"
+          test -d "_site/course/stock-decision/_next"
+          grep -q "/course/data-science/" "_site/courses.html"
+          grep -q "/course/stock-decision/" "_site/courses.html"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./_site
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
