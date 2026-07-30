@@ -7,9 +7,15 @@
     {% seo %}
     {% feed_meta %}
     <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml" />
+    <script>
+      try {
+        if (localStorage.getItem("jp-font-size") === "large") {
+          document.documentElement.classList.add("large-type");
+        }
+      } catch (error) {}
+    </script>
     <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}" />
     <link rel="stylesheet" href="{{ '/assets/jekyll.css' | relative_url }}" />
-    <link rel="stylesheet" href="{{ '/assets/mono-template.css' | relative_url }}" />
     <script src="{{ '/assets/main.js' | relative_url }}" defer></script>
   </head>
   <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
