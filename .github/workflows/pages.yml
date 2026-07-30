@@ -31,6 +31,7 @@ jobs:
           cache-dependency-path: |
             course/資料科學/package-lock.json
             course/股票新聞選股/package-lock.json
+            course/設計思考/package-lock.json
 
       - name: Install and test data science course
         working-directory: course/資料科學
@@ -41,6 +42,13 @@ jobs:
 
       - name: Install and test stock decision course
         working-directory: course/股票新聞選股
+        run: |
+          npm ci
+          npm run lint
+          npm test
+
+      - name: Install and test design thinking course
+        working-directory: course/設計思考
         run: |
           npm ci
           npm run lint
@@ -57,19 +65,23 @@ jobs:
 
       - name: Add static courses to the site
         run: |
-          mkdir -p "_site/course/data-science" "_site/course/stock-decision"
+          mkdir -p "_site/course/data-science" "_site/course/stock-decision" "_site/course/design-thinking"
           cp -a "course/資料科學/out/." "_site/course/data-science/"
           cp -a "course/股票新聞選股/out/." "_site/course/stock-decision/"
+          cp -a "course/設計思考/out/." "_site/course/design-thinking/"
 
       - name: Verify assembled Pages artifact
         run: |
           test -f "_site/courses.html"
           test -f "_site/course/data-science/index.html"
           test -f "_site/course/stock-decision/index.html"
+          test -f "_site/course/design-thinking/index.html"
           test -d "_site/course/data-science/_next"
           test -d "_site/course/stock-decision/_next"
+          test -d "_site/course/design-thinking/_next"
           grep -q "/course/data-science/" "_site/courses.html"
           grep -q "/course/stock-decision/" "_site/courses.html"
+          grep -q "/course/design-thinking/" "_site/courses.html"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4

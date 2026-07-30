@@ -31,5 +31,6 @@ exclude:
   - README.md
   - course/資料科學
   - course/股票新聞選股
+  - course/設計思考
   - .github
   - vendor
