@@ -2,8 +2,6 @@ const header = document.querySelector("[data-header]");
 const menuButton = document.querySelector(".menu-button");
 const navigation = document.querySelector(".site-nav");
 const themeButton = document.querySelector(".theme-toggle");
-const typeButton = document.querySelector(".type-toggle");
-const typeLabel = document.querySelector("[data-type-label]");
 const metaTheme = document.querySelector('meta[name="theme-color"]');
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
@@ -48,21 +46,6 @@ themeButton?.addEventListener("click", () => {
   const useDark = !document.body.classList.contains("dark");
   applyTheme(useDark);
   localStorage.setItem("jp-theme", useDark ? "dark" : "light");
-});
-
-function applyTypeSize(useLarge) {
-  document.documentElement.classList.toggle("large-type", useLarge);
-  typeButton?.setAttribute("aria-pressed", String(useLarge));
-  typeButton?.setAttribute("aria-label", useLarge ? "切換為一般字級" : "開啟大字模式");
-  if (typeLabel) typeLabel.textContent = useLarge ? "一般" : "大字";
-}
-
-applyTypeSize(document.documentElement.classList.contains("large-type"));
-
-typeButton?.addEventListener("click", () => {
-  const useLarge = !document.documentElement.classList.contains("large-type");
-  applyTypeSize(useLarge);
-  localStorage.setItem("jp-font-size", useLarge ? "large" : "normal");
 });
 
 document.querySelectorAll("[data-year]").forEach((node) => {
