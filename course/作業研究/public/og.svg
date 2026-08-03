@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1733" height="909" viewBox="0 0 1733 909" role="img" aria-labelledby="title desc">
+  <title id="title">作業研究線上課程</title>
+  <desc id="desc">從限制條件、模型與演算法走向可解釋決策的學習地圖</desc>
+  <rect width="1733" height="909" fill="#f4f0e7"/>
+  <path d="M0 0h1733v92H0z" fill="#172026"/>
+  <text x="96" y="60" fill="#fffdf7" font-size="28" font-family="Arial, sans-serif" font-weight="700" letter-spacing="7">OPERATIONS RESEARCH / OR I</text>
+  <g stroke="#0e5971" stroke-width="3" fill="none" opacity=".25">
+    <path d="M1000 170h580M1000 270h580M1000 370h580M1000 470h580M1000 570h580M1000 670h580"/>
+    <path d="M1050 130v640M1170 130v640M1290 130v640M1410 130v640M1530 130v640"/>
+  </g>
+  <g fill="#fffdf7" stroke="#172026" stroke-width="4">
+    <circle cx="1070" cy="585" r="24"/><circle cx="1205" cy="445" r="24"/><circle cx="1350" cy="520" r="24"/><circle cx="1515" cy="285" r="24"/>
+  </g>
+  <g fill="none" stroke="#e05a33" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1070 585L1205 445l145 75 165-235"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-weight="800">
+    <text x="100" y="260" fill="#0e5971" font-size="32" letter-spacing="5">MODEL · SOLVE · INTERPRET · DECIDE</text>
+    <text x="96" y="430" fill="#172026" font-size="116" letter-spacing="-4">作業研究</text>
+    <text x="102" y="540" fill="#e05a33" font-size="62">把限制條件變成更好的決策</text>
+    <text x="104" y="660" fill="#5f6c70" font-size="30">15 週 · 15 單元 · 30 支雙語影音 · 完整最佳化專題</text>
+  </g>
+  <rect x="100" y="739" width="570" height="74" fill="#0e5971"/>
+  <text x="132" y="788" fill="#fffdf7" font-size="27" font-family="Arial, sans-serif" font-weight="700">參考 NYCU OCW 王晉元老師課程主軸</text>
+</svg>
