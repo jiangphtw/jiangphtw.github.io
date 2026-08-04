@@ -9,6 +9,9 @@ on:
 permissions:
   contents: read
 
+env:
+  NPM_VERSION: "10.9.4"
+
 concurrency:
   group: pages-${{ github.ref }}
   cancel-in-progress: true
@@ -28,63 +31,35 @@ jobs:
         with:
           node-version: "22"
           cache: npm
-          cache-dependency-path: |
-            course/資料科學/package-lock.json
-            course/股票新聞選股/package-lock.json
-            course/設計思考/package-lock.json
-            course/作業研究/package-lock.json
-            course/ai-product-engineering/package-lock.json
-            course/notebooklm-academic/package-lock.json
-            course/oral-history-ai/package-lock.json
+          cache-dependency-path: "course/*/package-lock.json"
 
-      - name: Install and test data science course
-        working-directory: course/資料科學
-        run: |
-          npm ci
-          npm run lint
-          npm test
+      - name: Pin npm version
+        run: npm install --global "npm@$NPM_VERSION"
 
-      - name: Install and test stock decision course
-        working-directory: course/股票新聞選股
+      - name: Install and test all Node courses
+        shell: bash
         run: |
-          npm ci
-          npm run lint
-          npm test
+          set -euo pipefail
 
-      - name: Install and test design thinking course
-        working-directory: course/設計思考
-        run: |
-          npm ci
-          npm run lint
-          npm test
+          while IFS= read -r -d '' package_json; do
+            course_dir="$(dirname "$package_json")"
+            echo "::group::${course_dir}"
 
-      - name: Install and test operations research course
-        working-directory: course/作業研究
-        run: |
-          npm ci
-          npm run lint
-          npm test
+            npm --prefix "$course_dir" install \
+              --package-lock-only \
+              --ignore-scripts \
+              --no-audit \
+              --no-fund
 
-      - name: Install and test AI product engineering course
-        working-directory: course/ai-product-engineering
-        run: |
-          npm ci
-          npm run lint
-          npm test
+            if [[ -n "$(git status --porcelain -- "$course_dir/package-lock.json")" ]]; then
+              echo "::warning file=$course_dir/package-lock.json::Lockfile was normalized with npm $NPM_VERSION; regenerate it locally with npx npm@$NPM_VERSION install --package-lock-only."
+            fi
 
-      - name: Install and test Gemini Notebook academic course
-        working-directory: course/notebooklm-academic
-        run: |
-          npm ci
-          npm run lint
-          npm test
-
-      - name: Install and test oral history course
-        working-directory: course/oral-history-ai
-        run: |
-          npm ci
-          npm run lint
-          npm test
+            npm --prefix "$course_dir" ci --no-audit --no-fund
+            npm --prefix "$course_dir" run lint --if-present
+            npm --prefix "$course_dir" test --if-present
+            echo "::endgroup::"
+          done < <(find course -mindepth 2 -maxdepth 2 -type f -name package.json -print0 | sort -z)
 
       - name: Build Jekyll site
         uses: actions/jekyll-build-pages@v1

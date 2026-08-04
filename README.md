@@ -54,14 +54,27 @@ tags: [LLM, Inference]
 - `assets/images/`：文章圖片
 - `_config.yml`：網站與網址設定
 - `index.html`、`research.html`、`publications.html`、`courses.html`、`notes.html`、`about.html`：主要頁面
-- `course/`：兩門互動式線上課程的原始碼
+- `course/`：互動式線上課程的原始碼
+
+## 新增 Node.js 課程
+
+將新課程放在 `course/<課程目錄>/`，並使用專案指定的 npm 版本產生 lockfile：
+
+```bash
+cd course/<課程目錄>
+npx npm@10.9.4 install
+```
+
+請一併提交 `package.json` 與 `package-lock.json`。GitHub Actions 會自動尋找所有 `course/*/package.json`，先以 npm 10.9.4 校正 lockfile，再執行 `npm ci`；若課程定義了 `lint` 或 `test` script，也會自動執行。因此新增 Node.js 課程時，不需要再複製安裝與測試步驟，也不會因本機與 CI 的 npm 版本不同而出現 lockfile 不同步錯誤。
+
+課程的公開網址與 `out/` 複製位置仍須加入 `.github/workflows/pages.yml` 的組裝及驗證步驟。
 
 ## GitHub Pages
 
 GitHub Pages 的發布來源設為 **GitHub Actions**。推送到 `main` 後，工作流程會：
 
-1. 檢查並靜態建置兩門線上課程。
+1. 自動尋找、檢查並靜態建置所有 Node.js 線上課程。
 2. 建置 Jekyll 主站。
-3. 將課程加入 `/course/data-science/` 與 `/course/stock-decision/`。
+3. 將課程的靜態輸出加入對應的 `/course/<公開路徑>/`。
 4. 發布組合後的 GitHub Pages 網站。
 
