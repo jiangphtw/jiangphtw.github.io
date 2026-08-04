@@ -1,4 +1,4 @@
-window.SUSTAINABILITY_COURSE = {
+export const course = {
   checkedAt: "2026-08-04",
   phases: [
     {
@@ -468,4 +468,4 @@ window.SUSTAINABILITY_COURSE = {
     { label: "GRI Standards", url: "https://www.globalreporting.org/standards/", note: "組織影響與重大議題揭露" },
     { label: "GHG Protocol", url: "https://ghgprotocol.org/corporate-standard", note: "企業溫室氣體盤查框架" }
   ]
-};
+} as const;

@@ -134,9 +134,12 @@ export default function CourseApp() {
           <a href="#capstone">結業作品</a>
           <a href="#method">課程方法</a>
         </nav>
-        <div className="font-control" aria-label="字級選擇">
-          <button type="button" className={fontMode === "standard" ? "active" : ""} aria-pressed={fontMode === "standard"} onClick={() => setFontMode("standard")}>標準</button>
-          <button type="button" className={fontMode === "large" ? "active" : ""} aria-pressed={fontMode === "large"} onClick={() => setFontMode("large")}>大字</button>
+        <div className="topbar-tools">
+          <div className="font-control" aria-label="字級選擇">
+            <button type="button" className={fontMode === "standard" ? "active" : ""} aria-pressed={fontMode === "standard"} onClick={() => setFontMode("standard")}>標準</button>
+            <button type="button" className={fontMode === "large" ? "active" : ""} aria-pressed={fontMode === "large"} onClick={() => setFontMode("large")}>大字</button>
+          </div>
+          <a className="course-overview-link" href="/courses.html" aria-label="回到課程總覽頁面">← 課程總覽</a>
         </div>
       </header>
 

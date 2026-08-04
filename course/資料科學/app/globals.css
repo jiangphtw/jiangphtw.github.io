@@ -130,6 +130,25 @@ a {
   gap: 22px;
 }
 
+.course-overview-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--text);
+  font-size: 10px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.course-overview-link:hover {
+  border-color: var(--purple);
+  color: var(--purple);
+}
+
 .font-size-control {
   display: flex;
   align-items: center;
@@ -1595,6 +1614,10 @@ footer > div:last-child a {
     gap: 0;
   }
 
+  .course-overview-link {
+    margin-left: 8px;
+  }
+
   .hero {
     min-height: auto;
     padding-top: 60px;
@@ -1691,6 +1714,11 @@ footer > div:last-child a {
 
   .font-size-control button {
     padding: 6px;
+  }
+
+  .course-overview-link {
+    padding-inline: 7px;
+    font-size: 9px;
   }
 
   .hero {

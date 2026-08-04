@@ -72,7 +72,7 @@ jobs:
 
       - name: Add static courses to the site
         run: |
-          mkdir -p "_site/course/data-science" "_site/course/stock-decision" "_site/course/design-thinking" "_site/course/operations-research" "_site/course/ai-product-engineering" "_site/course/notebooklm-academic" "_site/course/oral-history-ai"
+          mkdir -p "_site/course/data-science" "_site/course/stock-decision" "_site/course/design-thinking" "_site/course/operations-research" "_site/course/ai-product-engineering" "_site/course/notebooklm-academic" "_site/course/oral-history-ai" "_site/course/sustainability"
           cp -a "course/資料科學/out/." "_site/course/data-science/"
           cp -a "course/股票新聞選股/out/." "_site/course/stock-decision/"
           cp -a "course/設計思考/out/." "_site/course/design-thinking/"
@@ -80,6 +80,7 @@ jobs:
           cp -a "course/ai-product-engineering/out/." "_site/course/ai-product-engineering/"
           cp -a "course/notebooklm-academic/out/." "_site/course/notebooklm-academic/"
           cp -a "course/oral-history-ai/out/." "_site/course/oral-history-ai/"
+          cp -a "course/sustainability/out/." "_site/course/sustainability/"
 
       - name: Verify assembled Pages artifact
         run: |
@@ -92,9 +93,6 @@ jobs:
           test -f "_site/course/notebooklm-academic/index.html"
           test -f "_site/course/oral-history-ai/index.html"
           test -f "_site/course/sustainability/index.html"
-          test -f "_site/course/sustainability/course-data.js"
-          test -f "_site/course/sustainability/app.js"
-          test -f "_site/course/sustainability/styles.css"
           test -d "_site/course/data-science/_next"
           test -d "_site/course/stock-decision/_next"
           test -d "_site/course/design-thinking/_next"
@@ -102,6 +100,7 @@ jobs:
           test -d "_site/course/ai-product-engineering/_next"
           test -d "_site/course/notebooklm-academic/_next"
           test -d "_site/course/oral-history-ai/_next"
+          test -d "_site/course/sustainability/_next"
           grep -q "/course/data-science/" "_site/courses.html"
           grep -q "/course/stock-decision/" "_site/courses.html"
           grep -q "/course/design-thinking/" "_site/courses.html"

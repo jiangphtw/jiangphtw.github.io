@@ -155,6 +155,13 @@ a {
   transform-origin: left;
 }
 
+.topbar-tools {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 12px;
+}
+
 .font-control {
   display: flex;
   justify-self: end;
@@ -176,6 +183,23 @@ a {
 .font-control button.active {
   background: var(--ink);
   color: var(--paper);
+}
+
+.course-overview-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 850;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.course-overview-link:hover {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .hero {
@@ -1719,6 +1743,10 @@ a {
     padding-inline: 16px;
   }
 
+  .topbar-tools {
+    gap: 8px;
+  }
+
   .brand small {
     display: none;
   }
@@ -1907,6 +1935,10 @@ a {
 
   .font-control button {
     padding: 6px 8px;
+    font-size: 9px;
+  }
+
+  .course-overview-link {
     font-size: 9px;
   }
 

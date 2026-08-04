@@ -1105,6 +1105,7 @@ export default function CourseApp() {
               <i style={{ width: `${progress}%` }} />
             </div>
           </div>
+          <a className="course-overview-link" href="/courses.html" aria-label="回到課程總覽頁面">← 課程總覽</a>
         </div>
         <button
           className="mobile-menu"

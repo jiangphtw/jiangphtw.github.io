@@ -153,6 +153,14 @@ input:focus-visible {
   border-color: var(--ink);
 }
 
+.top-actions .course-overview-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding-inline: 2px;
+  white-space: nowrap;
+}
+
 .type-toggle {
   display: inline-flex;
   align-items: center;
@@ -1721,6 +1729,11 @@ footer p {
 
   .top-actions > a {
     display: none;
+  }
+
+  .top-actions > .course-overview-link {
+    display: inline-flex;
+    font-size: 11px;
   }
 
   .type-toggle {

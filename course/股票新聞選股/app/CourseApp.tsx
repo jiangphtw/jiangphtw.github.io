@@ -197,6 +197,7 @@ export default function CourseApp() {
             <span aria-hidden="true">Aa</span>
             {largeType ? "一般字級" : "大字模式"}
           </button>
+          <a className="course-overview-link" href="/courses.html" aria-label="回到課程總覽頁面">← 課程總覽</a>
         </nav>
       </header>
 
