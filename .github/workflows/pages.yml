@@ -33,6 +33,9 @@ jobs:
             course/股票新聞選股/package-lock.json
             course/設計思考/package-lock.json
             course/作業研究/package-lock.json
+            course/ai-product-engineering/package-lock.json
+            course/notebooklm-academic/package-lock.json
+            course/oral-history-ai/package-lock.json
 
       - name: Install and test data science course
         working-directory: course/資料科學
@@ -62,6 +65,27 @@ jobs:
           npm run lint
           npm test
 
+      - name: Install and test AI product engineering course
+        working-directory: course/ai-product-engineering
+        run: |
+          npm ci
+          npm run lint
+          npm test
+
+      - name: Install and test Gemini Notebook academic course
+        working-directory: course/notebooklm-academic
+        run: |
+          npm ci
+          npm run lint
+          npm test
+
+      - name: Install and test oral history course
+        working-directory: course/oral-history-ai
+        run: |
+          npm ci
+          npm run lint
+          npm test
+
       - name: Build Jekyll site
         uses: actions/jekyll-build-pages@v1
         with:
@@ -73,11 +97,14 @@ jobs:
 
       - name: Add static courses to the site
         run: |
-          mkdir -p "_site/course/data-science" "_site/course/stock-decision" "_site/course/design-thinking" "_site/course/operations-research"
+          mkdir -p "_site/course/data-science" "_site/course/stock-decision" "_site/course/design-thinking" "_site/course/operations-research" "_site/course/ai-product-engineering" "_site/course/notebooklm-academic" "_site/course/oral-history-ai"
           cp -a "course/資料科學/out/." "_site/course/data-science/"
           cp -a "course/股票新聞選股/out/." "_site/course/stock-decision/"
           cp -a "course/設計思考/out/." "_site/course/design-thinking/"
           cp -a "course/作業研究/out/." "_site/course/operations-research/"
+          cp -a "course/ai-product-engineering/out/." "_site/course/ai-product-engineering/"
+          cp -a "course/notebooklm-academic/out/." "_site/course/notebooklm-academic/"
+          cp -a "course/oral-history-ai/out/." "_site/course/oral-history-ai/"
 
       - name: Verify assembled Pages artifact
         run: |
@@ -86,14 +113,28 @@ jobs:
           test -f "_site/course/stock-decision/index.html"
           test -f "_site/course/design-thinking/index.html"
           test -f "_site/course/operations-research/index.html"
+          test -f "_site/course/ai-product-engineering/index.html"
+          test -f "_site/course/notebooklm-academic/index.html"
+          test -f "_site/course/oral-history-ai/index.html"
+          test -f "_site/course/sustainability/index.html"
+          test -f "_site/course/sustainability/course-data.js"
+          test -f "_site/course/sustainability/app.js"
+          test -f "_site/course/sustainability/styles.css"
           test -d "_site/course/data-science/_next"
           test -d "_site/course/stock-decision/_next"
           test -d "_site/course/design-thinking/_next"
           test -d "_site/course/operations-research/_next"
+          test -d "_site/course/ai-product-engineering/_next"
+          test -d "_site/course/notebooklm-academic/_next"
+          test -d "_site/course/oral-history-ai/_next"
           grep -q "/course/data-science/" "_site/courses.html"
           grep -q "/course/stock-decision/" "_site/courses.html"
           grep -q "/course/design-thinking/" "_site/courses.html"
           grep -q "/course/operations-research/" "_site/courses.html"
+          grep -q "/course/ai-product-engineering/" "_site/courses.html"
+          grep -q "/course/notebooklm-academic/" "_site/courses.html"
+          grep -q "/course/oral-history-ai/" "_site/courses.html"
+          grep -q "/course/sustainability/" "_site/courses.html"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4

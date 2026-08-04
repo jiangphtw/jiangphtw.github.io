@@ -35,3 +35,6 @@ exclude:
   - course/作業研究
   - .github
   - vendor
+  - course/ai-product-engineering
+  - course/notebooklm-academic
+  - course/oral-history-ai

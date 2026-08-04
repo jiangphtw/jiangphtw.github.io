@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b4938" />
+    <meta name="description" content="給大學生的 8 週永續發展與 SDGs 線上課程：讀懂全球目標、國家政策、企業案例，完成可放入履歷與作品集的永續提案。" />
+    <meta property="og:title" content="永續力｜從 SDGs 到求職作品" />
+    <meta property="og:description" content="12 單元、24 支雙語影音、國家與企業案例，以及一份能被驗證的永續求職證據包。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://jiangphtw.github.io/course/sustainability/og.svg" />
+    <link rel="canonical" href="https://jiangphtw.github.io/course/sustainability/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>永續力｜從 SDGs 到求職作品</title>
+    <script src="./course-data.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#lesson">跳到目前課程</a>
+    <div class="page-shell" id="top">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="永續力課程首頁">
+          <span class="brand-orbit" aria-hidden="true"><i></i></span>
+          <span><strong>永續力</strong><small>SDGs → CAREER</small></span>
+        </a>
+        <nav aria-label="主要導覽">
+          <a href="#learn">開始學習</a>
+          <a href="#cases">案例雷達</a>
+          <a href="#career">求職成果</a>
+        </nav>
+        <div class="top-actions">
+          <button class="font-button" type="button" data-font="general" aria-pressed="true">一般</button>
+          <button class="font-button" type="button" data-font="large" aria-pressed="false">大字</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span>8 WEEKS</span> 大學生永續職涯實作課</p>
+            <h1 id="hero-title">不只關心世界，<br /><em>還能提出證據。</em></h1>
+            <p class="hero-lede">從 SDGs、各國政策與企業策略開始，學會讀報告、拆指標、查核承諾；最後把一個校園行動，變成履歷上說得清楚的能力。</p>
+            <div class="hero-actions">
+              <button type="button" data-start>開始第一課 <span aria-hidden="true">↘</span></button>
+              <a href="#roadmap">先看 8 週路線</a>
+            </div>
+            <dl class="hero-stats">
+              <div><dt>12</dt><dd>實作單元</dd></div>
+              <div><dt>24</dt><dd>雙語影音</dd></div>
+              <div><dt>08</dt><dd>國家／企業案例</dd></div>
+              <div><dt>01</dt><dd>求職證據包</dd></div>
+            </dl>
+          </div>
+          <div class="hero-visual" aria-label="從全球目標到個人職涯的學習路徑">
+            <div class="goal-disc">
+              <span class="disc-core">17<small>GLOBAL<br />GOALS</small></span>
+              <i class="ring ring-one"></i><i class="ring ring-two"></i><i class="ring ring-three"></i>
+              <b class="node node-a">國家<small>POLICY</small></b>
+              <b class="node node-b">企業<small>BUSINESS</small></b>
+              <b class="node node-c">你<small>CAREER</small></b>
+            </div>
+            <div class="signal-card signal-a"><span>35%</span><p>2025 年有趨勢資料的 SDG targets 達到或呈中度進展</p><small>UN SDG REPORT 2025</small></div>
+            <div class="signal-card signal-b"><span>18%</span><p>相較 2015 基準倒退：所以要學會讀證據，而非只看承諾</p><small>GLOBAL PROGRESS</small></div>
+          </div>
+        </section>
+
+        <section class="promise" aria-label="課程轉換">
+          <p><span>不是</span> 背完 17 個彩色圖示</p><i aria-hidden="true">→</i>
+          <p><span>而是</span> 看懂問題、比較做法、做出證據</p>
+          <small>零基礎可學・適合所有科系・每週約 2 小時</small>
+        </section>
+
+        <section class="learn" id="learn">
+          <button class="mobile-outline" type="button" aria-expanded="false" aria-controls="outline">開啟課程目錄</button>
+          <aside class="outline" id="outline">
+            <div class="progress-panel">
+              <span>YOUR PROGRESS</span><strong id="progress-number">0%</strong>
+              <div class="progress-track" role="progressbar" aria-label="課程完成度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="progress-bar"></i></div>
+              <p id="progress-copy">已完成 0 / 12 單元</p>
+            </div>
+            <label class="search-box">
+              <span aria-hidden="true">⌕</span><span class="sr-only">搜尋單元、技能或頻道</span>
+              <input id="search" type="search" placeholder="搜尋單元、技能或頻道" autocomplete="off" />
+            </label>
+            <div class="phase-filters" id="phase-filters" aria-label="依階段篩選"></div>
+            <div class="unit-list" id="unit-list"></div>
+            <button class="reset-button" id="reset-progress" type="button">重設本機學習進度</button>
+          </aside>
+
+          <section class="lesson" id="lesson" tabindex="-1" aria-live="polite">
+            <div class="lesson-crumb" id="lesson-crumb"></div>
+            <div class="lesson-toolbar">
+              <p><i aria-hidden="true"></i><span id="media-duration">精選影音</span></p>
+              <div class="language-tabs" role="tablist" aria-label="影音語言">
+                <button type="button" role="tab" data-language="zh" aria-selected="true">中文</button>
+                <button type="button" role="tab" data-language="en" aria-selected="false">English</button>
+              </div>
+            </div>
+            <div class="video-frame"><iframe id="lesson-video" title="課程影音" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="video-meta">
+              <div><span id="media-language">中文精選</span><strong id="media-title"></strong><small id="media-info"></small></div>
+              <a id="media-link" href="#" target="_blank" rel="noreferrer">在 YouTube 開啟 ↗</a>
+            </div>
+            <div class="lesson-heading">
+              <div><p id="lesson-topic"></p><h2 id="lesson-title"></h2></div>
+              <button id="complete-unit" type="button" aria-pressed="false">標記本課完成</button>
+            </div>
+            <div class="lesson-layout">
+              <div class="lesson-main">
+                <article class="content-card goals-card"><span class="card-number">01</span><div><p class="card-label">LEARNING OBJECTIVES</p><h3>完成後，你能做到</h3><ol id="objectives"></ol></div></article>
+                <article class="content-card theory-card"><span class="card-number">02</span><div><p class="card-label">THINK BEFORE YOU WATCH</p><h3>先帶走三個核心觀念</h3><div class="theory-list" id="theory"></div></div></article>
+                <article class="content-card evidence-card"><span class="card-number">03</span><div><p class="card-label">WHY THESE RESOURCES</p><h3>媒體選擇與查核入口</h3><div class="reasons" id="reasons"></div><a class="source-link" id="source-link" href="#" target="_blank" rel="noreferrer"></a><small class="checked-note">影音觀看數為 2026-08-04 查詢時約數，會隨時間變動；著作權歸原作者。</small></div></article>
+                <article class="content-card practice-card"><span class="card-number">04</span><div><p class="card-label">MAKE IT REAL</p><h3>課後實作</h3><div class="exercise-list" id="exercises"></div><div class="deliverable"><span>本課交付</span><strong id="project"></strong></div></div></article>
+              </div>
+              <aside class="lesson-rail">
+                <article class="facts-card"><p class="card-label">LESSON NOTES</p><dl id="facts"></dl><div class="skill-tags" id="skills"></div></article>
+                <article class="outcome-card"><span>VISIBLE OUTCOME</span><p id="outcome"></p></article>
+                <article class="next-card" id="next-card"><small>NEXT LESSON</small><strong id="next-title"></strong><button type="button" id="next-unit">前往下一單元 →</button></article>
+              </aside>
+            </div>
+          </section>
+        </section>
+
+        <section class="roadmap-section" id="roadmap">
+          <header class="section-heading"><div><span>COURSE ROADMAP</span><h2>八週，把抽象名詞變成行動。</h2></div><p>四個階段都留下可見交付；最後不用說「我對永續很有興趣」，而是直接展示你怎麼研究、判斷與執行。</p></header>
+          <div class="roadmap-grid" id="roadmap-grid"></div>
+        </section>
+
+        <section class="cases-section" id="cases">
+          <header class="section-heading inverse"><div><span>CASE RADAR</span><h2>同一個目標，八種做法。</h2></div><p>案例不是成功故事收藏。每張卡同時列出行動與需要追問的地方，練習從承諾一路查到治理與結果。</p></header>
+          <div class="case-controls" role="group" aria-label="案例類型">
+            <button type="button" data-case-filter="全部" aria-pressed="true">全部</button>
+            <button type="button" data-case-filter="國家" aria-pressed="false">國家</button>
+            <button type="button" data-case-filter="企業" aria-pressed="false">企業</button>
+          </div>
+          <div class="case-grid" id="case-grid"></div>
+        </section>
+
+        <section class="career-section" id="career">
+          <div class="career-copy">
+            <span>CAPSTONE / CAREER EVIDENCE</span>
+            <h2>把「我很關心」，<br />改寫成<span>「這是我做到的」。</span></h2>
+            <p>結業時，你會有一份可公開的校園永續提案，以及能直接放進履歷、作品集與面試的證據。成果不要求完美，要求可追溯、可查核、說得清楚。</p>
+            <button type="button" data-unit="12">查看最後一課 ↗</button>
+          </div>
+          <div class="career-board"><p>FINAL CHECK / 08 ITEMS</p><ol id="capstone-list"></ol><small>完成定義：每一項都能連回一筆觀察、資料、決策或真實回饋。</small></div>
+        </section>
+
+        <section class="skills-section" aria-labelledby="skills-title">
+          <header class="section-heading compact"><div><span>SKILL TRANSLATION</span><h2 id="skills-title">不論科系，都有切入點。</h2></div></header>
+          <div class="major-grid">
+            <article><span>DATA</span><h3>理工／資訊</h3><p>能源資料、碳盤查、生命週期、系統效率、永續產品與數位工具。</p></article>
+            <article><span>BUSINESS</span><h3>商管／財金</h3><p>重大性、供應鏈、永續金融、風險、揭露、商業模式與轉型策略。</p></article>
+            <article><span>PEOPLE</span><h3>人文／教育</h3><p>政策、溝通、行為改變、公正轉型、人權、參與設計與影響評估。</p></article>
+            <article><span>PLACE</span><h3>設計／社會實踐</h3><p>循環設計、服務系統、場域研究、社區協作與可近性。</p></article>
+          </div>
+        </section>
+
+        <section class="sources-section" aria-labelledby="sources-title">
+          <header><span>SOURCE DESK</span><h2 id="sources-title">從官方資料開始，不從二手口號結束。</h2><p>課程文字為原創教學內容；影音僅策展與隱私強化嵌入，權利歸原作者。企業案例為學習查核入口，不代表背書或合作。</p></header>
+          <div class="source-grid" id="official-sources"></div>
+        </section>
+
+        <section class="discussion-section" aria-label="課程討論">
+          <div><span>STUDIO DISCUSSION</span><h2>帶著證據來，也帶著問題離開。</h2><p>本靜態版本尚未連接討論服務。課程與本機進度可完整使用；網站擁有者可依既有課程設定加入 giscus。</p></div>
+          <a href="https://giscus.app/zh-TW" target="_blank" rel="noreferrer">查看 giscus 設定方式 ↗</a>
+        </section>
+      </main>
+
+      <footer class="site-footer"><div><strong>永續力</strong><span>一門把全球目標翻譯成個人行動的課。</span></div><p>策展查詢日：2026-08-04。觀看數為約數，不代表排名；遇到失效影音，請以同主題官方或教學等值資源替換。</p><a href="https://jiangphtw.github.io/courses.html">回到所有課程 ↗</a></footer>
+    </div>
+  </body>
+</html>

@@ -1,18 +1,18 @@
 ---
 layout: default
 title: 線上課程
-description: 江柏賢策劃的資料科學、投資研究、設計思考與作業研究線上課程，包含雙語教材、完整文字教學、練習與學習進度。
+description: 江柏賢策劃的資料科學、投資研究、設計思考、作業研究、AI 產品工程、永續發展、AI 學術研究與口述歷史線上課程，包含雙語教材、完整文字教學、練習與學習進度。
 nav: courses
 body_class: courses-page-view
 ---
 <main id="content" class="courses-main">
   <section class="courses-hero">
     <div class="courses-hero-copy reveal">
-      <p class="page-index">COURSES / 04</p>
+      <p class="page-index">COURSES / 08</p>
       <h1>把複雜知識，<em>整理成路徑。</em></h1>
     </div>
     <p class="courses-hero-intro reveal reveal-delay">
-      從資料科學的完整能力地圖、台股研究的可複核決策框架、設計思考實作，到把限制條件轉成更好決策的作業研究。每門課都能直接開始，並在目前的瀏覽器保存學習進度。
+      從資料科學、台股研究、設計思考與作業研究，到 AI 產品工程、永續發展、可複核的 AI 學術研究與口述歷史實作。每門課都能直接開始，並在目前的瀏覽器保存學習進度。
     </p>
     <div class="courses-hero-mark" aria-hidden="true">LEARN<br />BUILD<br />REVIEW</div>
   </section>
@@ -21,7 +21,7 @@ body_class: courses-page-view
     <div class="course-catalog-heading reveal">
       <p class="section-label">ONLINE LEARNING</p>
       <h2 id="course-catalog-title">選一條路，開始累積。</h2>
-      <p>四門課程皆為免費公開教材，包含中英文影片、完整文字導讀與可操作的課後練習。</p>
+      <p>八門課程皆為免費公開教材，包含中英文影片、完整文字導讀與可操作的課後練習。</p>
     </div>
 
     <article class="course-entry course-entry-data reveal">
@@ -89,6 +89,74 @@ body_class: courses-page-view
           <li>最佳化結業專題</li>
         </ul>
         <a class="button dark-button course-start" href="{{ '/course/operations-research/' | relative_url }}">開始學習 <span>↗</span></a>
+      </div>
+    </article>
+
+    <article class="course-entry course-entry-ai reveal">
+      <a class="course-cover" href="{{ '/course/ai-product-engineering/' | relative_url }}" aria-label="開始 AI 產品工程課程">
+        <img src="{{ '/course/ai-product-engineering/og.svg' | relative_url }}" alt="AI 產品工程課程封面" width="1600" height="900" loading="lazy" />
+      </a>
+      <div class="course-entry-copy">
+        <div class="course-entry-meta"><span>05</span><small>AI PRODUCT ENGINEERING · 12 UNITS</small></div>
+        <h2>AI 產品工程<br />從想法、程式到可靠上線</h2>
+        <p>不只叫 AI 寫出 Demo。從產品規格、全端架構、LLM 評測與安全，到測試、可觀測性、成本與回滾，完成一個有真實使用證據的 AI 產品。</p>
+        <ul aria-label="課程特色">
+          <li>12 個完整實作單元</li>
+          <li>24 支中英雙語影音</li>
+          <li>1 個可公開驗收產品</li>
+        </ul>
+        <a class="button dark-button course-start" href="{{ '/course/ai-product-engineering/' | relative_url }}">開始學習 <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="course-entry course-entry-design reveal">
+      <a class="course-cover" href="{{ '/course/sustainability/' | relative_url }}" aria-label="開始永續力：從 SDGs 到求職作品">
+        <img src="{{ '/course/sustainability/og.svg' | relative_url }}" alt="永續力：從 SDGs 到求職作品課程封面" width="1600" height="900" loading="lazy" />
+      </a>
+      <div class="course-entry-copy">
+        <div class="course-entry-meta"><span>06</span><small>SUSTAINABILITY · 8 WEEKS</small></div>
+        <h2>永續力・<br />從 SDGs 到求職作品</h2>
+        <p>讀懂 17 項全球目標、各國政策與企業策略，練習指標、查核、循環、淨零與公正轉型，最後完成可放入履歷的校園永續提案。</p>
+        <ul aria-label="課程特色">
+          <li>12 個完整實作單元</li>
+          <li>24 支中英雙語影音</li>
+          <li>8 個國家與企業案例</li>
+        </ul>
+        <a class="button dark-button course-start" href="{{ '/course/sustainability/' | relative_url }}">開始學習 <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="course-entry course-entry-data reveal">
+      <a class="course-cover" href="{{ '/course/notebooklm-academic/' | relative_url }}" aria-label="開始 Gemini Notebook 學術研究實戰">
+        <img src="{{ '/course/notebooklm-academic/og.svg' | relative_url }}" alt="Gemini Notebook 學術研究實戰課程封面" width="1600" height="900" loading="lazy" />
+      </a>
+      <div class="course-entry-copy">
+        <div class="course-entry-meta"><span>07</span><small>ACADEMIC RESEARCH · 7 WEEKS</small></div>
+        <h2>Gemini Notebook・<br />從文獻到可複核的研究</h2>
+        <p>從研究問題、來源策略與證據矩陣，走到批判綜整、引用查證、Zotero 知識庫與一份能被同儕重現的研究證據卷宗。</p>
+        <ul aria-label="課程特色">
+          <li>14 個完整實作單元</li>
+          <li>28 支中英雙語影音</li>
+          <li>1 份可複核研究卷宗</li>
+        </ul>
+        <a class="button dark-button course-start" href="{{ '/course/notebooklm-academic/' | relative_url }}">開始學習 <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="course-entry course-entry-stock reveal">
+      <a class="course-cover" href="{{ '/course/oral-history-ai/' | relative_url }}" aria-label="開始 AI 時代口述歷史方法與實作">
+        <img src="{{ '/course/oral-history-ai/og.svg' | relative_url }}" alt="留下人的聲音：AI 時代口述歷史方法與實作課程封面" width="1600" height="900" loading="lazy" />
+      </a>
+      <div class="course-entry-copy">
+        <div class="course-entry-meta"><span>08</span><small>ORAL HISTORY × AI · 8 UNITS</small></div>
+        <h2>留下人的聲音・<br />AI 時代口述歷史實作</h2>
+        <p>從方法、知情同意、訪綱與錄音，走到逐字稿、AI 轉錄稽核、保存與公共敘事，完成一份可回到原音、能負責任交還的口述史專案包。</p>
+        <ul aria-label="課程特色">
+          <li>8 個方法與實作單元</li>
+          <li>16 支中英雙語影音</li>
+          <li>1 份可保存口述史專案</li>
+        </ul>
+        <a class="button dark-button course-start" href="{{ '/course/oral-history-ai/' | relative_url }}">開始學習 <span>→</span></a>
       </div>
     </article>
   </section>

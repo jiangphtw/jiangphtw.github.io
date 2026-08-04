@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">留下人的聲音</title>
+  <desc id="desc">AI 時代口述歷史方法與實作課程封面</desc>
+  <rect width="1600" height="900" fill="#f4efe5"/>
+  <circle cx="1355" cy="155" r="145" fill="#e6b84c" opacity=".42"/>
+  <rect x="875" y="125" width="570" height="650" fill="#19231f" transform="rotate(1 1160 450)"/>
+  <rect x="897" y="147" width="526" height="606" fill="none" stroke="#56615b"/>
+  <g fill="#e6b84c">
+    <rect x="935" y="388" width="12" height="90"/><rect x="958" y="350" width="12" height="166"/><rect x="981" y="406" width="12" height="54"/><rect x="1004" y="306" width="12" height="254"/><rect x="1027" y="365" width="12" height="136"/><rect x="1050" y="278" width="12" height="310"/><rect x="1073" y="414" width="12" height="40"/><rect x="1096" y="333" width="12" height="202"/><rect x="1119" y="376" width="12" height="116"/><rect x="1142" y="292" width="12" height="284"/><rect x="1165" y="408" width="12" height="52"/><rect x="1188" y="322" width="12" height="224"/><rect x="1211" y="361" width="12" height="146"/><rect x="1234" y="260" width="12" height="348"/><rect x="1257" y="397" width="12" height="74"/><rect x="1280" y="338" width="12" height="192"/><rect x="1303" y="380" width="12" height="108"/><rect x="1326" y="312" width="12" height="244"/><rect x="1349" y="392" width="12" height="84"/>
+  </g>
+  <text x="110" y="128" fill="#b83b2f" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="6">ORAL HISTORY × AI</text>
+  <text x="105" y="312" fill="#19231f" font-family="Georgia, 'Noto Serif TC', serif" font-size="116" font-weight="700">留下人的</text>
+  <text x="105" y="438" fill="#b83b2f" font-family="Georgia, 'Noto Serif TC', serif" font-size="128" font-weight="700">聲音。</text>
+  <text x="112" y="530" fill="#52605a" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="34">AI 時代口述歷史方法與實作</text>
+  <line x1="110" y1="618" x2="725" y2="618" stroke="#19231f" stroke-width="3"/>
+  <text x="110" y="682" fill="#19231f" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="26">方法 · 倫理 · 訪談 · AI 稽核 · 保存 · 交還</text>
+  <text x="110" y="760" fill="#6b706c" font-family="Arial, sans-serif" font-size="20" letter-spacing="3">8 UNITS / 16 BILINGUAL VIDEOS / 1 CAPSTONE</text>
+</svg>
