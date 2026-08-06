@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f3f0e7"/>
+  <rect x="72" y="66" width="1456" height="768" fill="none" stroke="#12120f" stroke-width="4"/>
+  <rect x="1160" y="66" width="368" height="768" fill="#12120f"/>
+  <path d="M1210 666h262M1220 590l58-90 64 44 98-172" fill="none" stroke="#f5d34f" stroke-width="18"/>
+  <circle cx="1440" cy="372" r="18" fill="#cfe8df"/>
+  <text x="126" y="164" font-family="Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="4" fill="#0b6659">AI × INVESTMENT RESEARCH / 2026</text>
+  <text x="120" y="360" font-family="Georgia, 'Noto Serif TC', serif" font-size="132" font-weight="700" fill="#12120f">AI 投資</text>
+  <text x="120" y="505" font-family="Georgia, 'Noto Serif TC', serif" font-size="132" font-weight="700" fill="#12120f">研究工程</text>
+  <rect x="120" y="560" width="890" height="10" fill="#f5d34f"/>
+  <text x="126" y="652" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="36" font-weight="700" fill="#0b6659">來源可追溯 · 回測可反證 · 自動化可停機</text>
+  <text x="126" y="740" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="25" fill="#5f5c55">打造會引用、會拒答、有人覆核的 AI 研究助理</text>
+  <text x="1210" y="760" font-family="Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="3" fill="#cfe8df">EVIDENCE</text>
+  <text x="1210" y="797" font-family="Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="3" fill="#cfe8df">BEFORE ANSWERS</text>
+</svg>

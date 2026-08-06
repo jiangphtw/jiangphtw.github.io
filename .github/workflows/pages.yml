@@ -72,7 +72,7 @@ jobs:
 
       - name: Add static courses to the site
         run: |
-          mkdir -p "_site/course/data-science" "_site/course/stock-decision" "_site/course/design-thinking" "_site/course/operations-research" "_site/course/ai-product-engineering" "_site/course/notebooklm-academic" "_site/course/oral-history-ai" "_site/course/sustainability"
+          mkdir -p "_site/course/data-science" "_site/course/stock-decision" "_site/course/design-thinking" "_site/course/operations-research" "_site/course/ai-product-engineering" "_site/course/notebooklm-academic" "_site/course/oral-history-ai" "_site/course/sustainability" "_site/course/ai-investment-research"
           cp -a "course/資料科學/out/." "_site/course/data-science/"
           cp -a "course/股票新聞選股/out/." "_site/course/stock-decision/"
           cp -a "course/設計思考/out/." "_site/course/design-thinking/"
@@ -81,6 +81,7 @@ jobs:
           cp -a "course/notebooklm-academic/out/." "_site/course/notebooklm-academic/"
           cp -a "course/oral-history-ai/out/." "_site/course/oral-history-ai/"
           cp -a "course/sustainability/out/." "_site/course/sustainability/"
+          cp -a "course/ai-investment-research/out/." "_site/course/ai-investment-research/"
 
       - name: Verify assembled Pages artifact
         run: |
@@ -93,6 +94,7 @@ jobs:
           test -f "_site/course/notebooklm-academic/index.html"
           test -f "_site/course/oral-history-ai/index.html"
           test -f "_site/course/sustainability/index.html"
+          test -f "_site/course/ai-investment-research/index.html"
           test -d "_site/course/data-science/_next"
           test -d "_site/course/stock-decision/_next"
           test -d "_site/course/design-thinking/_next"
@@ -101,6 +103,7 @@ jobs:
           test -d "_site/course/notebooklm-academic/_next"
           test -d "_site/course/oral-history-ai/_next"
           test -d "_site/course/sustainability/_next"
+          test -d "_site/course/ai-investment-research/_next"
           grep -q "/course/data-science/" "_site/courses.html"
           grep -q "/course/stock-decision/" "_site/courses.html"
           grep -q "/course/design-thinking/" "_site/courses.html"
@@ -109,6 +112,7 @@ jobs:
           grep -q "/course/notebooklm-academic/" "_site/courses.html"
           grep -q "/course/oral-history-ai/" "_site/courses.html"
           grep -q "/course/sustainability/" "_site/courses.html"
+          grep -q "/course/ai-investment-research/" "_site/courses.html"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4

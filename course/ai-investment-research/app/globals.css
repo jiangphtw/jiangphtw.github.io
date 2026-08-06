@@ -1,0 +1,38 @@
+@import "../../ai-product-engineering/app/globals.css";
+
+:root {
+  --paper: #f3f0e7;
+  --white: #fffdf7;
+  --acid: #f5d34f;
+  --violet: #0b6659;
+  --blue: #cfe8df;
+  --orange: #e4582e;
+}
+
+.finance-warning {
+  max-width: 690px;
+  margin: 18px 0 0;
+  padding-left: 12px;
+  border-left: 3px solid var(--orange);
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 750;
+  line-height: 1.65;
+}
+
+.phase-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.phase-filters {
+  grid-template-columns: 1.5fr repeat(4, 1fr);
+}
+
+@media (max-width: 1080px) {
+  .phase-grid { grid-template-columns: repeat(2, 1fr); }
+  .phase-grid article:last-child { grid-column: auto; }
+}
+
+@media (max-width: 760px) {
+  .phase-grid { grid-template-columns: 1fr; }
+}
