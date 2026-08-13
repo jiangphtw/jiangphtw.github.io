@@ -10,6 +10,8 @@ sidebar: []
 excerpt_image: /assets/images/260813/prompt-to-graph-engineering-hero.png
 ---
 
+> **第一次接觸這些名詞？** 建議先看圖像版：[看漫畫學 AI 工程：Prompt、Context、Harness、Loop、Graph 一次看懂](/ai/2026/08/07/ai-engineering-beginner-comic-guide.html)。
+>
 > 本文整理至 **2026 年 8 月 13 日**。先說結論：`Prompt Engineering → Context Engineering → Harness Engineering → Loop Engineering → Graph Engineering` 並不是五個互相淘汰的世代，而是控制範圍逐層向外擴張的工程堆疊。
 >
 > 其中，**Graph Engineering 是 2026 年才快速流行的新標籤，底下的狀態機、工作流、DAG、多 Agent 編排與知識圖譜技術則早已存在**。因此，本文把它視為一個正在形成的實務語彙，而不是已由學界統一定義的正式學科。

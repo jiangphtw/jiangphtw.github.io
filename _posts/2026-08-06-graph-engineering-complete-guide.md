@@ -10,6 +10,8 @@ sidebar: []
 excerpt_image: /assets/images/260813/graph-engineering-complete-guide-hero.png
 ---
 
+> **想先用生活故事理解？** 請看入門圖像版：[看漫畫學 AI 工程：Prompt、Context、Harness、Loop、Graph 一次看懂](/ai/2026/08/07/ai-engineering-beginner-comic-guide.html)。
+>
 > 本文更新於 **2026 年 8 月 13 日**，是 LLM 工程演進系列的第六篇。建議依序閱讀：[完整演進地圖](/ai/2026/08/01/prompt-context-harness-loop-graph-engineering-evolution.html)、[Prompt Engineering](/ai/2026/08/02/prompt-engineering-complete-guide.html)、[Context Engineering](/ai/2026/08/03/context-engineering-complete-guide.html)、[Harness Engineering](/ai/2026/08/04/harness-engineering-complete-guide.html) 與 [Loop Engineering](/ai/2026/08/05/loop-engineering-complete-guide.html)。
 >
 > 用一句話先下定義：**Graph Engineering 是把一個複雜 AI 系統拆成有契約的節點、可解釋的邊、可持久化的狀態與有界的循環，再工程化它的路由、並行、合流、復原、權限、觀測與評估。**
