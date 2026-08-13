@@ -22,7 +22,7 @@
 
   <rect width="1600" height="900" rx="28" fill="url(#bg)" />
 
-  <text x="88" y="116" class="title">資料儲存要解決的是一致、追溯與重用</text>
+  <text x="88" y="116" class="title">資料儲存要解決的是一致性、可追溯性與重用性</text>
   <text x="88" y="168" class="subtitle">不要只想「放哪裡」，而要先想 raw、cleaned、mart 三層各自負責什麼。</text>
 
   <g filter="url(#shadow)">

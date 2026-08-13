@@ -72,7 +72,7 @@ export const course = {
       rhythm: "先讀 15 分鐘 → 看影片 20 分鐘 → 畫圖 20 分鐘 → 口頭解釋 15 分鐘",
       source: { label: "聯合國 2030 Agenda", url: "https://sdgs.un.org/2030agenda" },
       media: {
-        zh: { videoId: "2Q5idId2TgU", title: "2060年，台灣就會沒有冬天？永續發展目標 SDGs 是什麼？", channel: "志祺七七", duration: "11:14", approximateViews: "約 26 萬次觀看", selectionReason: "以臺灣生活情境串起氣候與 SDGs，敘事清楚、社群訊號強，適合第一次接觸的學生；課文則補足定義與目標間權衡。" },
+        zh: { videoId: "2Q5idId2TgU", title: "2060年，台灣就會沒有冬天？永續發展目標 SDGs 是什麼？", channel: "志祺七七", duration: "11:14", approximateViews: "約 26 萬次觀看", selectionReason: "以臺灣生活情境串起氣候與 SDGs，敘事清楚、觀看與互動表現突出，適合第一次接觸的學生；課文則補足定義與目標間權衡。" },
         en: { videoId: "M-iJM02m_Hg", title: "UN Sustainable Development Goals — Overview", channel: "UNICEF Georgia", duration: "2:12", approximateViews: "約 84 萬次觀看", selectionReason: "由聯合國體系頻道用短篇動畫建立全貌，觀看門檻低且訊息集中；與中文長版搭配，可快速複習 17 項目標。" }
       }
     },
@@ -106,7 +106,7 @@ export const course = {
       source: { label: "Stockholm Resilience Centre：Planetary Boundaries", url: "https://www.stockholmresilience.org/research/planetary-boundaries.html" },
       media: {
         zh: { videoId: "4LUvRdsCA0A", title: "系統思考｜教育問題是系統性的問題，釐清全貌才能靠近解方", channel: "為台灣而教 Teach For Taiwan", duration: "3:16", approximateViews: "約 2,600 次觀看", selectionReason: "用臺灣教育現場示範系統問題如何超越單一責任歸因，篇幅短而具轉移性；本課再把方法帶到環境與社會議題。" },
-        en: { videoId: "Vl6VhCAeEfQ", title: "The Tipping Points of Climate Change — and Where We Stand", channel: "TED", duration: "18:36", approximateViews: "約 157 萬次觀看", selectionReason: "Johan Rockström 以科學證據呈現臨界點與相互連動，社群訊號強；適合練習從線性因果轉向系統風險。" }
+        en: { videoId: "Vl6VhCAeEfQ", title: "The Tipping Points of Climate Change — and Where We Stand", channel: "TED", duration: "18:36", approximateViews: "約 157 萬次觀看", selectionReason: "Johan Rockström 以科學證據呈現臨界點與相互連動，觀看與互動表現突出；適合練習從線性因果轉向系統風險。" }
       }
     },
     {
@@ -132,7 +132,7 @@ export const course = {
         "檢查一張校園能源圖表，列出分母、基準年、季節性與至少兩個可能誤讀。",
         "為『更永續的通勤』設計 1 個成果、2 個領先與 1 個公平護欄指標，附資料取得方式。"
       ],
-      outcome: "能判斷一個永續承諾是否可衡量，也能指出數據仍不能回答的問題。",
+      outcome: "能判斷一個永續承諾是否可衡量，也能指出資料仍不能回答的問題。",
       project: "作品集 03｜SDGs 指標與資料品質卡",
       skills: ["Metric design", "Data literacy", "資料查核"],
       rhythm: "查官方目標 20 分鐘 → 看影片 15 分鐘 → 拆圖表 25 分鐘 → 設計指標 30 分鐘",
@@ -205,7 +205,7 @@ export const course = {
       source: { label: "行政院國家永續發展委員會", url: "https://ncsd.ndc.gov.tw/" },
       media: {
         zh: { videoId: "SXpwg3xq_ps", title: "實踐 SDGs！全台第一《地方自願檢視報告書 VLR》", channel: "侯友宜 houyuih", duration: "1:48", approximateViews: "約 700 次觀看", selectionReason: "以地方政府案例快速辨認 VLR 的定位；本課同時要求查核完整報告，避免只接受宣傳影片的成果敘事。" },
-        en: { videoId: "plDpUMeiXrI", title: "Taiwan Opts To Forge Ahead With Sustainable Development Goals", channel: "TaiwanPlus News", duration: "1:52", approximateViews: "約 200 次觀看", selectionReason: "以英語新聞視角概述臺灣永續目標，便於練習向國際受眾說明本地制度；再以官方 VNR 補上完整證據。" }
+        en: { videoId: "plDpUMeiXrI", title: "Taiwan Opts To Forge Ahead With Sustainable Development Goals", channel: "TaiwanPlus News", duration: "1:52", approximateViews: "約 200 次觀看", selectionReason: "以英語新聞視角概述臺灣永續目標，便於練習向國際受眾說明臺灣制度；再以官方 VNR 補上完整證據。" }
       }
     },
     {
@@ -223,7 +223,7 @@ export const course = {
       ],
       theory: [
         "重大議題不是高階主管最關心的新聞，而是組織對經濟、環境與人（含人權）的顯著影響，以及這些議題如何被治理。",
-        "企業永續從董事會監督、政策、責任歸屬、資源、誘因到揭露形成閉環；只有承諾、沒有責任與數據，無法形成策略。",
+        "企業永續從董事會監督、政策、責任歸屬、資源、誘因到揭露形成閉環；只有承諾、沒有責任與資料，無法形成策略。",
         "價值鏈視角會把原料、供應商、物流、使用與報廢納入，避免只看辦公室用電等容易處理但影響較小的項目。"
       ],
       exercises: [
@@ -238,7 +238,7 @@ export const course = {
       source: { label: "GRI 3：Material Topics 2021", url: "https://www.globalreporting.org/publications/documents/english/gri-3-material-topics-2021/" },
       media: {
         zh: { videoId: "g8XMNVtWhtQ", title: "永續報告書編纂流程與重大性議題分析", channel: "CSRone 永續智庫", duration: "19:53", approximateViews: "約 3,300 次觀看", selectionReason: "直接涵蓋報告流程與重大議題分析，符合本課實作；觀看規模適中但主題完整、可與 GRI 原始標準交叉閱讀。" },
-        en: { videoId: "6LkrhalWIMc", title: "Sustainability reporting with the GRI Standards", channel: "Global Reporting Initiative", duration: "2:41", approximateViews: "約 15 萬次觀看", selectionReason: "由標準制定組織官方說明 GRI 架構，來源權威且觀看訊號強；作為中文長版後的概念校準。" }
+        en: { videoId: "6LkrhalWIMc", title: "Sustainability reporting with the GRI Standards", channel: "Global Reporting Initiative", duration: "2:41", approximateViews: "約 15 萬次觀看", selectionReason: "由標準制定組織官方說明 GRI 架構，來源權威且觀看與互動表現突出；作為中文長版後的概念校準。" }
       }
     },
     {
@@ -271,7 +271,7 @@ export const course = {
       source: { label: "Ellen MacArthur Foundation：Circular Economy", url: "https://www.ellenmacarthurfoundation.org/topics/circular-economy-introduction/overview" },
       media: {
         zh: { videoId: "SaHyJc-H0vo", title: "循環經濟從源頭開始", channel: "TEDxTaipei", duration: "10:16", approximateViews: "約 3,800 次觀看", selectionReason: "以臺灣產業視角強調源頭設計，而非停在回收；案例具情境感，適合作為產品拆解練習的引子。" },
-        en: { videoId: "zCRKvDyyHmI", title: "Explaining the Circular Economy and How Society Can Re-think Progress", channel: "Ellen MacArthur Foundation", duration: "3:49", approximateViews: "約 197 萬次觀看", selectionReason: "由循環經濟主要知識機構製作，動畫清楚且社群訊號極強，適合建立三項核心原則。" }
+        en: { videoId: "zCRKvDyyHmI", title: "Explaining the Circular Economy and How Society Can Re-think Progress", channel: "Ellen MacArthur Foundation", duration: "3:49", approximateViews: "約 197 萬次觀看", selectionReason: "由循環經濟主要知識機構製作，動畫清楚且觀看與互動表現極為突出，適合建立三項核心原則。" }
       }
     },
     {
@@ -304,7 +304,7 @@ export const course = {
       source: { label: "GHG Protocol Corporate Standard", url: "https://ghgprotocol.org/corporate-standard" },
       media: {
         zh: { videoId: "0elBJFoWpzo", title: "真假 ESG 揭祕：你是真綠還是漂綠", channel: "鏡新聞調查報告", duration: "1:12:48", approximateViews: "約 1.9 萬次觀看", selectionReason: "以臺灣企業、訂單與綠領人才串連漂綠風險，調查篇幅完整；建議依本課標記選看片段並搭配六項檢核。" },
-        en: { videoId: "59KckhowbGY", title: "The Greenwashing Trap: How Carbon Credits Are Faking Climate Action", channel: "graphniti", duration: "3:05", approximateViews: "約 20 次觀看", selectionReason: "觀看訊號有限，但短片聚焦碳權與漂綠的爭點，適合作為反方材料；判斷仍須回到 GHG Protocol 與公司原始揭露。" }
+        en: { videoId: "59KckhowbGY", title: "The Greenwashing Trap: How Carbon Credits Are Faking Climate Action", channel: "graphniti", duration: "3:05", approximateViews: "約 20 次觀看", selectionReason: "觀看與互動表現有限，但短片聚焦碳權與漂綠的爭點，適合作為反方材料；判斷仍須回到 GHG Protocol 與公司原始揭露。" }
       }
     },
     {
@@ -370,7 +370,7 @@ export const course = {
       source: { label: "UN SDG Action Campaign", url: "https://sdgactioncampaign.org/" },
       media: {
         zh: { videoId: "8dHpKL3UDIo", title: "中山大學『永續辦公室』揭牌！科學治理迎戰氣候與轉型", channel: "NSYSU 國立中山大學", duration: "0:56", approximateViews: "約 100 次觀看", selectionReason: "提供臺灣大學以組織與科學治理推動永續的具體入口；篇幅很短，主要學習來自學生自己的走查與實驗。" },
-        en: { videoId: "atAGQ7kqL-g", title: "How To Make Your School More Sustainable", channel: "Foundation for Young Australians", duration: "2:38", approximateViews: "約 7.3 萬次觀看", selectionReason: "以學生可採取的校園行動為主，觀看訊號良好、節奏明快；適合在實作前快速建立可行感。" }
+        en: { videoId: "atAGQ7kqL-g", title: "How To Make Your School More Sustainable", channel: "Foundation for Young Australians", duration: "2:38", approximateViews: "約 7.3 萬次觀看", selectionReason: "以學生可採取的校園行動為主，觀看與互動表現良好、節奏明快；適合在實作前快速建立可行感。" }
       }
     },
     {
@@ -417,7 +417,7 @@ export const course = {
       prerequisites: ["完成校園永續實驗或同等專案"],
       objectives: [
         "把一段永續經驗改寫成含情境、任務、行動、結果與反思的履歷 bullet 與作品集案例。",
-        "以 90 秒回答一題永續面試題，清楚說明取捨、數據限制、個人貢獻與下一步。"
+        "以 90 秒回答一題永續面試題，清楚說明取捨、資料限制、個人貢獻與下一步。"
       ],
       theory: [
         "永續履歷不靠堆名詞。好的 bullet 說明你面對的問題、採取的分析或協作、產生的可驗證結果，以及規模與限制。",
@@ -436,7 +436,7 @@ export const course = {
       source: { label: "ILO Green Jobs", url: "https://www.ilo.org/global/topics/green-jobs/lang--en/index.htm" },
       media: {
         zh: { videoId: "UcR-T3M2FuI", title: "綠夥伴職涯分享｜淨零碳規劃師／永續管理師的實戰天地", channel: "蓋稏綠私塾 × 淨零領航者", duration: "1:05:12", approximateViews: "約 100 次觀看", selectionReason: "第一人稱職涯經驗能呈現工作內容與轉換過程；觀看數有限，建議搭配三份真實職缺而非單一成功故事。" },
-        en: { videoId: "9S1mTMMMiB8", title: "9 Sustainability Interview Questions and Answers", channel: "Tyanna Bui", duration: "14:02", approximateViews: "約 2.6 萬次觀看", selectionReason: "聚焦 entry-level 永續職缺常見問題，實作導向且社群訊號良好；本課用 STAR＋Impact 進一步要求證據與反思。" }
+        en: { videoId: "9S1mTMMMiB8", title: "9 Sustainability Interview Questions and Answers", channel: "Tyanna Bui", duration: "14:02", approximateViews: "約 2.6 萬次觀看", selectionReason: "聚焦 entry-level 永續職缺常見問題，實作導向且觀看與互動表現良好；本課用 STAR＋Impact 進一步要求證據與反思。" }
       }
     }
   ],

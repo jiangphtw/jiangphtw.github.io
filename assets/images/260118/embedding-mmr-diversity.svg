@@ -21,7 +21,7 @@
   <!-- Query -->
   <rect x="60" y="110" width="220" height="80" class="box"/>
   <text x="170" y="145" text-anchor="middle" class="label">Query</text>
-  <text x="170" y="170" text-anchor="middle" class="small muted">「embedding 在推薦怎麼用？」</text>
+  <text x="170" y="170" text-anchor="middle" class="small muted">「推薦系統如何使用 embedding？」</text>
 
   <path d="M280 150 L340 150" class="arrow"/>
   <rect x="340" y="110" width="250" height="80" class="box"/>

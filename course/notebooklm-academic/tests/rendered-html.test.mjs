@@ -8,7 +8,7 @@ test("exports the complete academic research course as static HTML", async () =>
   const html = await readFile(new URL("index.html", exportRoot), "utf8");
   assert.match(html, /<html lang="zh-Hant">/);
   assert.match(html, /Gemini Notebook 學術研究實戰/);
-  assert.match(html, /研究證據卷宗/);
+  assert.match(html, /研究證據包/);
   assert.match(html, /youtube-nocookie\.com/);
   assert.match(html, /課程方法與來源/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);

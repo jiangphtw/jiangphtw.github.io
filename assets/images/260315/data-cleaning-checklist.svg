@@ -24,7 +24,7 @@
 
   <rect width="1600" height="900" rx="28" fill="url(#bg)" />
 
-  <text x="88" y="118" class="title">資料清理是在固定定義，不只是整理表格</text>
+  <text x="88" y="118" class="title">資料清理是在統一定義，不只是整理表格</text>
   <text x="88" y="170" class="subtitle">真正的目標是讓資料可查詢、可比較、可重跑，而且不同人會得到同樣結論。</text>
 
   <g filter="url(#shadow)">

@@ -250,7 +250,7 @@ export default function CourseApp() {
             </article>
             <article className="note note-three">
               <small>03 / MAKE</small>
-              <b>做一個問題</b>
+              <b>製作原型</b>
               <span>讓想法接受測試</span>
             </article>
             <article className="note note-four">
@@ -670,7 +670,7 @@ export default function CourseApp() {
           <div className="section-heading compact">
             <div>
               <span>HOW TO USE THIS COURSE</span>
-              <h2>讓課程真的發生。</h2>
+              <h2>讓學習真正發生。</h2>
             </div>
           </div>
           <div className="method-grid">
@@ -724,7 +724,7 @@ export default function CourseApp() {
           <span>一門用行動縮短未知的課。</span>
         </div>
         <p>
-          本站僅策展與嵌入教學影音，著作權歸原創作者與頻道所有。
+          本站僅策展與嵌入教學影片，著作權歸原作者或權利人所有。
           觀看數為查詢日約數，不代表排名或合作關係。
         </p>
         <a href="https://jiangphtw.github.io">回到 Jiang 的網站 ↗</a>

@@ -16,7 +16,7 @@
   </defs>
 
   <rect width="1280" height="720" rx="28" fill="url(#bg)"/>
-  <text x="72" y="102" class="title">資料科學大多時間不在模型</text>
+  <text x="72" y="102" class="title">資料科學的大部分時間並不花在建模上</text>
   <text x="72" y="144" class="subtitle">下面是示意比例，不是通用統計，但很適合拿來校正初學者的期待。</text>
   <text x="640" y="206" text-anchor="middle" class="callout">最常被低估的是中間這大段：資料整理、口徑對齊、反覆驗證</text>
 

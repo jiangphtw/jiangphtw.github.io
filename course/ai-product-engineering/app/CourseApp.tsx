@@ -145,7 +145,7 @@ export default function CourseApp() {
           <div className="hero-copy">
             <p className="eyebrow"><span>2026</span> PRODUCT ENGINEERING FOR THE AI ERA</p>
             <h1>別只叫 AI<br />把東西<span>做出來。</span></h1>
-            <p className="hero-lede">把它做對、驗收、守住，再可靠上線。這門課從產品風險出發，帶你完成一個有測試、有來源、有成本邊界、出錯能復原的 AI 產品。</p>
+            <p className="hero-lede">把產品做對、完成驗收、守住品質，再可靠上線。這門課從產品風險出發，帶你完成一個有測試、有來源、有成本邊界、出錯能復原的 AI 產品。</p>
             <div className="hero-actions">
               <button type="button" onClick={() => lessonRef.current?.scrollIntoView({ behavior: "smooth" })}>開始第一課 <span aria-hidden="true">↘</span></button>
               <a href="#upgrade">為什麼更完整？</a>
@@ -154,7 +154,7 @@ export default function CourseApp() {
               <div><dt>12</dt><dd>完整實作單元</dd></div>
               <div><dt>24</dt><dd>中英雙語影音</dd></div>
               <div><dt>18+</dt><dd>小時學習與實作</dd></div>
-              <div><dt>01</dt><dd>可公開驗收產品</dd></div>
+              <div><dt>01</dt><dd>可公開驗收的產品</dd></div>
             </dl>
           </div>
           <div className="hero-system" aria-label="AI 產品工程循環示意">
@@ -172,7 +172,7 @@ export default function CourseApp() {
         </section>
 
         <section className="upgrade" id="upgrade" aria-labelledby="upgrade-title">
-          <div className="upgrade-intro"><p className="eyebrow">THE UPGRADE</p><h2 id="upgrade-title">從「會做」升級成<br /><span>「做得住」。</span></h2><p>保留參考課程從零到全端產品的骨架，再補上最容易讓 Demo 在真實世界失敗的工程能力。</p></div>
+          <div className="upgrade-intro"><p className="eyebrow">THE UPGRADE</p><h2 id="upgrade-title">從「會做」升級成<br /><span>「可靠運作」。</span></h2><p>保留參考課程從零到全端產品的骨架，再補上最容易讓 Demo 在真實世界失敗的工程能力。</p></div>
           <div className="comparison-list">
             {comparison.map((item, index) => <article key={item.gap}><span>{String(index + 1).padStart(2, "0")}</span><p>{item.gap}</p><i aria-hidden="true">→</i><strong>{item.upgrade}</strong></article>)}
           </div>
@@ -186,7 +186,7 @@ export default function CourseApp() {
             <div className="progress-box">
               <div><span>LOCAL PROGRESS</span><strong>{progress}%</strong></div>
               <div className="progress-track" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progress} aria-label={`課程完成度 ${progress}%`}><i style={{ width: `${progress}%` }} /></div>
-              <small>已完成 {completed.length} / {units.length} · 儲存在這台裝置</small>
+              <small>已完成 {completed.length} / {units.length} · 進度儲存在此瀏覽器</small>
             </div>
             <label className="search"><span aria-hidden="true">⌕</span><span className="sr-only">搜尋單元、技能或頻道</span><input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜尋單元、技能或頻道" /></label>
             <div className="phase-filters" aria-label="依階段篩選">
@@ -230,19 +230,19 @@ export default function CourseApp() {
         </section>
 
         <section className="roadmap" id="roadmap">
-          <div className="section-intro"><p className="eyebrow">FIVE PHASES</p><h2>每一階段都留下<br />可檢查的證據。</h2><p>不是看完影片就往下走；每一階段都有明確退出條件，後一階段只建立在已驗收的成果上。</p></div>
+          <div className="section-intro"><p className="eyebrow">FIVE PHASES</p><h2>每一階段都留下<br />可檢查的證據。</h2><p>不是看完影片就往下走；每一階段都有明確完成條件，驗收前一階段的成果後才能繼續。</p></div>
           <div className="phase-grid">{phases.map((item) => <article key={item.id}><span>{String(item.id).padStart(2, "0")}</span><small>{item.code}</small><h3>{item.title}</h3><p>{item.description}</p><strong>EXIT → {item.outcome}</strong></article>)}</div>
         </section>
 
         <section className="capstone" id="capstone">
-          <div className="capstone-copy"><p className="eyebrow">CAPSTONE / SHIP WITH PROOF</p><h2>最後不是九個 Demo，<br />是一個<span>做得住的產品。</span></h2><p>你會保留完整推理、測試與營運證據，讓作品不只好看，也能回答「為什麼這樣做、如何知道有效、出錯怎麼辦」。</p><a href="#workspace">回到課程工作區 ↑</a></div>
+          <div className="capstone-copy"><p className="eyebrow">CAPSTONE / SHIP WITH PROOF</p><h2>最後不是十二份分散的練習成果，<br />而是一個<span>能可靠運作的產品。</span></h2><p>你會保留完整推理、測試與營運證據，讓作品不只好看，也能回答「為什麼這樣做、如何知道有效、出錯怎麼辦」。</p><a href="#workspace">回到課程工作區 ↑</a></div>
           <ol className="checklist">{capstoneChecklist.map((item, index) => <li key={item}><span>{String(index + 1).padStart(2, "0")}</span><p>{item}</p></li>)}</ol>
         </section>
 
         <section className="source-note">
           <div><span>REFERENCE & RIGHTS</span><h2>研究骨架，重新設計學習成果。</h2></div>
           <p>本課以 Hahow「AI Coding 無痛上手」公開頁面的主題與 9 章 59 單元架構作為研究起點（查閱日：2026-08-03），保留從零到全端產品的價值鏈，並重新撰寫所有教學文字、練習與作品要求。<a href="https://hahow.in/courses/671ccc1ceebc1c6fd62bc08c" target="_blank" rel="noreferrer">查看參考課程 ↗</a></p>
-          <p>影音著作權屬原創作者與 YouTube 頻道；本站僅提供隱私增強嵌入、來源連結、近似觀看訊號與選片理由，不代表合作或背書。觀看數為查核當日近似值，可能持續變動。</p>
+          <p>影片著作權歸原作者或權利人所有；本站僅提供隱私增強嵌入、來源連結、查核時的觀看數與選片理由，不代表合作或背書。觀看數可能持續變動。</p>
         </section>
 
         <section className="discussion">
@@ -250,7 +250,7 @@ export default function CourseApp() {
           {giscusReady ? <div className="giscus-host" ref={discussionRef} /> : <div className="discussion-empty"><span>⌁</span><div><h3>討論區準備中</h3><p>設定四個公開 giscus 環境變數後會自動啟用；課程其他功能不受影響。</p><code>NEXT_PUBLIC_GISCUS_REPO · REPO_ID · CATEGORY · CATEGORY_ID</code></div></div>}
         </section>
       </main>
-      <footer><strong>AI PRODUCT ENGINEERING / 2026</strong><p>原創課程架構與教學文字 · 精選影音權利屬各創作者 · 學習進度只儲存在本機瀏覽器</p></footer>
+      <footer><strong>AI PRODUCT ENGINEERING / 2026</strong><p>原創課程架構與教學文字 · 影片著作權歸原作者或權利人所有 · 學習進度只儲存在此瀏覽器</p></footer>
     </div>
   );
 }

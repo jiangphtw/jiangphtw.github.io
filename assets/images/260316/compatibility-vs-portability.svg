@@ -1,8 +1,8 @@
 <svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="1600" height="900" rx="28" fill="#FFFDFC"/>
   <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
-  <text x="80" y="110" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="64" font-weight="800">兼容不是同一件事</text>
-  <text x="80" y="165" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="500">講 CUDA、Metal、ROCm 的「兼容」時，至少要先分成三層來看。</text>
+  <text x="80" y="110" fill="#1D2B4F" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="64" font-weight="800">相容性不只一個層次</text>
+  <text x="80" y="165" fill="#5C7095" font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif" font-size="28" font-weight="500">討論 CUDA、Metal、ROCm 的相容性時，至少要分成三個層次來看。</text>
 
   <rect x="150" y="250" width="1300" height="150" rx="28" fill="#FFFFFF" stroke="#B8CEF7" stroke-width="4"/>
   <rect x="150" y="445" width="1300" height="150" rx="28" fill="#FFFFFF" stroke="#FFD39F" stroke-width="4"/>

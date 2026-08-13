@@ -34,7 +34,7 @@ export const phases = [
   { id: 1, code: "FRAME", title: "先管決策，再找工具", description: "把目標、風險、資料時間點與人類責任寫成研究契約。", outcome: "投資政策聲明與研究問題卡" },
   { id: 2, code: "EVIDENCE", title: "建立可追溯證據鏈", description: "從原始揭露走到財報、估值與情境，不讓 AI 代替來源。", outcome: "附引用的公司研究備忘錄" },
   { id: 3, code: "TEST", title: "讓策略接受反證", description: "處理回測偏誤、交易成本、曝險、壓力情境與退出規則。", outcome: "樣本外測試與風險儀表板" },
-  { id: 4, code: "OPERATE", title: "把助理做成可靠系統", description: "用工作流、權限、監控與人工覆核，讓自動化可停、可查、可復原。", outcome: "可稽核 AI 研究助理與營運手冊" },
+  { id: 4, code: "OPERATE", title: "把助理做成可靠系統", description: "用工作流程、權限、監控與人工覆核，讓自動化可停、可查、可復原。", outcome: "可稽核 AI 研究助理與營運手冊" },
 ];
 
 export const units: CourseUnit[] = [
@@ -50,7 +50,7 @@ export const units: CourseUnit[] = [
     ],
     media: {
       zh: { videoId: "sxjzCcnbpC4", title: "為何 2000 年網路泡沫創下近 25 年最長熊市？", channel: "Smart智富月刊", duration: "11:34", approximateViews: "約 3.7 萬次觀看", checkedAt, selectionReason: "用真實崩跌提醒學員：新技術成立不代表價格合理。它適合在第一課打破『AI 等於勝率』的錯誤預期。" },
-      en: { videoId: "GPOv72Awo68", title: "How it Happened — The 2008 Financial Crisis", channel: "CrashCourse", duration: "11:24", approximateViews: "約 493 萬次觀看", checkedAt, selectionReason: "以高觀看、結構完整的歷史案例呈現風險如何從個別決策傳成系統危機；用來壓測投資政策，而非預測下一次崩盤。" },
+      en: { videoId: "GPOv72Awo68", title: "How it Happened — The 2008 Financial Crisis", channel: "CrashCourse", duration: "11:24", approximateViews: "約 493 萬次觀看", checkedAt, selectionReason: "以觀看數高、結構完整的歷史案例呈現風險如何從個別決策擴散成系統性危機；用來壓測投資政策，而非預測下一次崩盤。" },
     },
   },
   {
@@ -65,7 +65,7 @@ export const units: CourseUnit[] = [
     ],
     media: {
       zh: { videoId: "aed5O214MXU", title: "上市櫃公司的資訊集散地：公開資訊觀測站", channel: "臺灣證券交易所", duration: "05:39", approximateViews: "約 6,300 次觀看", checkedAt, selectionReason: "由證交所直接示範台股原始揭露入口，權威性高；觀看量不是最高，但來源角色比二手教學更適合證據鏈第一站。" },
-      en: { videoId: "kXYvRR7gV2E", title: "How I Research Stocks — Step-by-Step Fundamental Analysis", channel: "The Plain Bagel", duration: "18:27", approximateViews: "約 122 萬次觀看", checkedAt, selectionReason: "用完整研究流程串起公司、產業與風險，社群訊號強；本課再把流程補成可重查的資料血緣紀錄。" },
+      en: { videoId: "kXYvRR7gV2E", title: "How I Research Stocks — Step-by-Step Fundamental Analysis", channel: "The Plain Bagel", duration: "18:27", approximateViews: "約 122 萬次觀看", checkedAt, selectionReason: "用完整研究流程串起公司、產業與風險，觀看與互動表現突出；本課再把流程補成可重查的資料血緣紀錄。" },
     },
   },
   {
@@ -80,13 +80,13 @@ export const units: CourseUnit[] = [
     ],
     media: {
       zh: { videoId: "gdtUDPkg8IY", title: "一個故事看懂財務報表", channel: "Better Leaf 好葉", duration: "12:32", approximateViews: "約 14.9 萬次觀看", checkedAt, selectionReason: "用低門檻故事建立三表關係，適合先形成心智模型；本課用真實申報與勾稽練習補足細節。" },
-      en: { videoId: "Fi1wkUczuyk", title: "FINANCIAL STATEMENTS: all the basics in 8 MINS!", channel: "Accounting Stuff", duration: "08:56", approximateViews: "約 135 萬次觀看", checkedAt, selectionReason: "短而完整、社群訊號強，能快速複習三表基本結構；與中文資源互補，將時間留給引用與查核實作。" },
+      en: { videoId: "Fi1wkUczuyk", title: "FINANCIAL STATEMENTS: all the basics in 8 MINS!", channel: "Accounting Stuff", duration: "08:56", approximateViews: "約 135 萬次觀看", checkedAt, selectionReason: "短而完整、觀看與互動表現突出，能快速複習三表基本結構；與中文資源互補，將時間留給引用與查核實作。" },
     },
   },
   {
     id: 4, phase: 2, order: "04", topic: "估值與情境", title: "估值不是答案：把假設、範圍與反證攤開", level: "中階", estimatedTime: "125 分鐘", prerequisites: ["完成財報勾稽", "能操作試算表"],
     objectives: ["比較相對估值與 DCF 的適用條件，產出基準、樂觀與悲觀三種情境。", "建立敏感度表，找出最影響結論的假設並設計追蹤指標。"],
-    theory: ["估值是條件句：如果成長、利潤、資本成本與終值成立，才得到某個範圍。", "同業倍數速度快但會繼承市場錯價；DCF 可解釋但對遠期假設高度敏感。", "AI 最適合協助列假設與找反例，不應秘密決定折現率或把點估值包裝成精確答案。"],
+    theory: ["估值是條件句：如果成長、利潤、資本成本與終值成立，才得到某個範圍。", "同業倍數估值速度快，但會繼承市場錯價；DCF 可解釋但對遠期假設高度敏感。", "AI 最適合協助列假設與找反例，不應擅自決定折現率或把點估值包裝成精確答案。"],
     exercises: ["用本益比、股價淨值比與自由現金流殖利率做同業比較。", "建立三情境 DCF 與二維敏感度表，標記最脆弱的兩個假設。", "交換同學模型，從來源、單位、終值與循環位置提出五項反證。"],
     outcome: "能交付一個有假設、有範圍、可被反駁的估值模型。", project: "里程碑 04｜三情境估值模型＋反證清單", skills: ["Multiples", "DCF", "敏感度分析", "情境規劃"], rhythm: "看 30 分鐘 → 相對估值 25 分鐘 → DCF 40 分鐘 → 反證 30 分鐘",
     readings: [
@@ -94,8 +94,8 @@ export const units: CourseUnit[] = [
       { label: "Investor.gov：基本面分析詞彙", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/fundamental-analysis" },
     ],
     media: {
-      zh: { videoId: "yUUO7dtFInk", title: "股票估值三大指標：本益比／股價淨值比／殖利率", channel: "柴鼠兄弟 ZRBros", duration: "17:07", approximateViews: "約 87.4 萬次觀看", checkedAt, selectionReason: "用三個常見倍數建立相對估值直覺，中文候選中觀看訊號強；本課刻意補上情境與敏感度，避免指標變買賣按鈕。" },
-      en: { videoId: "21STUhQ-iP0", title: "Stock Multiples: How to Tell When a Stock is Cheap/Expensive", channel: "The Plain Bagel", duration: "15:43", approximateViews: "約 194 萬次觀看", checkedAt, selectionReason: "完整說明倍數的用途與限制，觀看訊號強；特別適合作為 DCF 之前的市場比較基線。" },
+      zh: { videoId: "yUUO7dtFInk", title: "股票估值三大指標：本益比／股價淨值比／殖利率", channel: "柴鼠兄弟 ZRBros", duration: "17:07", approximateViews: "約 87.4 萬次觀看", checkedAt, selectionReason: "用三個常見倍數建立相對估值直覺，中文候選中觀看與互動表現突出；本課刻意補上情境與敏感度，避免指標變買賣按鈕。" },
+      en: { videoId: "21STUhQ-iP0", title: "Stock Multiples: How to Tell When a Stock is Cheap/Expensive", channel: "The Plain Bagel", duration: "15:43", approximateViews: "約 194 萬次觀看", checkedAt, selectionReason: "完整說明倍數的用途與限制，觀看與互動表現突出；特別適合作為 DCF 之前的市場比較基線。" },
     },
   },
   {
@@ -109,8 +109,8 @@ export const units: CourseUnit[] = [
       { label: "CFA Institute：回測與模擬", url: "https://rpc.cfainstitute.org/research/foundation/2020/backtesting-simulation" },
     ],
     media: {
-      zh: { videoId: "DHOC2-MbQ7w", title: "K 線如何看出支撐壓力？", channel: "春哥美股投資 Spring Invest", duration: "15:29", approximateViews: "約 117 萬次觀看", checkedAt, selectionReason: "先把技術訊號說清楚，才能寫成可回測規則；高觀看訊號不代表策略有效，本課正用它練習從敘述走向反證。" },
-      en: { videoId: "hbcCykbX14U", title: "How to Use the Relative Strength Index (RSI)", channel: "Charles Schwab", duration: "10:43", approximateViews: "約 64.7 萬次觀看", checkedAt, selectionReason: "由大型券商教育頻道說明 RSI 用法與限制，社群訊號穩定；本課不照單全收，而是把訊號轉成樣本外可測假設。" },
+      zh: { videoId: "DHOC2-MbQ7w", title: "K 線如何看出支撐壓力？", channel: "春哥美股投資 Spring Invest", duration: "15:29", approximateViews: "約 117 萬次觀看", checkedAt, selectionReason: "先把技術訊號說清楚，才能寫成可回測規則；高觀看數不代表策略有效，本課正用它練習從敘述走向反證。" },
+      en: { videoId: "hbcCykbX14U", title: "How to Use the Relative Strength Index (RSI)", channel: "Charles Schwab", duration: "10:43", approximateViews: "約 64.7 萬次觀看", checkedAt, selectionReason: "由大型券商教育頻道說明 RSI 用法與限制，觀看與互動表現穩定；本課不照單全收，而是把訊號轉成樣本外可測假設。" },
     },
   },
   {
@@ -125,37 +125,37 @@ export const units: CourseUnit[] = [
     ],
     media: {
       zh: { videoId: "QMZwTpagHgs", title: "個股期貨入門指南：基本規則與風險", channel: "富邦證券", duration: "12:48", approximateViews: "約 1.9 萬次觀看", checkedAt, selectionReason: "由受監管券商說明契約、保證金與槓桿風險，可信度優先於熱度；用來練習最壞情境與部位限制。" },
-      en: { videoId: "LesjUjxaepc", title: "How Futures Leverage REALLY Works", channel: "TC Trading", duration: "12:03", approximateViews: "約 1,600 次觀看", checkedAt, selectionReason: "直接示範槓桿如何放大損益與資金需求，題目契合度高；社群訊號有限，因此以官方風險文件交叉查核。" },
+      en: { videoId: "LesjUjxaepc", title: "How Futures Leverage REALLY Works", channel: "TC Trading", duration: "12:03", approximateViews: "約 1,600 次觀看", checkedAt, selectionReason: "直接示範槓桿如何放大損益與資金需求，題目契合度高；觀看與互動表現有限，因此以官方風險文件交叉查核。" },
     },
   },
   {
-    id: 7, phase: 4, order: "07", topic: "可靠自動化", title: "從 n8n 流程到可復原研究管線", level: "進階入門", estimatedTime: "140 分鐘", prerequisites: ["完成前六份里程碑", "可使用 n8n 或等價工作流工具"],
+    id: 7, phase: 4, order: "07", topic: "可靠自動化", title: "從 n8n 流程到具復原能力的研究管線", level: "進階入門", estimatedTime: "140 分鐘", prerequisites: ["完成前六份里程碑", "可使用 n8n 或等價的工作流程工具"],
     objectives: ["把擷取、驗證、分析、引用與報告拆成可觀測節點，保存每次執行狀態。", "實作逾時、重試、冪等、死信、成本上限與人工覆核，不讓失敗靜默通過。"],
     theory: ["自動化價值在可重複，不在無人值守；高風險結論必須停在人工確認點。", "外部 API 會逾時、限流、改版與重送；每個節點都要有輸入契約與失敗路徑。", "只有帶來源、資料時間、模型版本、成本與審核狀態的報告，才具備稽核價值。"],
     exercises: ["畫出 ingest→validate→analyze→cite→review→publish 狀態機。", "重送同一事件三次並注入 API 失敗，證明不重複產出且可復原。", "加入每日成本上限、舊資料警告與人工核准，輸出一次完整執行紀錄。"],
-    outcome: "能建立會失敗也能被看見、停止與復原的研究工作流。", project: "里程碑 07｜可靠研究管線＋失敗復原手冊", skills: ["n8n", "冪等", "重試與死信", "成本護欄"], rhythm: "看 35 分鐘 → 畫狀態機 25 分鐘 → 建流程 45 分鐘 → 故障演練 35 分鐘",
+    outcome: "能建立即使失敗也能被看見、停止與復原的研究工作流程。", project: "里程碑 07｜可靠研究管線＋失敗復原手冊", skills: ["n8n", "冪等", "重試與死信", "成本護欄"], rhythm: "看 35 分鐘 → 畫狀態機 25 分鐘 → 建流程 45 分鐘 → 故障演練 35 分鐘",
     readings: [
       { label: "n8n：錯誤處理文件", url: "https://docs.n8n.io/flow-logic/error-handling/" },
       { label: "n8n：安全稽核工具", url: "https://docs.n8n.io/hosting/securing/security-audit/" },
     ],
     media: {
-      zh: { videoId: "CgPEN3sewwA", title: "n8n Webhook 應用：訂單通知自動化", channel: "柚智夫妻 X 雷蒙三十", duration: "36:09", approximateViews: "約 3.9 萬次觀看", checkedAt, selectionReason: "以具體事件完整展示 webhook 串接，中文候選中案例與社群訊號兼具；本課把訂單案例轉成可稽核研究管線。" },
+      zh: { videoId: "CgPEN3sewwA", title: "n8n Webhook 應用：訂單通知自動化", channel: "柚智夫妻 X 雷蒙三十", duration: "36:09", approximateViews: "約 3.9 萬次觀看", checkedAt, selectionReason: "以具體事件完整展示 webhook 串接，中文候選中案例完整，且觀看與互動表現良好；本課把訂單案例轉成可稽核研究管線。" },
       en: { videoId: "6nIX41-9rhA", title: "Background Jobs / Cron Jobs / Queue", channel: "ByteGrad", duration: "22:27", approximateViews: "約 1.3 萬次觀看", checkedAt, selectionReason: "清楚比較背景工作、排程與佇列，直接補足 no-code 流程常忽略的執行語意；觀看量中等但工程契合度高。" },
     },
   },
   {
     id: 8, phase: 4, order: "08", topic: "AI 治理與結業", title: "讓研究助理可用、可查、可停", level: "綜合實戰", estimatedTime: "180 分鐘＋專案", prerequisites: ["完成可靠研究管線", "邀請一位同學做紅隊審查"],
     objectives: ["建立正常、邊界與對抗案例評測集，量測引用、數值、拒答與人工接管。", "完成資料權限、提示注入、模型變更、成本異常、回滾與事故通報演練。"],
-    theory: ["LLM 產出是待驗證的外部資料；高影響金融結論應能引用、拒答並交給人覆核。", "提示注入會讓外部新聞或文件偽裝成指令，防護必須靠來源隔離、最小權限與動作確認。", "可靠系統必須能停：當資料過期、評測退步、成本暴增或引用缺失時，自動化要降級而不是硬跑。"],
-    exercises: ["建立 30 題評測集，涵蓋正確引用、數字核對、無答案拒答與惡意文件。", "執行提示注入與過度自信紅隊，記錄攻擊路徑並縮小工具權限。", "演練資料源中斷、模型退步與成本暴增，完成停機、回滾、通知與事後檢討。"],
+    theory: ["LLM 產出是待驗證的外部資料；影響重大的金融結論應能引用、拒答並交給人覆核。", "提示注入會讓外部新聞或文件偽裝成指令，防護必須靠來源隔離、最小權限與動作確認。", "可靠系統必須能停：當資料過期、評測結果退化、成本暴增或引用缺失時，自動化要降級而不是硬跑。"],
+    exercises: ["建立 30 題評測集，涵蓋正確引用、數字核對、無答案拒答與惡意文件。", "針對提示注入與過度自信輸出進行紅隊測試，記錄攻擊路徑並縮小工具權限。", "演練資料源中斷、模型效能退化與成本暴增，完成停機、回滾、通知與事後檢討。"],
     outcome: "交付一個不承諾報酬、保留來源、有人類責任與失效保護的 AI 投資研究助理。", project: "結業作品｜可稽核 AI 研究助理＋模型卡＋營運手冊", skills: ["LLM Eval", "Prompt injection", "Human-in-the-loop", "Incident response"], rhythm: "看 25 分鐘 → 建評測 45 分鐘 → 紅隊 40 分鐘 → 事故演練與文件 60 分鐘",
     readings: [
       { label: "NIST：生成式 AI 風險管理框架", url: "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence" },
       { label: "OWASP：LLM 提示注入風險", url: "https://genai.owasp.org/llmrisk/llm01-prompt-injection/" },
     ],
     media: {
-      zh: { videoId: "YJHjBc43x0w", title: "AI 寫程式真的安全？你必須建立的資安意識", channel: "所以想知道", duration: "14:18", approximateViews: "約 1,400 次觀看", checkedAt, selectionReason: "少數直接面向 AI 實作者的中文安全入門，語言負擔低；社群訊號有限，因此搭配 NIST、OWASP 與紅隊實作。" },
-      en: { videoId: "jrHRe9lSqqA", title: "What Is a Prompt Injection Attack?", channel: "IBM Technology", duration: "10:57", approximateViews: "約 28 萬次觀看", checkedAt, selectionReason: "用具體攻擊鏈說明提示注入，來源與觀看訊號俱佳；能直接支撐最後一課的威脅模型與工具權限設計。" },
+      zh: { videoId: "YJHjBc43x0w", title: "AI 寫程式真的安全？你必須建立的資安意識", channel: "所以想知道", duration: "14:18", approximateViews: "約 1,400 次觀看", checkedAt, selectionReason: "少數直接面向 AI 實作者的中文安全入門，語言負擔低；觀看與互動表現有限，因此搭配 NIST、OWASP 與紅隊實作。" },
+      en: { videoId: "jrHRe9lSqqA", title: "What Is a Prompt Injection Attack?", channel: "IBM Technology", duration: "10:57", approximateViews: "約 28 萬次觀看", checkedAt, selectionReason: "用具體攻擊鏈說明提示注入，來源可靠，且觀看與互動表現俱佳；能直接支撐最後一課的威脅模型與工具權限設計。" },
     },
   },
 ];
@@ -172,6 +172,6 @@ export const capstoneChecklist = [
   "原始資料登錄、as-of date 與來源衝突紀錄",
   "可引用財報摘要、三情境估值與反證清單",
   "含成本、基準、樣本外與壓力測試的研究證據",
-  "可復原工作流、執行紀錄、成本上限與人工核准",
+  "具故障復原能力的工作流程、執行紀錄、成本上限與人工核准",
   "LLM 評測集、威脅模型、模型卡、回滾與事故報告",
 ];

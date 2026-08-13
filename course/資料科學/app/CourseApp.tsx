@@ -588,7 +588,7 @@ const lessonDetails: Record<number, LessonDetail> = {
     zhDuration: "18 分 31 秒",
     zhViews: "5,500+",
     zhReason:
-      "中文資料工程完整長課仍少，這支台灣實務研討會精華清楚說明角色、ETL 與團隊分工；搭配英文主課可兼顧在地語境與實作深度。",
+      "中文資料工程完整長課仍少，這支臺灣實務研討會精華清楚說明角色、ETL 與團隊分工；搭配英文主課可兼顧在地語境與實作深度。",
     objectives: [
       "能描述批次資料管線從來源到分析層的完整生命週期。",
       "理解排程、可重跑、資料品質與血緣為何重要。",
@@ -795,7 +795,7 @@ const lessonDetails: Record<number, LessonDetail> = {
     zhDuration: "46 分 21 秒",
     zhViews: "5,000+",
     zhReason:
-      "雖非最高觀看的 FastAPI 短介，但它是台灣社群少數以真實 ML 模型服務完整比較 Flask 與 FastAPI 的長講，內容貼合本課目標。",
+      "雖非最高觀看的 FastAPI 短介，但它是臺灣社群少數以真實 ML 模型服務完整比較 Flask 與 FastAPI 的長講，內容貼合本課目標。",
     objectives: [
       "能以 typed schema 建立模型預測 API 與自動文件。",
       "理解 HTTP、同步/非同步、驗證與錯誤回應。",
@@ -1096,7 +1096,7 @@ export default function CourseApp() {
               onClick={() => setFontSize("large")}
               aria-pressed={fontSize === "large"}
             >
-              大字體
+              大字
             </button>
           </div>
           <div className="header-progress">
@@ -1131,7 +1131,7 @@ export default function CourseApp() {
           <p>
             一條為零基礎轉職者設計的 24
             週完整路線。以原課綱九大能力為骨架，補上統計、資料工程、生成式
-            AI、部署與 MLOps。每個單元都有中、英文雙語教材、理論導讀與課後練習，
+            AI、部署與 MLOps。每個單元都有中英雙語教材、理論導讀與課後練習，
             讓每一次觀看都通往一件能放進作品集的成果。
           </p>
           <div className="hero-actions">
@@ -1173,11 +1173,11 @@ export default function CourseApp() {
 
       <section className="trust-strip">
         <span>選片標準</span>
-        <p><b>01</b> 主題內高觀看</p>
-        <p><b>02</b> 讚與留言互動</p>
+        <p><b>01</b> 同主題中觀看數較高</p>
+        <p><b>02</b> 按讚與留言互動</p>
         <p><b>03</b> 長期社群口碑</p>
-        <p><b>04</b> 可跟做的完整度</p>
-        <small>人氣數字為 2026/07 查核時近似值，會隨 YouTube 即時變動。</small>
+        <p><b>04</b> 內容完整且可跟著實作</p>
+        <small>觀看數與互動表現為 2026/07 查核時的近似值，會隨 YouTube 即時變動。</small>
       </section>
 
       <section className="course-shell" id="curriculum">
@@ -1408,7 +1408,7 @@ export default function CourseApp() {
                     );
                   })}
                 </div>
-                <p className="practice-note">練習進度會保存在這台裝置，不需登入。</p>
+                <p className="practice-note">練習進度會保存在此瀏覽器中，不需登入。</p>
               </div>
             </article>
 
@@ -1417,7 +1417,7 @@ export default function CourseApp() {
                 <span className="card-label">LESSON INFO</span>
                 <dl>
                   <div><dt>難度</dt><dd>{selected.level}</dd></div>
-                  <div><dt>建議節奏</dt><dd>25 分 × 多段</dd></div>
+                  <div><dt>建議節奏</dt><dd>每段約 25 分鐘</dd></div>
                   <div><dt>實作比例</dt><dd>70%</dd></div>
                   <div><dt>教材語言</dt><dd>中文 + English</dd></div>
                 </dl>
@@ -1448,7 +1448,7 @@ export default function CourseApp() {
       <section className="roadmap-section">
         <div className="section-heading">
           <span>THE FULL ROADMAP</span>
-          <h2>六段路，從「看懂」走到「上線」</h2>
+          <h2>六個階段，從「看懂」走到「上線」</h2>
           <p>每一階段都以可驗收成果收尾，不把觀看時數誤認為學習成效。</p>
         </div>
         <div className="roadmap-grid">
@@ -1525,7 +1525,7 @@ export default function CourseApp() {
           <article>
             <b>03</b>
             <h3>最後看職場可轉移性</h3>
-            <p>優先選擇包含完整工作流、公開程式碼與真實資料的長課，避免只會複製單一範例。</p>
+            <p>優先選擇包含完整工作流程、公開程式碼與真實資料的長課，避免只會複製單一範例。</p>
           </article>
           <article>
             <b>04</b>
@@ -1553,7 +1553,7 @@ export default function CourseApp() {
         </div>
         <p>
           本站為公開學習資源策展，不隸屬 TibaMe、YouTube 或影片創作者。
-          影片著作權與觀看數據歸各自來源所有。
+          影片著作權歸原作者或權利人所有；觀看數以 YouTube 查核時顯示為準。
         </p>
         <div>
           <a href="#top">回到頂端 ↑</a>

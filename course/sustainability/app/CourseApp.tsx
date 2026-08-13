@@ -133,7 +133,7 @@ export default function CourseApp() {
   }
 
   function resetProgress() {
-    if (!window.confirm("確定要清除這台裝置上的單元與練習進度嗎？")) return;
+    if (!window.confirm("確定要清除此瀏覽器中的單元與練習進度嗎？")) return;
     setCompleted([]);
     setExerciseDone([]);
   }
@@ -186,14 +186,14 @@ export default function CourseApp() {
                 <b className="node node-b">企業<small>BUSINESS</small></b>
                 <b className="node node-c">你<small>CAREER</small></b>
               </div>
-              <div className="signal-card signal-a"><span>35%</span><p>2025 年有趨勢資料的 SDG targets 達到或呈中度進展</p><small>UN SDG REPORT 2025</small></div>
-              <div className="signal-card signal-b"><span>18%</span><p>相較 2015 基準倒退：所以要學會讀證據，而非只看承諾</p><small>GLOBAL PROGRESS</small></div>
+              <div className="signal-card signal-a"><span>35%</span><p>截至 2025 年，在具有趨勢資料的 SDG 細項目標中，已達成或有中度進展</p><small>UN SDG REPORT 2025</small></div>
+              <div className="signal-card signal-b"><span>18%</span><p>較 2015 年基準倒退：因此要學會讀證據，而非只看承諾</p><small>GLOBAL PROGRESS</small></div>
             </div>
           </section>
 
           <section className="promise" aria-label="課程轉換">
             <p><span>不是</span> 背完 17 個彩色圖示</p><i aria-hidden="true">→</i>
-            <p><span>而是</span> 看懂問題、比較做法、做出證據</p>
+            <p><span>而是</span> 看懂問題、比較做法、以證據支持行動</p>
             <small>零基礎可學・適合所有科系・每週約 2 小時</small>
           </section>
 
@@ -226,7 +226,7 @@ export default function CourseApp() {
                   );
                 }) : <p className="empty">找不到符合的單元，試試「碳」、「職涯」或切換階段。</p>}
               </div>
-              <button className="reset-button" type="button" onClick={resetProgress}>重設本機學習進度</button>
+              <button className="reset-button" type="button" onClick={resetProgress}>重設瀏覽器學習進度</button>
             </aside>
 
             <section className="lesson" id="lesson" tabIndex={-1} aria-live="polite" ref={lessonRef}>
@@ -251,7 +251,7 @@ export default function CourseApp() {
                 <div className="lesson-main">
                   <article className="content-card goals-card"><span className="card-number">01</span><div><p className="card-label">LEARNING OBJECTIVES</p><h3>完成後，你能做到</h3><ol id="objectives">{selected.objectives.map((item, index) => <li key={item}><i>{index + 1}</i><span>{item}</span></li>)}</ol></div></article>
                   <article className="content-card theory-card"><span className="card-number">02</span><div><p className="card-label">THINK BEFORE YOU WATCH</p><h3>先帶走三個核心觀念</h3><div className="theory-list">{selected.theory.map((item, index) => <div key={item}><span>{String(index + 1).padStart(2, "0")}</span><p>{item}</p></div>)}</div></div></article>
-                  <article className="content-card evidence-card"><span className="card-number">03</span><div><p className="card-label">WHY THESE RESOURCES</p><h3>媒體選擇與查核入口</h3><div className="reasons"><div><b>中</b><p>{selected.media.zh.selectionReason}</p></div><div><b>EN</b><p>{selected.media.en.selectionReason}</p></div></div><a className="source-link" href={selected.source.url} target="_blank" rel="noreferrer">本課官方查核入口｜{selected.source.label} ↗</a><small className="checked-note">影音觀看數為 {course.checkedAt} 查詢時約數，會隨時間變動；著作權歸原作者。</small></div></article>
+                  <article className="content-card evidence-card"><span className="card-number">03</span><div><p className="card-label">WHY THESE RESOURCES</p><h3>媒體選擇與查核入口</h3><div className="reasons"><div><b>中</b><p>{selected.media.zh.selectionReason}</p></div><div><b>EN</b><p>{selected.media.en.selectionReason}</p></div></div><a className="source-link" href={selected.source.url} target="_blank" rel="noreferrer">本課官方查核入口｜{selected.source.label} ↗</a><small className="checked-note">影片觀看數為 {course.checkedAt} 查詢時的約數，會隨時間變動；著作權歸原作者或權利人所有。</small></div></article>
                   <article className="content-card practice-card"><span className="card-number">04</span><div><p className="card-label">MAKE IT REAL</p><h3>課後實作</h3><div className="exercise-list">{selected.exercises.map((item, index) => {
                     const key = `${selected.id}-${index}`;
                     const checked = exerciseDone.includes(key);
@@ -268,7 +268,7 @@ export default function CourseApp() {
           </section>
 
           <section className="roadmap-section" id="roadmap">
-            <header className="section-heading"><div><span>COURSE ROADMAP</span><h2>八週，把抽象名詞變成行動。</h2></div><p>四個階段都留下可見交付；最後不用說「我對永續很有興趣」，而是直接展示你怎麼研究、判斷與執行。</p></header>
+            <header className="section-heading"><div><span>COURSE ROADMAP</span><h2>八週，把抽象名詞變成行動。</h2></div><p>四個階段都留下可檢視的成果；最後不用只說「我對永續很有興趣」，而能直接展示自己如何研究、判斷與執行。</p></header>
             <div className="roadmap-grid">{course.phases.map((item) => (
               <article key={item.id} style={{ "--phase": item.color } as CSSProperties}>
                 <div className="phase-top"><span>{item.number}</span><small>{item.weeks}</small></div>
@@ -286,7 +286,7 @@ export default function CourseApp() {
           </section>
 
           <section className="career-section" id="career">
-            <div className="career-copy"><span>CAPSTONE / CAREER EVIDENCE</span><h2>把「我很關心」，<br />改寫成<span>「這是我做到的」。</span></h2><p>結業時，你會有一份可公開的校園永續提案，以及能直接放進履歷、作品集與面試的證據。成果不要求完美，要求可追溯、可查核、說得清楚。</p><button type="button" onClick={() => selectUnit(12)}>查看最後一課 ↗</button></div>
+            <div className="career-copy"><span>CAPSTONE / CAREER EVIDENCE</span><h2>把「我很關心」，<br />改寫成<span>「這是我完成的成果」。</span></h2><p>結業時，你會有一份可公開的校園永續提案，以及能直接放進履歷、作品集與面試的證據。成果不要求完美，要求可追溯、可查核、說得清楚。</p><button type="button" onClick={() => selectUnit(12)}>查看最後一課 ↗</button></div>
             <div className="career-board"><p>FINAL CHECK / 08 ITEMS</p><ol>{course.capstoneChecklist.map((item, index) => <li key={item}><span>{String(index + 1).padStart(2, "0")}</span><strong>{item}</strong><i aria-hidden="true">□</i></li>)}</ol><small>完成定義：每一項都能連回一筆觀察、資料、決策或真實回饋。</small></div>
           </section>
 
@@ -295,12 +295,12 @@ export default function CourseApp() {
           <section className="sources-section" aria-labelledby="sources-title"><header><span>SOURCE DESK</span><h2 id="sources-title">從官方資料開始，不從二手口號結束。</h2><p>課程文字為原創教學內容；影音僅策展與隱私強化嵌入，權利歸原作者。企業案例為學習查核入口，不代表背書或合作。</p></header><div className="source-grid">{course.officialSources.map((source, index) => <a href={source.url} target="_blank" rel="noreferrer" key={source.url}><span>{String(index + 1).padStart(2, "0")}</span><strong>{source.label}</strong><small>{source.note}</small><i aria-hidden="true">↗</i></a>)}</div></section>
 
           <section className="discussion-section" aria-label="課程討論">
-            <div><span>STUDIO DISCUSSION</span><h2>{giscusReady ? "帶著證據來，也帶著問題離開。" : "討論區準備中"}</h2><p>{giscusReady ? "提出問題時附上來源、推理與目前卡點，讓討論能往下一步前進。" : "設定四個公開 giscus 環境變數後會自動啟用；課程與本機進度可完整使用。"}</p></div>
+            <div><span>STUDIO DISCUSSION</span><h2>{giscusReady ? "帶著證據來，也帶著問題離開。" : "討論區準備中"}</h2><p>{giscusReady ? "提出問題時附上來源、推理與目前卡點，讓討論能往下一步前進。" : "設定四個公開 giscus 環境變數後會自動啟用；課程與瀏覽器進度功能可完整使用。"}</p></div>
             {giscusReady ? <div className="giscus-host" ref={discussionRef} /> : <a href="https://giscus.app/zh-TW" target="_blank" rel="noreferrer">查看 giscus 設定方式 ↗</a>}
           </section>
         </main>
 
-        <footer className="site-footer"><div><strong>永續力</strong><span>一門把全球目標翻譯成個人行動的課。</span></div><p>策展查詢日：{course.checkedAt}。觀看數為約數，不代表排名；遇到失效影音，請以同主題官方或教學等值資源替換。</p><a href="/courses.html">回到所有課程 ↗</a></footer>
+        <footer className="site-footer"><div><strong>永續力</strong><span>一門把全球目標轉化為個人行動的課。</span></div><p>策展查詢日：{course.checkedAt}。觀看數為約數，不代表排名；遇到失效影音，請以同主題且品質相當的官方或教學資源替換。</p><a href="/courses.html">回到所有課程 ↗</a></footer>
       </div>
     </>
   );

@@ -132,7 +132,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 3.8 萬次觀看",
         checkedAt,
         selectionReason:
-          "以繁體中文逐步介紹五個階段，篇幅短、適合建立共同語言；社群觀看訊號在同系列中突出。搭配英文動畫，可同時掌握流程與非線性特質。",
+          "以繁體中文逐步介紹五個階段，篇幅短、適合建立共同語言；觀看與社群互動表現在同系列中突出。搭配英文動畫，可同時掌握流程與非線性特質。",
       },
       en: {
         videoId: "_r0VX-aU_T8",
@@ -142,7 +142,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 202 萬次觀看",
         checkedAt,
         selectionReason:
-          "動畫清楚呈現五階段與迭代關係，已有長期且強的觀看訊號。它適合做流程總覽，實作細節則由本單元挑戰卡補足。",
+          "動畫清楚呈現五階段與迭代關係，已有長期且突出的觀看與互動表現。它適合做流程總覽，實作細節則由本單元挑戰卡補足。",
       },
     },
   },
@@ -182,7 +182,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 9.8 萬次觀看",
         checkedAt,
         selectionReason:
-          "以中文呈現設計從物件走向系統與社會議題的視野，長期觀看訊號強。它擴大設計者角色；英文資源則補上個人如何建立行動信心。",
+          "以中文呈現設計從物件走向系統與社會議題的視野，長期觀看與互動表現突出。它擴大設計者角色；英文資源則補上個人如何建立行動信心。",
       },
       en: {
         videoId: "16p9YRF0l-g",
@@ -192,7 +192,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 244 萬次觀看",
         checkedAt,
         selectionReason:
-          "David Kelley 用案例把創意自信連到漸進式行動，教學敘事完整且社群訊號強。重點不是技巧清單，而是解除「我沒有創意」的自我限制。",
+          "David Kelley 用案例把創意自信連到漸進式行動，教學敘事完整且觀看與互動表現突出。重點不是技巧清單，而是解除「我沒有創意」的自我限制。",
       },
     },
   },
@@ -242,7 +242,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 16.9 萬次觀看",
         checkedAt,
         selectionReason:
-          "涵蓋準備、主持與避免偏誤的完整入門流程，觀看訊號穩定。適合先看示範，再用中文題綱完成自己的研究。",
+          "涵蓋準備、主持與避免偏誤的完整入門流程，觀看與互動表現穩定。適合先看示範，再用中文題綱完成自己的研究。",
       },
     },
   },
@@ -282,7 +282,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 7,600 次觀看",
         checkedAt,
         selectionReason:
-          "繁體中文內容聚焦設計思考中的觀察方法，與上一單元同屬一致的學習脈絡。社群訊號穩定，適合作為田野練習前的操作提示。",
+          "繁體中文內容聚焦設計思考中的觀察方法，與上一單元同屬一致的學習脈絡。觀看與互動表現穩定，適合作為田野練習前的操作提示。",
       },
       en: {
         videoId: "fqNAWyOOVfw",
@@ -292,7 +292,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 14.7 萬次觀看",
         checkedAt,
         selectionReason:
-          "完整說明同理在 UX 研究中的角色與偏誤，來源具教學權威且觀看訊號強。篇幅較長，建議分段觀看並立刻套用觀察框架。",
+          "完整說明同理在 UX 研究中的角色與偏誤，來源具教學權威且觀看與互動表現突出。篇幅較長，建議分段觀看並立刻套用觀察框架。",
       },
     },
   },
@@ -342,7 +342,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 1.4 萬次觀看",
         checkedAt,
         selectionReason:
-          "以完整小案例展示資料卡、分群與命名，短而可跟做；在同題材候選中兼具清晰度與可觀察的社群訊號。",
+          "以完整小案例展示資料卡、分群與命名，短而可跟做；在同題材候選中兼具清晰度與可查證的觀看數及互動表現。",
       },
     },
   },
@@ -382,7 +382,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 1 萬次觀看",
         checkedAt,
         selectionReason:
-          "華語教學把旅程地圖放進服務設計實務，能看到欄位如何轉成分析；在中文候選中有較強觀看訊號與完整示範。",
+          "華語教學把旅程地圖放進服務設計實務，能看到欄位如何轉成分析；在中文候選中觀看與互動表現較突出，也有完整示範。",
       },
       en: {
         videoId: "2W13ext26kQ",
@@ -432,7 +432,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 5,900 次觀看",
         checkedAt,
         selectionReason:
-          "繁體中文逐步拆解 POV 的組成，正好銜接本課的研究洞察。觀看訊號穩定；HMW 的尺度判斷則由練習與英文資源補強。",
+          "繁體中文逐步拆解 POV 的組成，正好銜接本課的研究洞察。觀看與互動表現穩定；HMW 的尺度判斷則由練習與英文資源補強。",
       },
       en: {
         videoId: "kT0ZqwdPYRM",
@@ -442,7 +442,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 10.3 萬次觀看",
         checkedAt,
         selectionReason:
-          "NN/g 清楚示範需求陳述如何避免偷渡功能，權威性與觀看訊號兼具。它讓學員能反查自己的 POV 是否仍以人與需求為中心。",
+          "NN/g 清楚示範需求陳述如何避免偷渡功能，兼具權威性與良好的觀看及互動表現。它讓學員能反查自己的 POV 是否仍以人與需求為中心。",
       },
     },
   },
@@ -492,7 +492,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 13 萬次觀看",
         checkedAt,
         selectionReason:
-          "以 IDEO 發想片段快速呈現團隊規則與能量，來源與設計創新教育直接相關且社群訊號強。它提供發散氛圍，中文資源補上收斂方法。",
+          "以 IDEO 發想片段快速呈現團隊規則與能量，來源與設計創新教育直接相關且觀看與互動表現突出。它提供發散氛圍，中文資源補上收斂方法。",
       },
     },
   },
@@ -542,7 +542,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 46.1 萬次觀看",
         checkedAt,
         selectionReason:
-          "Tom Chi 用 Google Glass 實例示範快速、針對假設的原型迭代，案例具體且觀看訊號強。重點可跨越工具版本，適合建立原型思維。",
+          "Tom Chi 用 Google Glass 實例示範快速、針對假設的原型迭代，案例具體且觀看與互動表現突出。重點可跨越工具版本，適合建立原型思維。",
       },
     },
   },
@@ -582,7 +582,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 940 次觀看",
         checkedAt,
         selectionReason:
-          "以中文 UX 實務直接說明使用者測試操作，適合第一次主持前快速複習。觀看訊號有限，因此搭配 Google 的長篇示範交叉學習。",
+          "以中文 UX 實務直接說明使用者測試操作，適合第一次主持前快速複習。觀看與互動表現有限，因此搭配 Google 的長篇示範交叉學習。",
       },
       en: {
         videoId: "nYCJTea1AUQ",
@@ -592,7 +592,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 11.2 萬次觀看",
         checkedAt,
         selectionReason:
-          "提供從規劃、主持到案例的完整教學，來源具教學權威且觀看訊號強。片長較長，可依本課腳本與主持段落選看。",
+          "提供從規劃、主持到案例的完整教學，來源具教學權威且觀看與互動表現突出。片長較長，可依本課腳本與主持段落選看。",
       },
     },
   },
@@ -632,7 +632,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 6,500 次觀看",
         checkedAt,
         selectionReason:
-          "華語資源以實務語言串起服務藍圖與生態系圖，在同題材中文候選中觀看訊號突出。適合由使用者旅程進一步看見組織系統。",
+          "華語資源以實務語言串起服務藍圖與生態系圖，在同題材中文候選中觀看與互動表現突出。適合由使用者旅程進一步看見組織系統。",
       },
       en: {
         videoId: "-glgJ9U_Fsk",
@@ -642,7 +642,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 13.8 萬次觀看",
         checkedAt,
         selectionReason:
-          "以簡潔圖例說明服務藍圖各層與用途，觀看訊號強且容易跟做。它提供結構骨架，中文資源補上服務設計脈絡。",
+          "以簡潔圖例說明服務藍圖各層與用途，觀看與互動表現突出且容易跟做。它提供結構骨架，中文資源補上服務設計脈絡。",
       },
     },
   },
@@ -692,7 +692,7 @@ export const units: CourseUnit[] = [
         approximateViews: "約 76.3 萬次觀看",
         checkedAt,
         selectionReason:
-          "以短篇幅拆解提案如何建立可信度與行動邀請，觀看訊號強。它提供敘事原則，本課八頁結構則確保設計證據不被故事掩蓋。",
+          "以短篇幅拆解提案如何建立可信度與行動邀請，觀看與互動表現突出。它提供敘事原則，本課八頁結構則確保設計證據不被故事掩蓋。",
       },
     },
   },

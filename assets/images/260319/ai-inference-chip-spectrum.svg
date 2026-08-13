@@ -45,7 +45,7 @@
   <g>
     <rect x="655" y="390" width="245" height="255" rx="28" fill="#FFFFFF" stroke="#9ADCC4" stroke-width="4"/>
     <text x="777.5" y="452" text-anchor="middle" class="name">NPU</text>
-    <text x="777.5" y="498" text-anchor="middle" class="body">低功耗本地 AI 加速</text>
+    <text x="777.5" y="498" text-anchor="middle" class="body">低功耗裝置端 AI 加速</text>
     <text x="777.5" y="532" text-anchor="middle" class="body">AI PC、手機、邊緣裝置</text>
     <text x="777.5" y="586" text-anchor="middle" class="body">重點是每瓦效能</text>
   </g>

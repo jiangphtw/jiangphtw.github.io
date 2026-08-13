@@ -141,7 +141,7 @@ export default function CourseApp() {
             <p className="hero-lede">從來源、財報與估值，到回測、風險與可靠自動化。你會完成一個會引用、會拒答、有人覆核、出錯能停的 AI 投資研究助理。</p>
             <div className="hero-actions">
               <button type="button" onClick={() => lessonRef.current?.scrollIntoView({ behavior: "smooth" })}>開始第一課 <span aria-hidden="true">↘</span></button>
-              <a href="#upgrade">看它好在哪裡</a>
+              <a href="#upgrade">了解課程如何補強研究流程</a>
             </div>
             <dl className="hero-stats">
               <div><dt>08</dt><dd>深度實作單元</dd></div><div><dt>16</dt><dd>中英雙語影音</dd></div><div><dt>16+</dt><dd>小時學習與實作</dd></div><div><dt>01</dt><dd>可稽核研究助理</dd></div>
@@ -170,7 +170,7 @@ export default function CourseApp() {
         <section className="workspace" id="workspace" ref={lessonRef} tabIndex={-1}>
           <button className="mobile-nav" type="button" aria-expanded={navOpen} aria-controls="curriculum" onClick={() => setNavOpen((value) => !value)}>{navOpen ? "收合課程目錄" : `開啟課程目錄 · ${selected.order}/${units.length}`}</button>
           <aside className={navOpen ? "curriculum open" : "curriculum"} id="curriculum">
-            <div className="progress-box"><div><span>LOCAL PROGRESS</span><strong>{progress}%</strong></div><div className="progress-track" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progress} aria-label={`課程完成度 ${progress}%`}><i style={{ width: `${progress}%` }} /></div><small>已完成 {completed.length} / {units.length} · 儲存在這台裝置</small></div>
+            <div className="progress-box"><div><span>LOCAL PROGRESS</span><strong>{progress}%</strong></div><div className="progress-track" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progress} aria-label={`課程完成度 ${progress}%`}><i style={{ width: `${progress}%` }} /></div><small>已完成 {completed.length} / {units.length} · 進度儲存在此瀏覽器</small></div>
             <label className="search"><span aria-hidden="true">⌕</span><span className="sr-only">搜尋單元、技能或頻道</span><input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜尋單元、技能或頻道" /></label>
             <div className="phase-filters" aria-label="依階段篩選"><button type="button" className={phaseFilter === 0 ? "active" : ""} aria-pressed={phaseFilter === 0} onClick={() => setPhaseFilter(0)}>ALL</button>{phases.map((item) => <button type="button" key={item.id} className={phaseFilter === item.id ? "active" : ""} aria-pressed={phaseFilter === item.id} onClick={() => setPhaseFilter(item.id)} title={item.title}>{item.id}</button>)}</div>
             <div className="unit-list">
@@ -219,9 +219,9 @@ export default function CourseApp() {
         </section>
 
         <section className="source-note">
-          <div><span>REFERENCE & RIGHTS</span><h2>保留實作骨架，重做可信度。</h2></div>
+          <div><span>REFERENCE & RIGHTS</span><h2>保留實作骨架，補強可信度。</h2></div>
           <p>本課以 Hahow「高效 AI 投資術：No Code 打造自動化股票理專」公開頁面作為研究起點（查閱日：2026-08-06）。參考頁面列出 9 章、31 單元、7 項作業與 425 分鐘內容；本站重新設計所有教學文字、練習與作品要求，補入資料稽核、回測偏誤、AI 風險與可靠營運。<a href="https://hahow.in/courses/68186cab7b691d6899006945" target="_blank" rel="noreferrer">查看參考課程 ↗</a></p>
-          <p>影音著作權屬原創作者與 YouTube 頻道；本站僅提供隱私增強嵌入、來源連結、近似觀看訊號與選片理由，不代表合作或背書。觀看數為查核當日近似值，可能持續變動。</p>
+          <p>影片著作權歸原作者或權利人所有；本站僅提供隱私增強嵌入、來源連結、查核時的觀看數與選片理由，不代表合作或背書。觀看數可能持續變動。</p>
         </section>
 
         <section className="discussion">
@@ -229,7 +229,7 @@ export default function CourseApp() {
           {giscusReady ? <div className="giscus-host" ref={discussionRef} /> : <div className="discussion-empty"><span>⌁</span><div><h3>討論區準備中</h3><p>設定四個公開 giscus 環境變數後會自動啟用；課程其他功能不受影響。</p><code>NEXT_PUBLIC_GISCUS_REPO · REPO_ID · CATEGORY · CATEGORY_ID</code></div></div>}
         </section>
       </main>
-      <footer><strong>AI INVESTMENT RESEARCH / 2026</strong><p>原創課程架構與教學文字 · 精選影音權利屬各創作者 · 不構成投資建議 · 學習進度只儲存在本機瀏覽器</p></footer>
+      <footer><strong>AI INVESTMENT RESEARCH / 2026</strong><p>原創課程架構與教學文字 · 影片著作權歸原作者或權利人所有 · 不構成投資建議 · 學習進度只儲存在此瀏覽器</p></footer>
     </div>
   );
 }

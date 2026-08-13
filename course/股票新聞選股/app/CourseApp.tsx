@@ -83,7 +83,7 @@ function Discussion() {
       <div>
         <h3>討論區尚未連線</h3>
         <p>
-          本地課程已可完整使用。若日後需要留言討論，可在環境設定加入
+          課程已可完整使用。若日後需要留言討論，可在環境設定加入
           giscus 的儲存庫與分類資訊。
         </p>
       </div>
@@ -204,7 +204,7 @@ export default function CourseApp() {
       <main id="top">
         <section className="course-hero" aria-labelledby="course-title">
           <div className="hero-copy">
-            <p className="eyebrow">台股研究實作課 · 本地版</p>
+            <p className="eyebrow">台股研究實作課 · 網頁版</p>
             <h1 id="course-title">
               從資訊噪音裡，
               <br />
@@ -529,7 +529,7 @@ export default function CourseApp() {
                   </div>
                 </div>
                 <p className="event-impact-note">
-                  數字口徑包含峰谷、年度與事件窗，已在各卡標示；用途是比較傳導方式，不是把不同口徑硬排成績。
+                  數值口徑包含峰谷、年度與事件窗，已在各卡標示；用途是比較傳導方式，不是將不同口徑直接排名。
                 </p>
                 <div className="event-impact-grid">
                   {current.eventImpacts.map((impact) => (
@@ -714,7 +714,7 @@ export default function CourseApp() {
             <div className="lesson-complete">
               <div>
                 <small>LESSON {current.order}</small>
-                <strong>{progress.units[current.id] ? "已完成，做得好。" : "完成實作後，留下進度。"}</strong>
+                <strong>{progress.units[current.id] ? "已完成，做得好。" : "完成實作後，記錄學習進度。"}</strong>
               </div>
               <button
                 type="button"
@@ -738,7 +738,7 @@ export default function CourseApp() {
             <p className="eyebrow">5 PHASES · 9 UNITS</p>
             <h2 id="roadmap-heading">從看懂，到能做出決策。</h2>
             <p>
-              每一階段都有可交付成果。最後不是得到一張推薦清單，而是一份能被新證據推翻、也能事後複盤的決策備忘錄。
+              每一階段都有可交付成果。最後不是得到一張推薦清單，而是一份能被新證據推翻、也能事後回顧的決策備忘錄。
             </p>
           </div>
           <div className="phase-grid">
@@ -799,7 +799,7 @@ export default function CourseApp() {
           <p>{courseFacts.subtitle}</p>
         </div>
         <p>
-          教育用途，不構成投資建議。影片著作權歸原創作者所有；本站僅提供策展、連結與原創學習引導。
+          教育用途，不構成投資建議。影片著作權歸原作者或權利人所有；本站僅提供策展、連結與原創學習引導。
           本課程是原筆記的主題式重構，不是逐頁重製；個股案例僅選代表性內容，制度資料以課程所連結的現行官方來源為準。
           資源查核日：{courseFacts.checkedAt}。
         </p>

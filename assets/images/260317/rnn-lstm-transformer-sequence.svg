@@ -2,7 +2,7 @@
   <rect width="1600" height="900" rx="28" fill="#F8FAFC"/>
   <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
   <text x="80" y="120" fill="#183153" font-size="58" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">RNN、LSTM 與 Transformer 的演進</text>
-  <text x="80" y="175" fill="#5B7090" font-size="28" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">我會把這條線理解成：先能處理序列，再想辦法記更久，最後直接重寫資訊互相看到彼此的方式。</text>
+  <text x="80" y="175" fill="#5B7090" font-size="28" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">我會把這條線理解成：先處理序列，再延長記憶，最後重新設計序列中各位置交換資訊的方式。</text>
 
   <rect x="90" y="270" width="420" height="470" rx="30" fill="#FFF7ED" stroke="#FDBA74" stroke-width="4"/>
   <rect x="590" y="270" width="420" height="470" rx="30" fill="#F0F9FF" stroke="#93C5FD" stroke-width="4"/>

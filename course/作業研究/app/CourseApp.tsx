@@ -268,7 +268,7 @@ export default function CourseApp() {
           <i aria-hidden="true">→</i>
           <span>而是</span>
           <p>一套可稽核的決策流程</p>
-          <small>適合大二管理與工程學生，也適合想補強最佳化思維的工作者</small>
+          <small>適合大二以上的管理或工程領域學生，也適合想補強最佳化思維的工作者</small>
         </section>
 
         <section
@@ -670,7 +670,7 @@ export default function CourseApp() {
           <div className="section-heading compact">
             <div>
               <span>HOW TO USE THIS COURSE</span>
-              <h2>讓課程真的發生。</h2>
+              <h2>讓學習真正發生。</h2>
             </div>
           </div>
           <div className="method-grid">
@@ -721,10 +721,10 @@ export default function CourseApp() {
       <footer className="site-footer">
         <div>
           <b>作業研究</b>
-          <span>一門把限制轉成可解決策的課。</span>
+          <span>一門把限制轉化為可求解模型與可執行決策的課。</span>
         </div>
         <p>
-          本站僅策展與嵌入教學影音，著作權歸原創作者與頻道所有。
+          本站僅策展與嵌入教學影片，著作權歸原作者或權利人所有。
           觀看數為查詢日約數，不代表排名或合作關係。課程架構參考
           <a
             href="https://ocw.nycu.edu.tw/?course_page=all-course%2Fcollege-of-management%2F%E4%BD%9C%E6%A5%AD%E7%A0%94%E7%A9%B6%E4%B8%80-operations-research-i-97%E5%AD%B8%E5%B9%B4%E5%BA%A6-%E9%81%8B%E8%BC%B8%E8%88%87%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86%E5%AD%B8%E7%B3%BB-%E7%8E%8B"

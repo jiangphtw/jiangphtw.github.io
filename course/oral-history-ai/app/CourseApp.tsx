@@ -144,7 +144,7 @@ export default function CourseApp() {
         <section className="hero">
           <div className="hero-copy">
             <p className="eyebrow"><span>2026</span> LISTEN BEFORE YOU GENERATE</p>
-            <h1>AI 會轉成文字。<br />但誰來<span>守住聲音？</span></h1>
+            <h1>AI 能把錄音轉成文字。<br />但誰來<span>守住聲音？</span></h1>
             <p className="hero-lede">一門從方法、倫理與傾聽開始的實作課。你會完成訪談、逐字稿與 AI 稽核，最後交付一份能回到原音、尊重敘事者、可長久保存的口述史專案。</p>
             <div className="hero-actions">
               <button type="button" onClick={() => lessonRef.current?.scrollIntoView({ behavior: "smooth" })}>開始第一課 <span aria-hidden="true">↓</span></button>
@@ -153,8 +153,8 @@ export default function CourseApp() {
             <dl className="hero-stats">
               <div><dt>08</dt><dd>方法與實作單元</dd></div>
               <div><dt>16</dt><dd>中英精選影音</dd></div>
-              <div><dt>01</dt><dd>正式口述訪談</dd></div>
-              <div><dt>01</dt><dd>可保存專案包</dd></div>
+              <div><dt>01</dt><dd>正式的口述歷史訪談</dd></div>
+              <div><dt>01</dt><dd>可長期保存的專案包</dd></div>
             </dl>
           </div>
           <div className="hero-archive" aria-label="口述史資料流示意">
@@ -190,7 +190,7 @@ export default function CourseApp() {
             <div className="progress-box">
               <div><span>LOCAL PROGRESS</span><strong>{progress}%</strong></div>
               <div className="progress-track" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progress} aria-label={`課程完成度 ${progress}%`}><i style={{ width: `${progress}%` }} /></div>
-              <small>已完成 {completed.length} / {units.length} · 只儲存在這台裝置</small>
+              <small>已完成 {completed.length} / {units.length} · 進度只儲存在此瀏覽器</small>
             </div>
             <label className="search"><span aria-hidden="true">⌕</span><span className="sr-only">搜尋單元、技能或頻道</span><input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜尋單元、技能或頻道" /></label>
             <div className="phase-filters" aria-label="依階段篩選">
@@ -234,7 +234,7 @@ export default function CourseApp() {
         </section>
 
         <section className="roadmap" id="roadmap">
-          <div className="section-intro"><p className="eyebrow">FOUR PHASES</p><h2>每一階段都留下<br />可查核的痕跡。</h2><p>後一階段只建立在前一階段已完成的文件與同意上。沒有倫理與保存，速度不算進步。</p></div>
+          <div className="section-intro"><p className="eyebrow">FOUR PHASES</p><h2>每一階段都留下<br />可查核的痕跡。</h2><p>完成前一階段的文件與同意程序後，才能進入下一階段。沒有倫理與保存，速度不算進步。</p></div>
           <div className="phase-grid">{phases.map((item) => <article key={item.id}><span>0{item.id}</span><small>{item.code}</small><h3>{item.title}</h3><p>{item.description}</p><strong>EXIT → {item.outcome}</strong></article>)}</div>
         </section>
 
@@ -248,7 +248,7 @@ export default function CourseApp() {
           <div>
             <p>課程方法參照臺灣口述歷史學會、Oral History Association、Baylor Institute for Oral History、Library of Congress 與 National Park Service 的公開資源，所有教學說明、練習與專案要求均為重新撰寫。</p>
             <div className="source-links"><a href="https://www.oh.org.tw/" target="_blank" rel="noreferrer">臺灣口述歷史學會 ↗</a><a href="https://oralhistory.org/principles-and-best-practices-revised-2018/" target="_blank" rel="noreferrer">OHA Principles ↗</a><a href="https://library.web.baylor.edu/visit/institute-oral-history/resources" target="_blank" rel="noreferrer">Baylor Resources ↗</a><a href="https://www.nps.gov/articles/000/oral-history-resources-choosing-recording-equipment.htm" target="_blank" rel="noreferrer">NPS Equipment ↗</a></div>
-            <p>影音著作權屬原創作者與 YouTube 頻道；本站僅提供隱私增強嵌入、來源連結、近似觀看訊號與選片理由，不代表合作或背書。觀看數為查核當日近似值，可能持續變動。</p>
+            <p>影片著作權歸原作者或權利人所有；本站僅提供隱私增強嵌入、來源連結、查核時的觀看數與選片理由，不代表合作或背書。觀看數可能持續變動。</p>
           </div>
         </section>
 
@@ -257,7 +257,7 @@ export default function CourseApp() {
           {giscusReady ? <div className="giscus-host" ref={discussionRef} /> : <div className="discussion-empty"><span aria-hidden="true">◎</span><div><h3>討論區準備中</h3><p>設定四個公開 giscus 環境變數後會自動啟用；課程、進度與練習功能不受影響。</p><code>NEXT_PUBLIC_GISCUS_REPO · REPO_ID · CATEGORY · CATEGORY_ID</code></div></div>}
         </section>
       </main>
-      <footer><strong>留下人的聲音 / 2026</strong><p>原創課程架構與教學文字 · 精選影音權利屬各創作者 · 學習進度只儲存在本機瀏覽器</p></footer>
+      <footer><strong>留下人的聲音 / 2026</strong><p>原創課程架構與教學文字 · 影片著作權歸原作者或權利人所有 · 學習進度只儲存在此瀏覽器</p></footer>
     </div>
   );
 }

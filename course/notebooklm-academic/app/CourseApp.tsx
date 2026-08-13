@@ -148,7 +148,7 @@ export default function CourseApp() {
           <div className="hero-copy">
             <p className="eyebrow">GEMINI NOTEBOOK <span>原 NOTEBOOKLM</span></p>
             <h1>不要只問 AI。<br /><em>建立能被查證的研究。</em></h1>
-            <p className="hero-lede">從一個問題開始，走過搜尋、證據矩陣、批判綜整、引用查核與 Zotero 知識庫。最後交出的不是聊天紀錄，而是一份讀者能理解、審查者能追溯的研究證據卷宗。</p>
+            <p className="hero-lede">從一個問題開始，走過搜尋、證據矩陣、批判綜整、引用查核與 Zotero 知識庫。最後交出的不是聊天紀錄，而是一份讀者能理解、審查者能追溯的研究證據包。</p>
             <div className="hero-actions">
               <button type="button" onClick={() => lessonRef.current?.scrollIntoView({ behavior: "smooth" })}>從第 1 單元開始 <span>↘</span></button>
               <a href="#roadmap">先看 7 週路線</a>
@@ -157,7 +157,7 @@ export default function CourseApp() {
               <div><dt>07</dt><dd>週完整路徑</dd></div>
               <div><dt>14</dt><dd>個實作單元</dd></div>
               <div><dt>28</dt><dd>支雙語影音</dd></div>
-              <div><dt>01</dt><dd>份研究卷宗</dd></div>
+              <div><dt>01</dt><dd>份研究證據包</dd></div>
             </dl>
           </div>
 
@@ -194,7 +194,7 @@ export default function CourseApp() {
             <div className="curriculum-progress">
               <div><span>YOUR PROGRESS</span><strong>{progress}%</strong></div>
               <div className="progress-track" role="progressbar" aria-label={`課程進度 ${progress}%`} aria-valuemin={0} aria-valuemax={100} aria-valuenow={progress}><i style={{ width: `${progress}%` }} /></div>
-              <p>完成 {completed.length} / {units.length} 單元 · 資料只存在這台裝置</p>
+              <p>完成 {completed.length} / {units.length} 單元 · 進度只儲存在此瀏覽器</p>
             </div>
 
             <label className="search">
@@ -281,7 +281,7 @@ export default function CourseApp() {
         </section>
 
         <section className="roadmap-section" id="roadmap">
-          <div className="section-heading"><div><p className="eyebrow">7-WEEK ROADMAP</p><h2>從問題，到證據，再到交付。</h2></div><p>每週完成兩個單元與一組可以保存的研究產物。建議用同一題貫穿全課，讓每次練習都累積到結業作品。</p></div>
+          <div className="section-heading"><div><p className="eyebrow">7-WEEK ROADMAP</p><h2>從問題，到證據，再到交付。</h2></div><p>每週完成兩個單元與一組可以保存的研究成果。建議用同一題貫穿全課，讓每次練習都累積到結業作品。</p></div>
           <div className="roadmap-grid">
             {phases.map((item) => <article key={item.id} style={{ "--phase": item.color } as React.CSSProperties}>
               <div className="phase-top"><span>{item.number}</span><small>WEEK {item.id}</small></div><p>{item.short}</p><h3>{item.title}</h3><i className="phase-stroke" /><p className="phase-description">{item.description}</p>
@@ -292,7 +292,7 @@ export default function CourseApp() {
         </section>
 
         <section className="capstone-section" id="capstone">
-          <div className="capstone-copy"><span className="eyebrow">CAPSTONE / RESEARCH DOSSIER</span><h2>結業不是考試，<br /><em>是一份研究證據卷宗。</em></h2><p>選一個真實問題，用至少 12 個合格來源完成 1,500–2,000 字研究簡報。把搜尋、選擇、抽取、綜整與修訂過程一起交付，讓別人能沿著你的證據路徑重做一次。</p><button type="button" onClick={() => selectUnit(14)}>前往結業單元 →</button></div>
+          <div className="capstone-copy"><span className="eyebrow">CAPSTONE / RESEARCH DOSSIER</span><h2>結業不是考試，<br /><em>而是一份研究證據包。</em></h2><p>選一個真實問題，用至少 12 個合格來源完成 1,500–2,000 字研究簡報。把搜尋、選擇、抽取、綜整與修訂過程一起交付，讓別人能依循證據路徑重現研究過程。</p><button type="button" onClick={() => selectUnit(14)}>前往結業單元 →</button></div>
           <div className="capstone-board"><p>FINAL DELIVERY / 07 FILES</p><ol>{capstoneChecklist.map((item, index) => <li key={item}><span>{String(index + 1).padStart(2, "0")}</span><b>{item}</b><i>↗</i></li>)}</ol><small>最低通過條件：同儕隨機抽查 3 條主張，均能在兩步內回到原始來源。</small></div>
         </section>
 
@@ -307,14 +307,14 @@ export default function CourseApp() {
         </section>
 
         <section className="discussion-section">
-          <div className="discussion-heading"><p className="eyebrow">DISCUSSION</p><h2>把你的問題，放進研究社群。</h2><p>分享檢索式、難以判讀的證據、相互矛盾的結果，或請同學抽查你的主張。高品質討論從可重現的上下文開始。</p></div>
+          <div className="discussion-heading"><p className="eyebrow">DISCUSSION</p><h2>把你的問題，放進研究社群。</h2><p>分享檢索式、難以判讀的證據、相互矛盾的結果，或請同學抽查你的主張。高品質討論從足以重現問題的背景資訊開始。</p></div>
           <div className="giscus-host" ref={discussionRef}>
             {!giscusReady && <div className="giscus-setup"><span>?</span><div><b>討論區尚未啟用</b><p>在部署環境設定四個 <code>NEXT_PUBLIC_GISCUS_*</code> 變數，即可載入 GitHub Discussions。</p></div><a href="https://giscus.app/zh-TW" target="_blank" rel="noreferrer">查看設定方式 ↗</a></div>}
           </div>
         </section>
       </main>
 
-      <footer className="site-footer"><div><b>EVIDENCE FIRST</b><span>Gemini Notebook 學術研究實戰</span></div><p>Gemini Notebook / NotebookLM 為 Google 產品名稱。本課為獨立策展的免費教育資源，與 Google 及影片作者無隸屬關係；影片權利屬原頻道。</p><a href="/courses.html">返回所有課程 ↗</a></footer>
+      <footer className="site-footer"><div><b>EVIDENCE FIRST</b><span>Gemini Notebook 學術研究實戰</span></div><p>Gemini Notebook / NotebookLM 為 Google 產品名稱。本課為獨立策展的免費教育資源，與 Google 及影片作者無隸屬關係；影片著作權歸原作者或權利人所有。</p><a href="/courses.html">回到所有課程 ↗</a></footer>
     </div>
   );
 }

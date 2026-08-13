@@ -22,7 +22,7 @@
 
   <text x="1300" y="335" text-anchor="middle" fill="#0F766E" font-size="32" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">xLSTM</text>
   <text x="1300" y="410" text-anchor="middle" fill="#183153" font-size="42" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">不是回到舊版</text>
-  <text x="1300" y="456" text-anchor="middle" fill="#183153" font-size="42" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">而是現代化重做</text>
+  <text x="1300" y="456" text-anchor="middle" fill="#183153" font-size="42" font-weight="800" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">而是以現代方法重新設計</text>
   <text x="1300" y="540" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">改 gating、改 memory</text>
   <text x="1300" y="576" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">重新測試 recurrent 架構潛力</text>
   <text x="1300" y="612" text-anchor="middle" fill="#5B7090" font-size="24" font-weight="500" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">這是 2024 論文的主張</text>

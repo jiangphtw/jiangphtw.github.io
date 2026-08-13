@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://jiangphtw.github.io"),
   title: "股海判讀學｜從筆記到可複核的台股決策",
   description:
-    "把財報、技術、新聞、風險與重大事件史整合成 9 單元台股研究實作課，含中英教學影片、案例、練習與本地進度追蹤。",
+    "把財報、技術、新聞、風險與重大事件史整合成 9 單元台股研究實作課，含中英教學影片、案例、練習與瀏覽器進度追蹤。",
   icons: {
     icon: `${courseBasePath}/favicon.svg`,
     shortcut: `${courseBasePath}/favicon.svg`,

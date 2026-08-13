@@ -35,7 +35,7 @@ export const phases = [
   { id: 4, number: "04", short: "SYNTHESIZE", title: "綜整文獻地景", description: "辨認共識、分歧、條件與時間脈絡，不把多篇摘要誤當綜述。", deliverable: "綜整表＋概念地圖", color: "#8047e8" },
   { id: 5, number: "05", short: "QUESTION", title: "深問與找缺口", description: "用問題階梯、反例與方法差異，把理解推向研究缺口。", deliverable: "問題樹＋缺口假說", color: "#c14b00" },
   { id: 6, number: "06", short: "VERIFY", title: "查證與引用", description: "逐條回到原文，檢查引文、語境、數字與 AI 推論的邊界。", deliverable: "主張—引用稽核表", color: "#cf315a" },
-  { id: 7, number: "07", short: "SHIP", title: "累積與交付", description: "讓 Notebook、Zotero 與自己的輸出可延續，完成一份可複核作品。", deliverable: "研究證據卷宗", color: "#1d738c" },
+  { id: 7, number: "07", short: "SHIP", title: "累積與交付", description: "讓 Notebook、Zotero 與自己的輸出可延續，完成一份可複核作品。", deliverable: "研究證據包", color: "#1d738c" },
 ] as const;
 
 const checkedAt = "2026-08-04";
@@ -97,7 +97,7 @@ export const units: Unit[] = [
     prerequisites: "研究問題卡與可公開測試的主題",
     skills: ["布林檢索", "引用追蹤", "可重現搜尋"],
     media: {
-      zh: { videoId: "cFt9z8kLGsQ", title: "NotebookLM 整理論文、研究計畫與文獻回顧", channel: "RYAN 老師 AI 研究室", duration: "約 21 分", approximateViews: "約 1.5 萬次觀看", selectionReason: "示範學術材料如何進入 Notebook 工作流，適合作為搜尋後的落地情境；操作步驟不能取代資料庫檢索紀錄。", checkedAt },
+      zh: { videoId: "cFt9z8kLGsQ", title: "NotebookLM 整理論文、研究計畫與文獻回顧", channel: "RYAN 老師 AI 研究室", duration: "約 21 分", approximateViews: "約 1.5 萬次觀看", selectionReason: "示範學術材料如何進入 Notebook 工作流程，適合作為搜尋後的落地情境；操作步驟不能取代資料庫檢索紀錄。", checkedAt },
       en: { videoId: "mo9gZA3fCGs", title: "NotebookLM for an Efficient Literature Review", channel: "Aynur Science", duration: "約 12 分", approximateViews: "約 3 萬次觀看", selectionReason: "聚焦文獻選取與整理，能把搜尋和後續綜整接起來；需自行補上領域專屬資料庫。", checkedAt },
     },
   },
@@ -178,7 +178,7 @@ export const units: Unit[] = [
     skills: ["主題綜整", "矛盾解釋", "證據加權"],
     media: {
       zh: { videoId: "Z9Y7SxehRA0", title: "Google NotebookLM：來源、筆記與 Audio Overview", channel: "PAPAYA 電腦教室", duration: "約 12 分", approximateViews: "約 67 萬次觀看", selectionReason: "清楚展示從來源提問、保存筆記到再轉成來源的流程；偏操作教學，綜整判準仍由課內框架負責。", checkedAt },
-      en: { videoId: "PVtquY6ziYQ", title: "Fast & Efficient Literature Review with NotebookLM", channel: "Aynur Science", duration: "約 25 分", approximateViews: "約 1.8 萬次觀看", selectionReason: "涵蓋文獻選取、矛盾、缺口、假說與反覆批判，最接近完整綜整工作流；較長，建議依章節觀看。", checkedAt },
+      en: { videoId: "PVtquY6ziYQ", title: "Fast & Efficient Literature Review with NotebookLM", channel: "Aynur Science", duration: "約 25 分", approximateViews: "約 1.8 萬次觀看", selectionReason: "涵蓋文獻選取、矛盾、缺口、假說與反覆批判，最接近完整綜整工作流程；較長，建議依章節觀看。", checkedAt },
     },
   },
   {
@@ -306,13 +306,13 @@ export const units: Unit[] = [
     order: "14",
     phase: 7,
     topic: "CAPSTONE",
-    title: "完成一份可複核的研究證據卷宗",
+    title: "完成一份可複核的研究證據包",
     subtitle: "把研究問題、來源、矩陣、綜整、查核與口頭說明組成可交付作品。",
     objectives: ["把 13 個單元產物整合成一致、可閱讀、可追溯的作品。", "用同儕重現與口頭答辯檢查研究流程是否站得住腳。"],
     theory: ["好的交付物同時服務讀者與審查者：結論清楚，證據路徑也清楚。", "可複核不等於完全客觀，而是讓範圍、選擇、限制與修訂可被看見。", "最後交付時揭露 AI 的角色，將未解問題轉成下一輪研究待辦。"],
     exercises: ["整併研究問題卡、檢索日誌、來源表、矩陣、地圖與稽核紀錄。", "撰寫 1,500–2,000 字研究簡報稿，所有重要主張連到來源。", "請同儕隨機抽 3 條主張重現查證，依回饋修訂並錄製 5 分鐘說明。"],
     outcome: "一份讀者能理解、審查者能追溯、未來自己能續作的研究作品。",
-    project: "研究證據卷宗 v1（研究簡報＋證據矩陣＋概念圖＋查核表＋AI 揭露）",
+    project: "研究證據包 v1（研究簡報＋證據矩陣＋概念圖＋查核表＋AI 揭露）",
     rhythm: "3–5 小時",
     prerequisites: "完成前 13 單元與至少 12 個合格來源",
     skills: ["研究寫作", "同儕審查", "知識轉譯"],

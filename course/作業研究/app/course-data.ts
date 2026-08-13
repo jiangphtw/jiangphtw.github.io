@@ -102,7 +102,7 @@ export const units: CourseUnit[] = [
     rhythm: "先讀觀念 15 分 → 看中文課堂 → 寫一版模型 → 用英文教材補強術語",
     media: {
       zh: { videoId: "ptrOxKIzvno", title: "作業研究（一）第一週：導論、模型與圖解法", channel: "NYCU OCW｜王晉元老師", duration: "完整課堂", approximateViews: nycuViews, checkedAt, selectionReason: "直接來自指定參考課程，從 OR/MS 目的進入線性規劃與圖解，最能保留原課的管理視角；觀看數未在課程頁顯示，因此以官方課程脈絡而非人氣作為選擇依據。" },
-      en: { videoId: "a2QgdDk4Xjw", title: "Introduction to Linear Programming Formulations", channel: "NPTEL / IIT Madras", duration: "51:48", approximateViews: "約 114 萬次觀看", checkedAt, selectionReason: "以完整產品組合案例示範如何建模，且在官方 NPTEL 系列中具有強烈長期觀看訊號；適合補足英文符號與 formulation 語言。" },
+      en: { videoId: "a2QgdDk4Xjw", title: "Introduction to Linear Programming Formulations", channel: "NPTEL / IIT Madras", duration: "51:48", approximateViews: "約 114 萬次觀看", checkedAt, selectionReason: "以完整產品組合案例示範如何建模，且在官方 NPTEL 系列中具有長期且突出的觀看與互動表現；適合補足英文符號與 formulation 語言。" },
     },
   },
   {
@@ -114,7 +114,7 @@ export const units: CourseUnit[] = [
     outcome: "能在求解前辨認模型是否適用，並把異常解轉成可追查的問題。", project: "模型稽核表｜假設、邊界與失敗模式", skills: ["模型假設", "可行域", "失敗診斷"], rhythm: "看例題 → 畫三種可行域 → 回頭稽核自己的模型",
     media: {
       zh: { videoId: "yXwbFYWN738", title: "第二週：線性規劃模型、假設與例題", channel: "NYCU OCW｜王晉元老師", duration: "完整課堂", approximateViews: nycuViews, checkedAt, selectionReason: "指定原課的第二週專注模型假設與延伸案例，能把第一週的形式轉成建模判斷；以課程連續性作為主要證據。" },
-      en: { videoId: "pzbSURDWluA", title: "Linear Programming Formulations (Continued)", channel: "NPTEL / IIT Madras", duration: "52:08", approximateViews: "約 23 萬次觀看", checkedAt, selectionReason: "延續官方 NPTEL 建模系列，透過多個限制型態練習 formulation；觀看訊號穩定，適合作為假設檢查的第二視角。" },
+      en: { videoId: "pzbSURDWluA", title: "Linear Programming Formulations (Continued)", channel: "NPTEL / IIT Madras", duration: "52:08", approximateViews: "約 23 萬次觀看", checkedAt, selectionReason: "延續官方 NPTEL 建模系列，透過多個限制型態練習 formulation；觀看與互動表現穩定，適合作為假設檢查的第二視角。" },
     },
   },
   {
@@ -126,7 +126,7 @@ export const units: CourseUnit[] = [
     outcome: "能用幾何圖驗證模型與解，並預測係數變動對最佳點的影響。", project: "圖解驗證頁｜可行域、等值線與頂點表", skills: ["圖解法", "凸集合", "結果驗證"], rhythm: "手畫 20 分 → 看示範 → 用工具重畫 → 口頭解釋 3 分鐘",
     media: {
       zh: { videoId: "RTe7_OO17ww", title: "第三週：線性代數與單體法", channel: "NYCU OCW｜王晉元老師", duration: "完整課堂", approximateViews: nycuViews, checkedAt, selectionReason: "原課從幾何銜接線性代數與單體法，正好完成從圖形直觀到一般演算法的橋接。" },
-      en: { videoId: "XEA1pOtyrfo", title: "Linear Programming Solutions — Graphical Methods", channel: "NPTEL / IIT Madras", duration: "52:11", approximateViews: "約 30 萬次觀看", checkedAt, selectionReason: "完整推導圖解解法並涵蓋特殊解型，官方系列觀看訊號強；適合跟著畫出每一步。" },
+      en: { videoId: "XEA1pOtyrfo", title: "Linear Programming Solutions — Graphical Methods", channel: "NPTEL / IIT Madras", duration: "52:11", approximateViews: "約 30 萬次觀看", checkedAt, selectionReason: "完整推導圖解解法並涵蓋特殊解型，官方系列觀看與互動表現突出；適合跟著畫出每一步。" },
     },
   },
   {
@@ -150,7 +150,7 @@ export const units: CourseUnit[] = [
     outcome: "能手算小型單體表，並解釋每一次樞紐與終止狀態。", project: "單體法計算紀錄與診斷卡", skills: ["單體表", "比值檢定", "異常解"], rhythm: "先遮答案手算 → 對照影片 → 以另一題做 20 分鐘限時演練",
     media: {
       zh: { videoId: "WMqHCKNgom8", title: "第五週：單體法理論", channel: "NYCU OCW｜王晉元老師", duration: "完整課堂", approximateViews: nycuViews, checkedAt, selectionReason: "原課第五週聚焦單體法的理論與運作，適合在已會轉換後深入每一步的選擇理由。" },
-      en: { videoId: "wdGiekwXM2w", title: "Simplex Algorithm — Minimization Problems", channel: "NPTEL / IIT Madras", duration: "52:11", approximateViews: "約 40 萬次觀看", checkedAt, selectionReason: "用最小化問題擴大單體法的適用型態，社群訊號強；與中文理論課形成計算互補。" },
+      en: { videoId: "wdGiekwXM2w", title: "Simplex Algorithm — Minimization Problems", channel: "NPTEL / IIT Madras", duration: "52:11", approximateViews: "約 40 萬次觀看", checkedAt, selectionReason: "用最小化問題擴大單體法的適用型態，觀看與互動表現突出；與中文理論課形成計算互補。" },
     },
   },
   {
@@ -162,7 +162,7 @@ export const units: CourseUnit[] = [
     outcome: "能用矩陣形式重建單體法關鍵量，並說明大型求解器為何採用它。", project: "修正單體法工作紙與計算量比較", skills: ["修正單體法", "基底反矩陣", "稀疏計算"], rhythm: "複習矩陣 → 跟算一次 → 不看影片重做 → 寫 150 字比較",
     media: {
       zh: { videoId: "Oz2PTxr8n88", title: "第七週：修正單體法", channel: "NYCU OCW｜王晉元老師", duration: "完整課堂", approximateViews: nycuViews, checkedAt, selectionReason: "這是指定課程中專門處理 revised simplex 的單元，能延續王老師前幾週的符號與基底脈絡。" },
-      en: { videoId: "cCBFC8LmNDE", title: "Simplex Algorithm — Initialization and Iteration", channel: "NPTEL / IIT Madras", duration: "52:24", approximateViews: "約 14 萬次觀看", checkedAt, selectionReason: "以 initialization 與 iteration 拆解演算法資料流，能補足修正單體法前的程序基礎；觀看訊號在完整課程中穩定。" },
+      en: { videoId: "cCBFC8LmNDE", title: "Simplex Algorithm — Initialization and Iteration", channel: "NPTEL / IIT Madras", duration: "52:24", approximateViews: "約 14 萬次觀看", checkedAt, selectionReason: "以 initialization 與 iteration 拆解演算法資料流，能補足修正單體法前的程序基礎；觀看與互動表現在完整課程中穩定。" },
     },
   },
   {
@@ -174,7 +174,7 @@ export const units: CourseUnit[] = [
     outcome: "能正確建立對偶，並以管理語言說明資源價值。", project: "原—對偶對照表與資源報價備忘錄", skills: ["對偶建模", "弱對偶", "資源定價"], rhythm: "先用語意配對 → 寫符號 → 看推導 → 以一頁 memo 解釋",
     media: {
       zh: { videoId: "6U7P8TxFsEA", title: "第八週：基本洞見與對偶理論", channel: "NYCU OCW｜王晉元老師", duration: "完整課堂", approximateViews: nycuViews, checkedAt, selectionReason: "原課以 Fundamental Insight 進入 Duality，保留了從基底到資源價格的推導鏈，而不只是寫對偶規則。" },
-      en: { videoId: "gmDwUCvOJQ8", title: "Introduction to Duality", channel: "NPTEL / IIT Madras", duration: "51:03", approximateViews: "約 19 萬次觀看", checkedAt, selectionReason: "完整展示 primal 與 dual 的建構方式，官方系列中有良好觀看訊號；適合用英文術語重新檢查符號規則。" },
+      en: { videoId: "gmDwUCvOJQ8", title: "Introduction to Duality", channel: "NPTEL / IIT Madras", duration: "51:03", approximateViews: "約 19 萬次觀看", checkedAt, selectionReason: "完整展示 primal 與 dual 的建構方式，官方系列中有良好觀看與互動表現；適合用英文術語重新檢查符號規則。" },
     },
   },
   {
@@ -222,7 +222,7 @@ export const units: CourseUnit[] = [
     outcome: "能針對模型變更選擇對偶單體法，並描述參數變化的分段結構。", project: "參數路徑圖與暖啟動策略", skills: ["對偶單體法", "參數規劃", "暖啟動"], rhythm: "先判斷可行性 → 手做一個 pivot → 畫參數區間 → 寫運算策略",
     media: {
       zh: { videoId: "H6T1SYDigYw", title: "第十二週：對偶單體、參數規劃與運輸問題", channel: "NYCU OCW｜王晉元老師", duration: "完整課堂", approximateViews: nycuViews, checkedAt, selectionReason: "指定原課唯一直接涵蓋 dual simplex 與 parametric programming 的課堂，也自然銜接下一階段的運輸結構。" },
-      en: { videoId: "_-Mlp3w1Brc", title: "Sensitivity Analysis and Transportation Problem Introduction", channel: "NPTEL / IIT Madras", duration: "1:01:46", approximateViews: "約 14 萬次觀看", checkedAt, selectionReason: "從敏感度過渡到運輸模型，與本單元的課程位置一致；官方系列具穩定觀看與完整推導。" },
+      en: { videoId: "_-Mlp3w1Brc", title: "Sensitivity Analysis and Transportation Problem Introduction", channel: "NPTEL / IIT Madras", duration: "1:01:46", approximateViews: "約 14 萬次觀看", checkedAt, selectionReason: "從敏感度過渡到運輸模型，與本單元的課程位置一致；官方系列具穩定觀看數與完整推導。" },
     },
   },
   {
@@ -234,7 +234,7 @@ export const units: CourseUnit[] = [
     outcome: "能辨認運輸與指派結構，建立模型並產生可解釋的配置方案。", project: "物流配置工作簿｜運輸表、指派表、成本比較", skills: ["運輸模型", "匈牙利法", "物流配置"], rhythm: "建表 → 算初始解 → 看改善法 → 用求解器交叉驗證",
     media: {
       zh: { videoId: "yK7HH2QoazI", title: "第十四週：運輸問題與指派問題", channel: "NYCU OCW｜王晉元老師", duration: "完整課堂", approximateViews: nycuViews, checkedAt, selectionReason: "指定原課把 transportation 與 assignment 放在同一週，最適合建立兩者的結構關係。" },
-      en: { videoId: "BUGIhEecipE", title: "Assignment Problem — Hungarian Algorithm", channel: "NPTEL / IIT Madras", duration: "1:00:16", approximateViews: "約 43 萬次觀看", checkedAt, selectionReason: "完整演示匈牙利法，且在官方 NPTEL 系列具有強觀看訊號；與中文課的運輸脈絡形成方法補充。" },
+      en: { videoId: "BUGIhEecipE", title: "Assignment Problem — Hungarian Algorithm", channel: "NPTEL / IIT Madras", duration: "1:00:16", approximateViews: "約 43 萬次觀看", checkedAt, selectionReason: "完整演示匈牙利法，且在官方 NPTEL 系列具有突出的觀看與互動表現；與中文課的運輸脈絡形成方法補充。" },
     },
   },
   {
@@ -246,7 +246,7 @@ export const units: CourseUnit[] = [
     outcome: "能辨認常見網路模型並用路徑、樹或割集證明結果。", project: "網路決策圖｜模型選擇、計算與瓶頸解釋", skills: ["最短路", "最小生成樹", "最大流"], rhythm: "先畫圖 → 手跑兩種演算法 → 用程式驗證 → 解釋瓶頸",
     media: {
       zh: { videoId: "bZFMMPJIzms", title: "第十五週：網路最佳化模型", channel: "NYCU OCW｜王晉元老師", duration: "完整課堂", approximateViews: nycuViews, checkedAt, selectionReason: "指定原課在同一課堂比較 shortest path、minimum spanning tree 與 maximum flow，能建立模型選擇地圖。" },
-      en: { videoId: "bZkzH5x0SKU", title: "Dijkstra’s Shortest Path Algorithm Explained", channel: "FelixTechTips", duration: "8:24", approximateViews: "約 109 萬次觀看", checkedAt, selectionReason: "用一個清晰圖例在短時間走完整個 Dijkstra 過程，具有強觀看訊號；作為英文補充，降低長課堂後的認知負擔。" },
+      en: { videoId: "bZkzH5x0SKU", title: "Dijkstra’s Shortest Path Algorithm Explained", channel: "FelixTechTips", duration: "8:24", approximateViews: "約 109 萬次觀看", checkedAt, selectionReason: "用一個清晰圖例在短時間走完整個 Dijkstra 過程，具有突出的觀看與互動表現；作為英文補充，降低長課堂後的認知負擔。" },
     },
   },
   {
@@ -258,7 +258,7 @@ export const units: CourseUnit[] = [
     outcome: "能以網路圖找出專案瓶頸，並用不確定工期支持承諾日期。", project: "專案控制板｜網路圖、關鍵路徑與趕工方案", skills: ["CPM", "PERT", "專案風險"], rhythm: "畫 AON 圖 → 前後推 → 加入三點估計 → 做一次趕工情境",
     media: {
       zh: { videoId: "ipK_5LxjlSw", title: "第十六週：PERT / CPM 與賽局導論", channel: "NYCU OCW｜王晉元老師", duration: "完整課堂", approximateViews: nycuViews, checkedAt, selectionReason: "指定原課直接從網路模型延伸到 PERT/CPM，保留了課綱的原始銜接。" },
-      en: { videoId: "-TDh-5n90vk", title: "Project Scheduling — PERT/CPM: Finding Critical Path", channel: "Joshua Emmanuel", duration: "6:57", approximateViews: "約 210 萬次觀看", checkedAt, selectionReason: "短片完整示範前推、後推、浮時與關鍵路徑，觀看訊號極強；很適合在長篇中文課後快速重做一次。" },
+      en: { videoId: "-TDh-5n90vk", title: "Project Scheduling — PERT/CPM: Finding Critical Path", channel: "Joshua Emmanuel", duration: "6:57", approximateViews: "約 210 萬次觀看", checkedAt, selectionReason: "短片完整示範前推、後推、浮時與關鍵路徑，觀看與互動表現極為突出；很適合在長篇中文課後快速重做一次。" },
     },
   },
   {
@@ -270,7 +270,7 @@ export const units: CourseUnit[] = [
     outcome: "能分析競爭性決策，並交付一份從模型到建議都可追溯的作業研究提案。", project: "結業專題｜最佳化模型、驗證、敏感度與決策簡報", skills: ["零和賽局", "混合策略", "整合建模"], rhythm: "先手算 payoff → 用 LP 驗證 → 完成專題 → 以 5 分鐘簡報接受質疑",
     media: {
       zh: { videoId: "K93epwBp_ZE", title: "第十七週：賽局理論", channel: "NYCU OCW｜王晉元老師", duration: "完整課堂", approximateViews: nycuViews, checkedAt, selectionReason: "指定原課以完整一週收束 Game Theory，能直接把 minimax 與前面學過的線性規劃對偶連起來。" },
-      en: { videoId: "h0bdo06qNVw", title: "Game Theory", channel: "NPTEL / IIT Madras", duration: "58:00", approximateViews: "約 33 萬次觀看", checkedAt, selectionReason: "官方 NPTEL 長講涵蓋 payoff、純策略與混合策略，觀看訊號強；足以支撐結業前的完整複習與推導。" },
+      en: { videoId: "h0bdo06qNVw", title: "Game Theory", channel: "NPTEL / IIT Madras", duration: "58:00", approximateViews: "約 33 萬次觀看", checkedAt, selectionReason: "官方 NPTEL 長講涵蓋 payoff、純策略與混合策略，觀看與互動表現突出；足以支撐結業前的完整複習與推導。" },
     },
   },
 ];
