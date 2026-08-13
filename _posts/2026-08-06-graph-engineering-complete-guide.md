@@ -3,14 +3,14 @@ layout: post
 title: "Graph Engineering 完整指南：把 Agent、狀態、分支、並行與知識關係設計成可治理的圖"
 subtitle: "從 Workflow Graph、Reasoning Topology、GraphRAG，到 State、Reducer、Checkpoint、HITL、版本遷移、Observability 與 Evals"
 author: Paul Jiang
-date: 2026-08-13 23:30:00 +0800
+date: 2026-08-06 09:00:00 +0800
 categories: AI
 tags: LLM Graph-Engineering AI-Agent LangGraph LlamaIndex Microsoft-Agent-Framework GraphRAG Workflow State-Machine Checkpoint Human-in-the-loop Observability Evals
 sidebar: []
 excerpt_image: /assets/images/260813/graph-engineering-complete-guide-hero.png
 ---
 
-> 本文更新於 **2026 年 8 月 13 日**，是 LLM 工程演進系列的第六篇。建議依序閱讀：[完整演進地圖](/ai/2026/08/13/prompt-context-harness-loop-graph-engineering-evolution.html)、[Prompt Engineering](/ai/2026/08/13/prompt-engineering-complete-guide.html)、[Context Engineering](/ai/2026/08/13/context-engineering-complete-guide.html)、[Harness Engineering](/ai/2026/08/13/harness-engineering-complete-guide.html) 與 [Loop Engineering](/ai/2026/08/13/loop-engineering-complete-guide.html)。
+> 本文更新於 **2026 年 8 月 13 日**，是 LLM 工程演進系列的第六篇。建議依序閱讀：[完整演進地圖](/ai/2026/08/01/prompt-context-harness-loop-graph-engineering-evolution.html)、[Prompt Engineering](/ai/2026/08/02/prompt-engineering-complete-guide.html)、[Context Engineering](/ai/2026/08/03/context-engineering-complete-guide.html)、[Harness Engineering](/ai/2026/08/04/harness-engineering-complete-guide.html) 與 [Loop Engineering](/ai/2026/08/05/loop-engineering-complete-guide.html)。
 >
 > 用一句話先下定義：**Graph Engineering 是把一個複雜 AI 系統拆成有契約的節點、可解釋的邊、可持久化的狀態與有界的循環，再工程化它的路由、並行、合流、復原、權限、觀測與評估。**
 

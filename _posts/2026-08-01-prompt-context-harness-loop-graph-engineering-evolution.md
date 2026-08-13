@@ -3,6 +3,7 @@ layout: post
 title: 從 Prompt 到 Graph Engineering：LLM 工程如何從下指令走向可控系統
 subtitle: 完整梳理 Prompt、Context、Harness、Loop 與 Graph Engineering 的演進、瓶頸、控制單位與實務取捨
 author: Paul Jiang
+date: 2026-08-01 09:00:00 +0800
 categories: AI
 tags: LLM Prompt-Engineering Context-Engineering Harness-Engineering Loop-Engineering Graph-Engineering AI-Agent LangGraph GraphRAG
 sidebar: []
@@ -333,4 +334,3 @@ Graph 並不一定比較先進。它增加狀態設計、節點契約、觀測�
 - [LangGraph Documentation: Persistence](https://docs.langchain.com/oss/python/langgraph/persistence)
 - [Microsoft Research: Project GraphRAG](https://www.microsoft.com/en-us/research/project/graphrag/)
 - [Addy Osmani: Loop Engineering](https://addyosmani.com/blog/loop-engineering/)
-

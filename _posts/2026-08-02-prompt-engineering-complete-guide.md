@@ -3,14 +3,14 @@ layout: post
 title: Prompt Engineering 完整指南：從提示詞結構、核心技巧到評測與安全
 subtitle: 不再追逐魔法句型，從 LLM 運作原理理解 Goal、Context、Examples、Constraints、Structured Output、Prompt Injection 與 Evals
 author: Paul Jiang
-date: 2026-08-13 20:00:00 +0800
+date: 2026-08-02 09:00:00 +0800
 categories: AI
 tags: LLM Prompt-Engineering Zero-Shot Few-Shot Chain-of-Thought Structured-Output Prompt-Injection Evals OpenAI Anthropic Gemini
 sidebar: []
 excerpt_image: /assets/images/260813/prompt-engineering-complete-guide-hero.png
 ---
 
-> 本文整理至 **2026 年 8 月 13 日**，是「LLM 工程演進」系列的第二篇。上一篇先梳理了 [Prompt、Context、Harness、Loop 與 Graph Engineering 的整體關係](/ai/2026/08/13/prompt-context-harness-loop-graph-engineering-evolution.html)，這一篇則深入最內層的 `Prompt Engineering`。
+> 本文整理至 **2026 年 8 月 13 日**，是「LLM 工程演進」系列的第二篇。上一篇先梳理了 [Prompt、Context、Harness、Loop 與 Graph Engineering 的整體關係](/ai/2026/08/01/prompt-context-harness-loop-graph-engineering-evolution.html)，這一篇則深入最內層的 `Prompt Engineering`。
 >
 > 先用一句話定義：**Prompt Engineering 是透過可重複、可測試的輸入設計，在不修改模型權重的情況下，提高模型完成特定任務的成功率。**
 

@@ -3,14 +3,14 @@ layout: post
 title: Loop Engineering 完整指南：把 Agent 的反覆嘗試設計成可停止、可驗證、可恢復的工作循環
 subtitle: 深入 Agent Loop、ReAct、Plan-Execute-Replan、Evaluator-Optimizer、Test-Repair、停止條件、無進展偵測、Checkpoint、Tracing 與 Evals
 author: Paul Jiang
-date: 2026-08-13 23:00:00 +0800
+date: 2026-08-05 09:00:00 +0800
 categories: AI
 tags: LLM Loop-Engineering AI-Agent Agent-Loop ReAct Reflection Self-Refine Tools Stop-Conditions Checkpoint Observability Evals
 sidebar: []
 excerpt_image: /assets/images/260813/loop-engineering-complete-guide-hero.png
 ---
 
-> 本文整理至 **2026 年 8 月 13 日**，是「LLM 工程演進」系列的第五篇。前面依序介紹了 [整體工程演進](/ai/2026/08/13/prompt-context-harness-loop-graph-engineering-evolution.html)、[Prompt Engineering](/ai/2026/08/13/prompt-engineering-complete-guide.html)、[Context Engineering](/ai/2026/08/13/context-engineering-complete-guide.html) 與 [Harness Engineering](/ai/2026/08/13/harness-engineering-complete-guide.html)。這一篇聚焦 Harness 裡最關鍵的動態機制：**Agent 如何反覆行動、取得回饋、修正方向，並在正確時機停止。**
+> 本文整理至 **2026 年 8 月 13 日**，是「LLM 工程演進」系列的第五篇。前面依序介紹了 [整體工程演進](/ai/2026/08/01/prompt-context-harness-loop-graph-engineering-evolution.html)、[Prompt Engineering](/ai/2026/08/02/prompt-engineering-complete-guide.html)、[Context Engineering](/ai/2026/08/03/context-engineering-complete-guide.html) 與 [Harness Engineering](/ai/2026/08/04/harness-engineering-complete-guide.html)。這一篇聚焦 Harness 裡最關鍵的動態機制：**Agent 如何反覆行動、取得回饋、修正方向，並在正確時機停止。**
 >
 > 先用一句話定義：**Loop Engineering 是把 Agent 的多步驟執行設計成一個有目標、有狀態、有外部回饋、有驗證器、有資源上限、有停止出口的受控循環。**
 
@@ -1127,4 +1127,3 @@ Loop Engineering 的核心不是要求模型多思考幾次，而是建立一個
 - [Hou et al. (2026), When Agents Do Not Stop: Uncovering Infinite Agentic Loops in LLM Agents（預印本）](https://arxiv.org/abs/2607.01641)
 - [Shrivastava (2026), Semantic Early-Stopping for Iterative LLM Agent Loops（預印本）](https://arxiv.org/abs/2606.27009)
 - [Stop Hand-Holding Your Coding Agent: Engineering the Loops that Replace Step-by-Step Prompting（2026 預印本）](https://arxiv.org/abs/2607.00038)
-

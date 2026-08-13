@@ -3,14 +3,14 @@ layout: post
 title: Harness Engineering 完整指南：讓 LLM 從會回答走向安全、可靠、可觀測的 Agent
 subtitle: 深入工具契約、Sandbox、權限、狀態、恢復、Tracing、Evals，並比較 Hermes Agent、OpenClaw、Pi Agent 與 nanobot
 author: Paul Jiang
-date: 2026-08-13 22:00:00 +0800
+date: 2026-08-04 09:00:00 +0800
 categories: AI
 tags: LLM Harness-Engineering AI-Agent Hermes-Agent OpenClaw Pi-Agent nanobot Tools Sandbox Guardrails Observability Evals MCP
 sidebar: []
 excerpt_image: /assets/images/260813/harness-engineering-complete-guide-hero.png
 ---
 
-> 本文整理至 **2026 年 8 月 13 日**，是「LLM 工程演進」系列的第四篇。前面依序介紹了 [整體工程演進](/ai/2026/08/13/prompt-context-harness-loop-graph-engineering-evolution.html)、[Prompt Engineering](/ai/2026/08/13/prompt-engineering-complete-guide.html) 與 [Context Engineering](/ai/2026/08/13/context-engineering-complete-guide.html)，這一篇開始把模型接上工具、狀態與真實世界。
+> 本文整理至 **2026 年 8 月 13 日**，是「LLM 工程演進」系列的第四篇。前面依序介紹了 [整體工程演進](/ai/2026/08/01/prompt-context-harness-loop-graph-engineering-evolution.html)、[Prompt Engineering](/ai/2026/08/02/prompt-engineering-complete-guide.html) 與 [Context Engineering](/ai/2026/08/03/context-engineering-complete-guide.html)，這一篇開始把模型接上工具、狀態與真實世界。
 >
 > 先用一句話定義：**Harness Engineering 是設計包圍模型的執行鷹架，讓模型能在明確能力、權限、資源與安全邊界內採取行動，並且讓整個過程可觀測、可測試、可中斷、可恢復。**
 

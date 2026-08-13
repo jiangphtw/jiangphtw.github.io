@@ -3,14 +3,14 @@ layout: post
 title: Context Engineering 完整指南：從 RAG、Memory、Compaction 到 Agent 的動態上下文
 subtitle: 不只是把資料塞進 Context Window，而是系統化設計資訊的選擇、檢索、排序、壓縮、記憶、權限與評測
 author: Paul Jiang
-date: 2026-08-13 21:00:00 +0800
+date: 2026-08-03 09:00:00 +0800
 categories: AI
 tags: LLM Context-Engineering RAG Retrieval Memory Compaction Agent Prompt-Engineering Vector-Database Prompt-Injection Evals OpenAI Anthropic
 sidebar: []
 excerpt_image: /assets/images/260813/context-engineering-complete-guide-hero.png
 ---
 
-> 本文整理至 **2026 年 8 月 13 日**，是「LLM 工程演進」系列的第三篇。第一篇先整理了 [Prompt、Context、Harness、Loop 與 Graph Engineering 的整體關係](/ai/2026/08/13/prompt-context-harness-loop-graph-engineering-evolution.html)，第二篇深入介紹 [Prompt Engineering](/ai/2026/08/13/prompt-engineering-complete-guide.html)，這一篇則把焦點移到模型每一次推論真正看見的完整資訊環境。
+> 本文整理至 **2026 年 8 月 13 日**，是「LLM 工程演進」系列的第三篇。第一篇先整理了 [Prompt、Context、Harness、Loop 與 Graph Engineering 的整體關係](/ai/2026/08/01/prompt-context-harness-loop-graph-engineering-evolution.html)，第二篇深入介紹 [Prompt Engineering](/ai/2026/08/02/prompt-engineering-complete-guide.html)，這一篇則把焦點移到模型每一次推論真正看見的完整資訊環境。
 >
 > 先用一句話定義：**Context Engineering 是在每一次模型推論前後，系統化選擇、組織、更新與保護上下文，使有限的 Token 承載最高價值的資訊。**
 
