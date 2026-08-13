@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Loop Engineering 核心執行迴圈</title>
+  <desc id="desc">Agent 從目標、規劃、行動、觀察、驗證到更新狀態的有界迴圈，並包含完成、人工介入與安全停止出口。</desc>
+  <defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="9" stdDeviation="13" flood-color="#092033" flood-opacity=".14"/></filter><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3 0 6z" fill="#244b66"/></marker></defs>
+  <rect width="1600" height="1000" fill="#f6f2e8"/>
+  <g opacity=".14" stroke="#244b66"><path d="M0 125H1600M0 250H1600M0 375H1600M0 500H1600M0 625H1600M0 750H1600M0 875H1600"/><path d="M200 0V1000M400 0V1000M600 0V1000M800 0V1000M1000 0V1000M1200 0V1000M1400 0V1000"/></g>
+  <g font-family="Arial, 'Noto Sans TC', sans-serif">
+    <text x="78" y="76" fill="#0c2335" font-size="43" font-weight="800">Agent Loop：每一圈都必須增加可驗證的進展</text>
+    <text x="78" y="119" fill="#4f6777" font-size="23">Loop 不是無限重試，而是有狀態、有回饋、有預算、有出口的執行控制</text>
+    <ellipse cx="760" cy="505" rx="535" ry="285" fill="none" stroke="#244b66" stroke-width="12" stroke-dasharray="2 18" stroke-linecap="round"/>
+    <g fill="none" stroke="#244b66" stroke-width="6" marker-end="url(#a)">
+      <path d="M433 296Q560 195 685 225"/><path d="M865 225Q1015 210 1116 305"/><path d="M1190 415Q1227 500 1187 586"/><path d="M1097 690Q965 790 846 760"/><path d="M665 760Q505 782 412 679"/><path d="M335 572Q297 466 340 390"/>
+    </g>
+    <g filter="url(#s)">
+      <g><circle cx="360" cy="335" r="92" fill="#0c2335"/><text x="360" y="326" text-anchor="middle" fill="#dfff42" font-size="26" font-weight="800">01 目標</text><text x="360" y="360" text-anchor="middle" fill="#fff" font-size="18">成功條件 · 範圍</text></g>
+      <g><circle cx="775" cy="225" r="92" fill="#244b66"/><text x="775" y="216" text-anchor="middle" fill="#dfff42" font-size="26" font-weight="800">02 規劃</text><text x="775" y="250" text-anchor="middle" fill="#fff" font-size="18">下一步 · 假設</text></g>
+      <g><circle cx="1170" cy="340" r="92" fill="#3f6985"/><text x="1170" y="331" text-anchor="middle" fill="#fff" font-size="26" font-weight="800">03 行動</text><text x="1170" y="365" text-anchor="middle" fill="#e7eff3" font-size="18">工具 · Side effect</text></g>
+      <g><circle cx="1145" cy="650" r="92" fill="#dfff42"/><text x="1145" y="641" text-anchor="middle" fill="#0c2335" font-size="26" font-weight="800">04 觀察</text><text x="1145" y="675" text-anchor="middle" fill="#304532" font-size="18">結果 · 錯誤 · 變化</text></g>
+      <g><circle cx="755" cy="765" r="92" fill="#bdf02f"/><text x="755" y="756" text-anchor="middle" fill="#0c2335" font-size="26" font-weight="800">05 驗證</text><text x="755" y="790" text-anchor="middle" fill="#304532" font-size="18">測試 · Postcondition</text></g>
+      <g><circle cx="360" cy="635" r="92" fill="#dce5e9"/><text x="360" y="626" text-anchor="middle" fill="#0c2335" font-size="26" font-weight="800">06 更新</text><text x="360" y="660" text-anchor="middle" fill="#496273" font-size="18">State · Memory · Plan</text></g>
+    </g>
+    <g filter="url(#s)"><rect x="592" y="385" width="336" height="238" rx="54" fill="#0c2335"/><path d="M690 505l70-72 70 72-70 72z" fill="none" stroke="#dfff42" stroke-width="10"/><circle cx="760" cy="505" r="28" fill="#dfff42"/><text x="760" y="598" text-anchor="middle" fill="#fff" font-size="25" font-weight="800">LOOP STATE</text></g>
+    <g stroke-width="5" fill="none" marker-end="url(#a)"><path d="M840 756Q1050 858 1248 840" stroke="#244b66"/><path d="M1150 430Q1370 405 1370 525" stroke="#244b66"/><path d="M300 635Q128 680 128 790" stroke="#244b66"/></g>
+    <g filter="url(#s)">
+      <rect x="1240" y="785" width="285" height="105" rx="28" fill="#dfff42"/><text x="1382" y="828" text-anchor="middle" fill="#0c2335" font-size="25" font-weight="800">完成 DONE</text><text x="1382" y="861" text-anchor="middle" fill="#304532" font-size="17">外部條件已證明</text>
+      <rect x="1250" y="480" width="270" height="105" rx="28" fill="#dce5e9"/><text x="1385" y="523" text-anchor="middle" fill="#0c2335" font-size="24" font-weight="800">人工介入</text><text x="1385" y="556" text-anchor="middle" fill="#496273" font-size="17">核准 · 補資料 · 接管</text>
+      <rect x="75" y="760" width="285" height="125" rx="28" fill="#0c2335"/><text x="217" y="804" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">安全停止 STOP</text><text x="217" y="838" text-anchor="middle" fill="#dfff42" font-size="17">預算 · 超時 · 無進展</text><text x="217" y="865" text-anchor="middle" fill="#cbd7df" font-size="16">保留 Best-so-far</text>
+    </g>
+    <rect x="238" y="912" width="1044" height="56" rx="22" fill="#e2e9ec"/><text x="760" y="948" text-anchor="middle" fill="#0c2335" font-size="21" font-weight="800">每圈輸入：目前狀態與回饋　｜　每圈輸出：可觀測的 State Delta 與下一個 Route</text>
+  </g>
+</svg>
+

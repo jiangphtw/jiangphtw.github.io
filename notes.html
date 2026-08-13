@@ -21,7 +21,11 @@ nav: notes
     {% assign featured = site.posts | first %}
     {% if featured %}
     <article class="lead-note reveal">
-      <div class="lead-note-art" aria-hidden="true"><span>KV</span><i></i><i></i></div>
+      {% if featured.excerpt_image and featured.excerpt_image != 'NO_EXCERPT_IMAGE' %}
+      <div class="lead-note-art lead-note-cover"><img src="{{ featured.excerpt_image | relative_url }}" alt="" /></div>
+      {% else %}
+      <div class="lead-note-art" aria-hidden="true"><span>AI</span><i></i><i></i></div>
+      {% endif %}
       <div>
         <p class="section-label">FEATURED · {{ featured.categories | first | default: 'NOTE' | upcase }} · {{ featured.date | date: '%Y.%m.%d' }}</p>
         <h2>{{ featured.title }}</h2>

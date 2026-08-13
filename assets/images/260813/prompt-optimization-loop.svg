@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="920" viewBox="0 0 1600 920" role="img" aria-labelledby="title desc">
+  <title id="title">Prompt Engineering 的評測驅動迴圈</title>
+  <desc id="desc">從定義任務與資料集開始，建立最小 Prompt，執行代表案例，分析失敗，做單一修改，進行回歸評測後發布並監控。</desc>
+  <defs>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="9" stdDeviation="12" flood-color="#092033" flood-opacity=".13"/></filter>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0l10 5-10 5z" fill="#193a52"/></marker>
+  </defs>
+  <rect width="1600" height="920" fill="#f6f2e8"/>
+  <text x="90" y="82" fill="#0c2335" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="44" font-weight="800">Prompt Engineering 是一個評測迴圈</text>
+  <text x="90" y="127" fill="#4f6777" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="24">不要憑一個漂亮回答挑 Prompt；要比較它在一組代表案例上的穩定表現</text>
+
+  <g fill="none" stroke="#193a52" stroke-width="6" marker-end="url(#a)">
+    <path d="M330 280H460"/><path d="M710 280H840"/><path d="M1090 280H1220"/>
+    <path d="M1350 350V495"/><path d="M1220 565H1090"/><path d="M840 565H710"/><path d="M460 565H330"/>
+    <path d="M200 495V365"/>
+  </g>
+
+  <g font-family="Arial, 'Noto Sans TC', sans-serif" filter="url(#s)">
+    <rect x="80" y="210" width="250" height="140" rx="28" fill="#0c2335"/>
+    <circle cx="135" cy="260" r="27" fill="#dfff42"/><text x="135" y="269" text-anchor="middle" fill="#0c2335" font-size="22" font-weight="900">1</text>
+    <text x="175" y="258" fill="#fff" font-size="25" font-weight="800">定義任務</text><text x="175" y="294" fill="#cbd7df" font-size="19">成功標準與資料集</text>
+
+    <rect x="460" y="210" width="250" height="140" rx="28" fill="#244b66"/>
+    <circle cx="515" cy="260" r="27" fill="#dfff42"/><text x="515" y="269" text-anchor="middle" fill="#0c2335" font-size="22" font-weight="900">2</text>
+    <text x="555" y="258" fill="#fff" font-size="25" font-weight="800">最小基準</text><text x="555" y="294" fill="#d8e2e8" font-size="18">建立 Baseline Prompt</text>
+
+    <rect x="840" y="210" width="250" height="140" rx="28" fill="#3f6985"/>
+    <circle cx="895" cy="260" r="27" fill="#dfff42"/><text x="895" y="269" text-anchor="middle" fill="#0c2335" font-size="22" font-weight="900">3</text>
+    <text x="935" y="258" fill="#fff" font-size="25" font-weight="800">執行 Evals</text><text x="935" y="294" fill="#e2eaee" font-size="18">正常／邊界／對抗</text>
+
+    <rect x="1220" y="210" width="250" height="140" rx="28" fill="#dfff42"/>
+    <circle cx="1275" cy="260" r="27" fill="#0c2335"/><text x="1275" y="269" text-anchor="middle" fill="#dfff42" font-size="22" font-weight="900">4</text>
+    <text x="1315" y="258" fill="#0c2335" font-size="25" font-weight="800">分析失敗</text><text x="1315" y="294" fill="#304532" font-size="18">依失敗類型分類</text>
+
+    <rect x="1220" y="495" width="250" height="140" rx="28" fill="#caef42"/>
+    <circle cx="1275" cy="545" r="27" fill="#0c2335"/><text x="1275" y="554" text-anchor="middle" fill="#dfff42" font-size="22" font-weight="900">5</text>
+    <text x="1315" y="543" fill="#0c2335" font-size="25" font-weight="800">單一修改</text><text x="1315" y="579" fill="#304532" font-size="18">指令／例子／格式擇一</text>
+
+    <rect x="840" y="495" width="250" height="140" rx="28" fill="#d8e2e7"/>
+    <circle cx="895" cy="545" r="27" fill="#0c2335"/><text x="895" y="554" text-anchor="middle" fill="#dfff42" font-size="22" font-weight="900">6</text>
+    <text x="935" y="543" fill="#0c2335" font-size="25" font-weight="800">回歸比較</text><text x="935" y="579" fill="#496273" font-size="18">品質／成本／延遲</text>
+
+    <rect x="460" y="495" width="250" height="140" rx="28" fill="#244b66"/>
+    <circle cx="515" cy="545" r="27" fill="#dfff42"/><text x="515" y="554" text-anchor="middle" fill="#0c2335" font-size="22" font-weight="900">7</text>
+    <text x="555" y="543" fill="#fff" font-size="25" font-weight="800">版本發布</text><text x="555" y="579" fill="#d8e2e8" font-size="18">綁定 Prompt 與模型</text>
+
+    <rect x="80" y="495" width="250" height="140" rx="28" fill="#0c2335"/>
+    <circle cx="135" cy="545" r="27" fill="#dfff42"/><text x="135" y="554" text-anchor="middle" fill="#0c2335" font-size="22" font-weight="900">8</text>
+    <text x="175" y="543" fill="#fff" font-size="25" font-weight="800">監控真實失敗</text><text x="175" y="579" fill="#cbd7df" font-size="19">新案例回到資料集</text>
+  </g>
+
+  <rect x="300" y="725" width="1000" height="104" rx="32" fill="#e2e9ec"/>
+  <text x="800" y="770" text-anchor="middle" fill="#0c2335" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="24" font-weight="800">每次只改一個變因，才能知道品質改變來自 Prompt、模型、參數或工具</text>
+  <text x="800" y="807" text-anchor="middle" fill="#4f6777" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">一個成功範例是 Demo；一組可重跑、可比較的案例才是 Engineering</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Production Agent Harness 的十二個核心元件</title>
+  <desc id="desc">語言模型位於中央，外圍由模型介面、上下文、工具、政策、沙箱、狀態、檢查點、恢復、人工核准、觀測、驗證與預算控制組成。</desc>
+  <defs>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#092033" flood-opacity=".13"/></filter>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0l10 5-10 5z" fill="#17384f"/></marker>
+  </defs>
+  <rect width="1600" height="1040" fill="#f6f2e8"/>
+  <g opacity=".16" stroke="#244b66"><path d="M0 130H1600M0 260H1600M0 390H1600M0 520H1600M0 650H1600M0 780H1600M0 910H1600"/><path d="M200 0V1040M400 0V1040M600 0V1040M800 0V1040M1000 0V1040M1200 0V1040M1400 0V1040"/></g>
+  <g font-family="Arial, 'Noto Sans TC', sans-serif">
+    <text x="80" y="76" fill="#0c2335" font-size="43" font-weight="800">Production Harness：模型只是核心，不是完整系統</text>
+    <text x="80" y="119" fill="#4f6777" font-size="23">十二個元件共同決定 Agent 能做什麼、怎麼失敗，以及如何被驗證</text>
+
+    <g filter="url(#s)">
+      <rect x="602" y="325" width="396" height="390" rx="64" fill="#0c2335"/>
+      <path d="M686 429l114-77 114 77v156l-114 77-114-77z" fill="none" stroke="#dfff42" stroke-width="10"/>
+      <circle cx="800" cy="507" r="49" fill="#dfff42"/>
+      <text x="800" y="685" text-anchor="middle" fill="#fff" font-size="30" font-weight="800">LANGUAGE MODEL</text>
+    </g>
+
+    <g font-size="23" font-weight="800" filter="url(#s)">
+      <g><rect x="70" y="180" width="340" height="100" rx="25" fill="#0c2335"/><circle cx="116" cy="230" r="25" fill="#dfff42"/><text x="116" y="238" text-anchor="middle" fill="#0c2335">01</text><text x="157" y="222" fill="#fff">Model Adapter</text><text x="157" y="253" fill="#cbd7df" font-size="17">模型、串流與用量介面</text></g>
+      <g><rect x="70" y="315" width="340" height="100" rx="25" fill="#244b66"/><circle cx="116" cy="365" r="25" fill="#dfff42"/><text x="116" y="373" text-anchor="middle" fill="#0c2335">02</text><text x="157" y="357" fill="#fff">Context Builder</text><text x="157" y="388" fill="#d8e2e8" font-size="17">檢索、組裝與壓縮</text></g>
+      <g><rect x="70" y="450" width="340" height="100" rx="25" fill="#3f6985"/><circle cx="116" cy="500" r="25" fill="#dfff42"/><text x="116" y="508" text-anchor="middle" fill="#0c2335">03</text><text x="157" y="492" fill="#fff">Tool Registry</text><text x="157" y="523" fill="#e1e9ed" font-size="17">能力、Schema 與副作用</text></g>
+      <g><rect x="70" y="585" width="340" height="100" rx="25" fill="#dfff42"/><circle cx="116" cy="635" r="25" fill="#0c2335"/><text x="116" y="643" text-anchor="middle" fill="#dfff42">04</text><text x="157" y="627" fill="#0c2335">Policy Engine</text><text x="157" y="658" fill="#304532" font-size="17">身分、授權與風險政策</text></g>
+      <g><rect x="70" y="720" width="340" height="100" rx="25" fill="#c9ef42"/><circle cx="116" cy="770" r="25" fill="#0c2335"/><text x="116" y="778" text-anchor="middle" fill="#dfff42">05</text><text x="157" y="762" fill="#0c2335">Sandbox／Runtime</text><text x="157" y="793" fill="#304532" font-size="17">檔案、網路與資源邊界</text></g>
+      <g><rect x="70" y="855" width="340" height="100" rx="25" fill="#dce5e9"/><circle cx="116" cy="905" r="25" fill="#0c2335"/><text x="116" y="913" text-anchor="middle" fill="#dfff42">06</text><text x="157" y="897" fill="#0c2335">State Store</text><text x="157" y="928" fill="#496273" font-size="17">任務、核准與產物狀態</text></g>
+
+      <g><rect x="1190" y="180" width="340" height="100" rx="25" fill="#0c2335"/><circle cx="1236" cy="230" r="25" fill="#dfff42"/><text x="1236" y="238" text-anchor="middle" fill="#0c2335">07</text><text x="1277" y="222" fill="#fff">Checkpoint／Resume</text><text x="1277" y="253" fill="#cbd7df" font-size="17">中斷、保存與續跑</text></g>
+      <g><rect x="1190" y="315" width="340" height="100" rx="25" fill="#244b66"/><circle cx="1236" cy="365" r="25" fill="#dfff42"/><text x="1236" y="373" text-anchor="middle" fill="#0c2335">08</text><text x="1277" y="357" fill="#fff">Retry／Recovery</text><text x="1277" y="388" fill="#d8e2e8" font-size="17">逾時、冪等與錯誤復原</text></g>
+      <g><rect x="1190" y="450" width="340" height="100" rx="25" fill="#3f6985"/><circle cx="1236" cy="500" r="25" fill="#dfff42"/><text x="1236" y="508" text-anchor="middle" fill="#0c2335">09</text><text x="1277" y="492" fill="#fff">Human Approval</text><text x="1277" y="523" fill="#e1e9ed" font-size="17">暫停、審查與接管</text></g>
+      <g><rect x="1190" y="585" width="340" height="100" rx="25" fill="#dfff42"/><circle cx="1236" cy="635" r="25" fill="#0c2335"/><text x="1236" y="643" text-anchor="middle" fill="#dfff42">10</text><text x="1277" y="627" fill="#0c2335">Observability</text><text x="1277" y="658" fill="#304532" font-size="17">Trace、Log、Metric、Audit</text></g>
+      <g><rect x="1190" y="720" width="340" height="100" rx="25" fill="#c9ef42"/><circle cx="1236" cy="770" r="25" fill="#0c2335"/><text x="1236" y="778" text-anchor="middle" fill="#dfff42">11</text><text x="1277" y="762" fill="#0c2335">Validators／Evals</text><text x="1277" y="793" fill="#304532" font-size="17">結果、產物與回歸評測</text></g>
+      <g><rect x="1190" y="855" width="340" height="100" rx="25" fill="#dce5e9"/><circle cx="1236" cy="905" r="25" fill="#0c2335"/><text x="1236" y="913" text-anchor="middle" fill="#dfff42">12</text><text x="1277" y="897" fill="#0c2335">Budget／Stop</text><text x="1277" y="928" fill="#496273" font-size="17">成本、時間與停止條件</text></g>
+    </g>
+    <g fill="none" stroke="#17384f" stroke-width="4" opacity=".8"><path d="M410 230h142q35 0 50 45l26 77"/><path d="M410 365h170"/><path d="M410 500h150"/><path d="M410 635h170"/><path d="M410 770h142q35 0 50-45l26-77"/><path d="M410 905h240q45 0 55-85l6-76"/><path d="M1190 230h-142q-35 0-50 45l-26 77"/><path d="M1190 365h-170"/><path d="M1190 500h-150"/><path d="M1190 635h-170"/><path d="M1190 770h-142q-35 0-50-45l-26-77"/><path d="M1190 905h-240q-45 0-55-85l-6-76"/></g>
+  </g>
+</svg>
